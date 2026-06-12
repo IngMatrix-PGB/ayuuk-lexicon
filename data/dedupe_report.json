@@ -1,0 +1,443 @@
+{
+  "removed_or_merged_count": 73,
+  "items": [
+    {
+      "ayuuk": "Ajtsy",
+      "espanol": "Hermano mayor",
+      "categoria": "familia",
+      "kept_as": "Ajtsy"
+    },
+    {
+      "ayuuk": "ANEE",
+      "espanol": "Trueno",
+      "categoria": "vocabulario_general",
+      "kept_as": "Anee"
+    },
+    {
+      "ayuuk": "Anee",
+      "espanol": "Trueno",
+      "categoria": "fenomenos_naturales",
+      "kept_as": "Anee"
+    },
+    {
+      "ayuuk": "Aptykaa",
+      "espanol": "Puercoespín",
+      "categoria": "animales",
+      "kept_as": "Aptykaa"
+    },
+    {
+      "ayuuk": "AWAATS",
+      "espanol": "Llave / Se abrió",
+      "categoria": "vocabulario_general",
+      "kept_as": "AWA’ATS"
+    },
+    {
+      "ayuuk": "ËËP",
+      "espanol": "Cantando",
+      "categoria": "vocabulario_general",
+      "kept_as": "EEP"
+    },
+    {
+      "ayuuk": "ËËTSY",
+      "espanol": "Yo",
+      "categoria": "vocabulario_general",
+      "kept_as": "ËËTSY"
+    },
+    {
+      "ayuuk": "ËYOOP",
+      "espanol": "Sufre",
+      "categoria": "vocabulario_general",
+      "kept_as": "ËYOOP"
+    },
+    {
+      "ayuuk": "Iixy",
+      "espanol": "Comadreja",
+      "categoria": "animales",
+      "kept_as": "Iixy"
+    },
+    {
+      "ayuuk": "Jat",
+      "espanol": "Salamandra mal agüero",
+      "categoria": "animales",
+      "kept_as": "Jat"
+    },
+    {
+      "ayuuk": "JËJP",
+      "espanol": "Filoso",
+      "categoria": "vocabulario_general",
+      "kept_as": "JEJP"
+    },
+    {
+      "ayuuk": "Jëy",
+      "espanol": "Cuñado",
+      "categoria": "familia",
+      "kept_as": "Jëy"
+    },
+    {
+      "ayuuk": "Jëyújk",
+      "espanol": "Bestia mular",
+      "categoria": "animales",
+      "kept_as": "Jëyújk"
+    },
+    {
+      "ayuuk": "Jok",
+      "espanol": "Humo",
+      "categoria": "fenomenos_naturales",
+      "kept_as": "Jok"
+    },
+    {
+      "ayuuk": "Jok",
+      "espanol": "Nube",
+      "categoria": "fenomenos_naturales",
+      "kept_as": "Jok"
+    },
+    {
+      "ayuuk": "Kaa",
+      "espanol": "Tigre",
+      "categoria": "animales",
+      "kept_as": "Kaa"
+    },
+    {
+      "ayuuk": "Kapy",
+      "espanol": "Cuñado por parte de la nuera",
+      "categoria": "familia",
+      "kept_as": "Kapy"
+    },
+    {
+      "ayuuk": "KATS",
+      "espanol": "Jaspeado",
+      "categoria": "colores",
+      "kept_as": "KATS"
+    },
+    {
+      "ayuuk": "KATSY",
+      "espanol": "Costilla",
+      "categoria": "vocabulario_general",
+      "kept_as": "KATSY"
+    },
+    {
+      "ayuuk": "KËËK",
+      "espanol": "Hondo",
+      "categoria": "vocabulario_general",
+      "kept_as": "KEEK"
+    },
+    {
+      "ayuuk": "KËË’K",
+      "espanol": "Calzada",
+      "categoria": "vocabulario_general",
+      "kept_as": "KEEK"
+    },
+    {
+      "ayuuk": "KEPY",
+      "espanol": "Palo",
+      "categoria": "vocabulario_general",
+      "kept_as": "KEPY"
+    },
+    {
+      "ayuuk": "KEPY",
+      "espanol": "Árbol",
+      "categoria": "vocabulario_general",
+      "kept_as": "KEPY"
+    },
+    {
+      "ayuuk": "KËË’W",
+      "espanol": "Cocido",
+      "categoria": "vocabulario_general",
+      "kept_as": "KËËW"
+    },
+    {
+      "ayuuk": "KËJX",
+      "espanol": "Se acabó",
+      "categoria": "vocabulario_general",
+      "kept_as": "KËJX"
+    },
+    {
+      "ayuuk": "KOJY",
+      "espanol": "Fabricado, hecho",
+      "categoria": "vocabulario_general",
+      "kept_as": "KOJY"
+    },
+    {
+      "ayuuk": "KOM",
+      "espanol": "Hondo o lleno",
+      "categoria": "vocabulario_general",
+      "kept_as": "KOM"
+    },
+    {
+      "ayuuk": "Kuaay",
+      "espanol": "Caballo",
+      "categoria": "animales",
+      "kept_as": "Kuaay"
+    },
+    {
+      "ayuuk": "Kujx",
+      "espanol": "Búho",
+      "categoria": "animales",
+      "kept_as": "Kujx"
+    },
+    {
+      "ayuuk": "Majk",
+      "espanol": "Diez",
+      "categoria": "numeros_1_20",
+      "kept_as": "Majk"
+    },
+    {
+      "ayuuk": "MËËY",
+      "espanol": "Zacate",
+      "categoria": "vocabulario_general",
+      "kept_as": "Mëëy"
+    },
+    {
+      "ayuuk": "Mëëy",
+      "espanol": "Concuña",
+      "categoria": "familia",
+      "kept_as": "Mëëy"
+    },
+    {
+      "ayuuk": "Mëëy",
+      "espanol": "Concuño por parte de la nuera al hermano mayor",
+      "categoria": "familia",
+      "kept_as": "Mëëy"
+    },
+    {
+      "ayuuk": "Mejy",
+      "espanol": "Mar",
+      "categoria": "naturaleza",
+      "kept_as": "Mejy"
+    },
+    {
+      "ayuuk": "Mëjnëë",
+      "espanol": "Río",
+      "categoria": "naturaleza",
+      "kept_as": "Mëjnëë"
+    },
+    {
+      "ayuuk": "Mu’u",
+      "espanol": "Chapulín",
+      "categoria": "animales",
+      "kept_as": "Mu’u"
+    },
+    {
+      "ayuuk": "Naan",
+      "espanol": "Venado",
+      "categoria": "animales",
+      "kept_as": "Naan"
+    },
+    {
+      "ayuuk": "Naax",
+      "espanol": "Tierra",
+      "categoria": "naturaleza",
+      "kept_as": "Naax"
+    },
+    {
+      "ayuuk": "Nak",
+      "espanol": "Aplanado",
+      "categoria": "formas_geometricas",
+      "kept_as": "Nak"
+    },
+    {
+      "ayuuk": "Nuj",
+      "espanol": "Arriera",
+      "categoria": "insectos",
+      "kept_as": "Nuj"
+    },
+    {
+      "ayuuk": "Nëë",
+      "espanol": "Agua",
+      "categoria": "fenomenos_naturales",
+      "kept_as": "Nëë"
+    },
+    {
+      "ayuuk": "Nëëts",
+      "espanol": "Armadillo",
+      "categoria": "animales",
+      "kept_as": "Nëëts"
+    },
+    {
+      "ayuuk": "NËJËË",
+      "espanol": "Hipo",
+      "categoria": "vocabulario_general",
+      "kept_as": "NËJE’E"
+    },
+    {
+      "ayuuk": "Ojy",
+      "espanol": "Cuñada por parte de la nuera a la hermana mayor",
+      "categoria": "familia",
+      "kept_as": "Ojy"
+    },
+    {
+      "ayuuk": "Pë’ëx",
+      "espanol": "Zancudo",
+      "categoria": "insectos",
+      "kept_as": "Pë’ëx"
+    },
+    {
+      "ayuuk": "PËJY",
+      "espanol": "Flor",
+      "categoria": "vocabulario_general",
+      "kept_as": "PEJY"
+    },
+    {
+      "ayuuk": "Pik",
+      "espanol": "Redondo",
+      "categoria": "formas_geometricas",
+      "kept_as": "Pik"
+    },
+    {
+      "ayuuk": "Poj",
+      "espanol": "Viento",
+      "categoria": "fenomenos_naturales",
+      "kept_as": "Poj"
+    },
+    {
+      "ayuuk": "PO’O",
+      "espanol": "Luna; mes del año",
+      "categoria": "vocabulario_general",
+      "kept_as": "Poo"
+    },
+    {
+      "ayuuk": "Poo",
+      "espanol": "Tlacuache",
+      "categoria": "animales",
+      "kept_as": "Poo"
+    },
+    {
+      "ayuuk": "Po’o",
+      "espanol": "Luna",
+      "categoria": "naturaleza",
+      "kept_as": "Poo"
+    },
+    {
+      "ayuuk": "Pooxyp",
+      "espanol": "Araña",
+      "categoria": "insectos",
+      "kept_as": "Pooxyp"
+    },
+    {
+      "ayuuk": "PU’TS",
+      "espanol": "Amarillo",
+      "categoria": "colores",
+      "kept_as": "PU’TS"
+    },
+    {
+      "ayuuk": "PU’UTS",
+      "espanol": "Podrido",
+      "categoria": "vocabulario_general",
+      "kept_as": "PUUTS"
+    },
+    {
+      "ayuuk": "PU’UY",
+      "espanol": "Tabla; banco",
+      "categoria": "vocabulario_general",
+      "kept_as": "PUUY"
+    },
+    {
+      "ayuuk": "Tëptsy",
+      "espanol": "Tuza",
+      "categoria": "animales",
+      "kept_as": "Tëptsy"
+    },
+    {
+      "ayuuk": "Tsaa",
+      "espanol": "Piedra",
+      "categoria": "naturaleza",
+      "kept_as": "Tsaa"
+    },
+    {
+      "ayuuk": "TSA’AM",
+      "espanol": "Maduro",
+      "categoria": "vocabulario_general",
+      "kept_as": "TSAAM"
+    },
+    {
+      "ayuuk": "Tsik",
+      "espanol": "Tejón",
+      "categoria": "animales",
+      "kept_as": "Tsik"
+    },
+    {
+      "ayuuk": "Tsuáp",
+      "espanol": "Suegro por parte de la nuera",
+      "categoria": "familia",
+      "kept_as": "Tsuáp"
+    },
+    {
+      "ayuuk": "Tsuuk",
+      "espanol": "Ratón",
+      "categoria": "animales",
+      "kept_as": "Tsuuk"
+    },
+    {
+      "ayuuk": "TSUXK",
+      "espanol": "Verde",
+      "categoria": "colores",
+      "kept_as": "TSUXK"
+    },
+    {
+      "ayuuk": "Uk",
+      "espanol": "Perro",
+      "categoria": "animales",
+      "kept_as": "Uk"
+    },
+    {
+      "ayuuk": "Utsy",
+      "espanol": "Hermano menor",
+      "categoria": "familia",
+      "kept_as": "Utsy"
+    },
+    {
+      "ayuuk": "WAA’TS",
+      "espanol": "Limpio",
+      "categoria": "vocabulario_general",
+      "kept_as": "WAATS"
+    },
+    {
+      "ayuuk": "Waj",
+      "espanol": "Ganado",
+      "categoria": "animales",
+      "kept_as": "Waj"
+    },
+    {
+      "ayuuk": "Wok",
+      "espanol": "Gorgojo",
+      "categoria": "insectos",
+      "kept_as": "Wok"
+    },
+    {
+      "ayuuk": "Woon",
+      "espanol": "Garza",
+      "categoria": "animales",
+      "kept_as": "Woon"
+    },
+    {
+      "ayuuk": "Xëë",
+      "espanol": "Sol",
+      "categoria": "naturaleza",
+      "kept_as": "Xëë"
+    },
+    {
+      "ayuuk": "XU’UX",
+      "espanol": "Tocar instrumento musical",
+      "categoria": "vocabulario_general",
+      "kept_as": "Xuu’x"
+    },
+    {
+      "ayuuk": "Xuu’x",
+      "espanol": "Colibrí",
+      "categoria": "animales",
+      "kept_as": "Xuu’x"
+    },
+    {
+      "ayuuk": "Yuuk",
+      "espanol": "Montaña virgen",
+      "categoria": "naturaleza",
+      "kept_as": "Yuuk"
+    },
+    {
+      "ayuuk": "Yuuktsy",
+      "espanol": "Pavo real",
+      "categoria": "animales",
+      "kept_as": "Yuuktsy"
+    }
+  ]
+}

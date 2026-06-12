@@ -1,0 +1,2482 @@
+{
+  "generated_at": "2026-06-12T14:53:00.433849+00:00",
+  "dry_run": false,
+  "update_dataset": true,
+  "legacy_root": "/Users/PGALEANA/Documents/ayuuk-para-todos-main",
+  "project_root": "/Users/PGALEANA/Documents/ayuuk_para_todos_mvp",
+  "stats": {
+    "dataset_entries": 1080,
+    "legacy_mappings_extracted": 232,
+    "legacy_by_source": {
+      "letras-spa-lite/A.html": 153,
+      "letras-spa-lite/M.html": 40,
+      "pages/colores.html": 19,
+      "1-10-A.html": 20
+    },
+    "audios_found_physically": 231,
+    "matched_audios": 230,
+    "copied_audios": 0,
+    "pending_audios": 850,
+    "legacy_without_dataset_match": 0
+  },
+  "examples": {
+    "matches": [
+      {
+        "slug": "aamy",
+        "ayuuk": "AAMY",
+        "espanol": "Hace rato",
+        "file": "audio/aamy.mp3",
+        "legacy_source": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/1.mp3",
+        "source_html": "letras-spa-lite/A.html"
+      },
+      {
+        "slug": "aapk",
+        "ayuuk": "AAPK",
+        "espanol": "Sombra",
+        "file": "audio/aapk.mp3",
+        "legacy_source": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/2.mp3",
+        "source_html": "letras-spa-lite/A.html"
+      },
+      {
+        "slug": "aat",
+        "ayuuk": "AAT",
+        "espanol": "Piojo",
+        "file": "audio/aat.mp3",
+        "legacy_source": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/3.mp3",
+        "source_html": "letras-spa-lite/A.html"
+      },
+      {
+        "slug": "aats",
+        "ayuuk": "AATS",
+        "espanol": "Bejuco",
+        "file": "audio/aats.mp3",
+        "legacy_source": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/4.mp3",
+        "source_html": "letras-spa-lite/A.html"
+      },
+      {
+        "slug": "aaw",
+        "ayuuk": "AAW",
+        "espanol": "Boca",
+        "file": "audio/aaw.mp3",
+        "legacy_source": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/5.mp3",
+        "source_html": "letras-spa-lite/A.html"
+      },
+      {
+        "slug": "aay",
+        "ayuuk": "AAY",
+        "espanol": "Hoja",
+        "file": "audio/aay.mp3",
+        "legacy_source": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/6.mp3",
+        "source_html": "letras-spa-lite/A.html"
+      },
+      {
+        "slug": "aix",
+        "ayuuk": "AIX",
+        "espanol": "Espera",
+        "file": "audio/aix.mp3",
+        "legacy_source": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/7.mp3",
+        "source_html": "letras-spa-lite/A.html"
+      },
+      {
+        "slug": "aixeey",
+        "ayuuk": "AIXËËY",
+        "espanol": "Calculado",
+        "file": "audio/aixeey.mp3",
+        "legacy_source": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/8.mp3",
+        "source_html": "letras-spa-lite/A.html"
+      },
+      {
+        "slug": "aj",
+        "ayuuk": "AJ",
+        "espanol": "Cedro",
+        "file": "audio/aj.mp3",
+        "legacy_source": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/9.mp3",
+        "source_html": "letras-spa-lite/A.html"
+      },
+      {
+        "slug": "ajaax",
+        "ayuuk": "AJAAX",
+        "espanol": "Pasar la mano",
+        "file": "audio/ajaax.mp3",
+        "legacy_source": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/10.mp3",
+        "source_html": "letras-spa-lite/A.html"
+      }
+    ],
+    "pending": [
+      {
+        "slug": "aaxk",
+        "ayuuk": "A’axk",
+        "espanol": "Liendre"
+      },
+      {
+        "slug": "aaxy",
+        "ayuuk": "Aa’xy",
+        "espanol": "Zanate"
+      },
+      {
+        "slug": "aad",
+        "ayuuk": "Aad",
+        "espanol": "Piojo"
+      },
+      {
+        "slug": "adsej",
+        "ayuuk": "Adséj",
+        "espanol": "Pájaro carpintero"
+      },
+      {
+        "slug": "adsem",
+        "ayuuk": "Adsëm",
+        "espanol": "Puerco"
+      },
+      {
+        "slug": "adsemdaj",
+        "ayuuk": "Adsëmdáj",
+        "espanol": "Puerco con cría"
+      },
+      {
+        "slug": "adegekteek",
+        "ayuuk": "Adëgëkteek",
+        "espanol": "Triángulo"
+      },
+      {
+        "slug": "adegeegteekyaatsne",
+        "ayuuk": "Adëgëëgteek yaa’tsnë",
+        "espanol": "Prisma triangular"
+      },
+      {
+        "slug": "agatspeeb",
+        "ayuuk": "Agátspeeb",
+        "espanol": "Hoatzín"
+      },
+      {
+        "slug": "ajtsykoobe",
+        "ayuuk": "Ajtsy koobë",
+        "espanol": "Primogénito"
+      }
+    ],
+    "legacy_without_dataset_match": []
+  },
+  "copy_actions": [],
+  "legacy_mappings": [
+    {
+      "mixe": "AAMY",
+      "es": "Hace rato",
+      "audio": "../Letra-A/1.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/1.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AAPK",
+      "es": "Sombra",
+      "audio": "../Letra-A/2.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/2.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AAT",
+      "es": "Piojo",
+      "audio": "../Letra-A/3.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/3.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AATS",
+      "es": "Bejuco",
+      "audio": "../Letra-A/4.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/4.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AAW",
+      "es": "Boca",
+      "audio": "../Letra-A/5.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/5.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AAY",
+      "es": "Hoja de árbol o planta",
+      "audio": "../Letra-A/6.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/6.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AIX",
+      "es": "Espera",
+      "audio": "../Letra-A/7.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/7.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AIXËËY",
+      "es": "Calculado",
+      "audio": "../Letra-A/8.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/8.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJ",
+      "es": "Cedro",
+      "audio": "../Letra-A/9.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/9.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJAAX",
+      "es": "Pasar la mano",
+      "audio": "../Letra-A/10.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/10.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJAXTU’UT",
+      "es": "Quitar algo",
+      "audio": "../Letra-A/11.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/11.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJËËXK",
+      "es": "Por fuera",
+      "audio": "../Letra-A/12.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/12.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJËJP",
+      "es": "Pujando",
+      "audio": "../Letra-A/13.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/13.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJETEEDËW",
+      "es": "Partir una cosa",
+      "audio": "../Letra-A/14.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/14.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJIITS",
+      "es": "Tapar algo",
+      "audio": "../Letra-A/15.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/15.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJIITSY",
+      "es": "Cerrado",
+      "audio": "../Letra-A/16.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/16.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJOJP",
+      "es": "Evaporando",
+      "audio": "../Letra-A/17.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/17.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJOKXËËW",
+      "es": "Recalentar",
+      "audio": "../Letra-A/18.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/18.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJOT",
+      "es": "Herida en la boca",
+      "audio": "../Letra-A/19.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/19.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJTSY",
+      "es": "Hermano mayor",
+      "audio": "../Letra-A/20.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/20.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJUP",
+      "es": "Tápalo",
+      "audio": "../Letra-A/21.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/21.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AJUUPYË",
+      "es": "Compra, venta, comerciante",
+      "audio": "../Letra-A/22.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/22.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AK",
+      "es": "Piel, corteza",
+      "audio": "../Letra-A/23.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/23.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKAP",
+      "es": "Tapar con palos",
+      "audio": "../Letra-A/24.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/24.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKAPX",
+      "es": "Persona platicadora",
+      "audio": "../Letra-A/25.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/25.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKATAA",
+      "es": "Solo este",
+      "audio": "../Letra-A/26.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/26.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKATS",
+      "es": "Mestizo",
+      "audio": "../Letra-A/27.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/27.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKËËW",
+      "es": "Cerrar puerta, ventana o recipiente",
+      "audio": "../Letra-A/28.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/28.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKËY",
+      "es": "Cerrado",
+      "audio": "../Letra-A/29.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/29.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKON",
+      "es": "Cosa corta",
+      "audio": "../Letra-A/30.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/30.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKONY",
+      "es": "Hijo natural",
+      "audio": "../Letra-A/31.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/31.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKOOTS",
+      "es": "A oscuras",
+      "audio": "../Letra-A/32.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/32.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKTS",
+      "es": "Totomosle",
+      "audio": "../Letra-A/33.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/33.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKUJK",
+      "es": "En el municipio",
+      "audio": "../Letra-A/34.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/34.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKUJPËJP",
+      "es": "Casamiento civil",
+      "audio": "../Letra-A/35.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/35.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKUJTËJP",
+      "es": "Casa municipal",
+      "audio": "../Letra-A/36.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/36.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKUPAJP",
+      "es": "De memoria",
+      "audio": "../Letra-A/37.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/37.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKUTË’ËTS",
+      "es": "Sin tomar agua, a secas",
+      "audio": "../Letra-A/38.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/38.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKX",
+      "es": "Pescado",
+      "audio": "../Letra-A/39.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/39.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AKXA",
+      "es": "Chayote",
+      "audio": "../Letra-A/40.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/40.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMAAPY",
+      "es": "Imitar",
+      "audio": "../Letra-A/41.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/41.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMAAT",
+      "es": "Con enojo",
+      "audio": "../Letra-A/42.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/42.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMAATSY",
+      "es": "Mejilla",
+      "audio": "../Letra-A/43.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/43.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMAAY",
+      "es": "Delicado",
+      "audio": "../Letra-A/44.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/44.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMAY",
+      "es": "Bastante, montón",
+      "audio": "../Letra-A/45.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/45.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMAYEEPY",
+      "es": "Escandaliza",
+      "audio": "../Letra-A/46.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/46.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMËJ",
+      "es": "Viejo, gente adulta",
+      "audio": "../Letra-A/47.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/47.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMEJTSTAAKP",
+      "es": "Posada",
+      "audio": "../Letra-A/48.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/48.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMETSK",
+      "es": "En pareja, de dos en dos",
+      "audio": "../Letra-A/49.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/49.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMETSY",
+      "es": "En silencio",
+      "audio": "../Letra-A/50.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/50.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMËXAN",
+      "es": "Castellanizado",
+      "audio": "../Letra-A/51.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/51.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMKAAKY",
+      "es": "Tortilla caliente",
+      "audio": "../Letra-A/52.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/52.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMON",
+      "es": "Cállate",
+      "audio": "../Letra-A/53.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/53.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMOONTSËËPY",
+      "es": "Se hace lodoso",
+      "audio": "../Letra-A/54.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/54.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMOTS",
+      "es": "Envolver",
+      "audio": "../Letra-A/55.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/55.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMUKIËJAAY",
+      "es": "Borracho",
+      "audio": "../Letra-A/56.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/56.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMUTSK",
+      "es": "Celoso",
+      "audio": "../Letra-A/57.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/57.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMUUKYË",
+      "es": "Andar borracho",
+      "audio": "../Letra-A/58.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/58.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMUUM",
+      "es": "Entero",
+      "audio": "../Letra-A/59.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/59.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AMUUTSY",
+      "es": "Cucaracha",
+      "audio": "../Letra-A/60.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/60.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AN",
+      "es": "Caliente",
+      "audio": "../Letra-A/61.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/61.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANA’JTY",
+      "es": "Zurdo",
+      "audio": "../Letra-A/62.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/62.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANAXY",
+      "es": "Colado",
+      "audio": "../Letra-A/63.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/63.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANËË",
+      "es": "Baba, mentiroso",
+      "audio": "../Letra-A/64.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/64.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANEE",
+      "es": "Trueno",
+      "audio": "../Letra-A/65.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/65.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANE’EK",
+      "es": "Doblar ropa",
+      "audio": "../Letra-A/68.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/68.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANEEM",
+      "es": "Encargar, ordenar",
+      "audio": "../Letra-A/69.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/69.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANEY",
+      "es": "Chueco",
+      "audio": "../Letra-A/70.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/70.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANIIY",
+      "es": "Gusta de comer chile",
+      "audio": "../Letra-A/71.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/71.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANNËË",
+      "es": "Agua caliente",
+      "audio": "../Letra-A/72.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/72.mp3",
+      "audio_exists": false
+    },
+    {
+      "mixe": "ANO’KËPËTSY",
+      "es": "Tengo calor",
+      "audio": "../Letra-A/73.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/73.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANPËKP",
+      "es": "Hace calor",
+      "audio": "../Letra-A/74.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/74.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANTSAA",
+      "es": "Piedra caliente",
+      "audio": "../Letra-A/75.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/75.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANUKX",
+      "es": "Prestado",
+      "audio": "../Letra-A/76.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/76.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANU’XËËPY",
+      "es": "Cansado",
+      "audio": "../Letra-A/77.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/77.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ANU’XP",
+      "es": "Pide prestado",
+      "audio": "../Letra-A/78.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/78.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AOJTSP",
+      "es": "Se dobla",
+      "audio": "../Letra-A/79.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/79.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AOOTSY",
+      "es": "Sellado",
+      "audio": "../Letra-A/80.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/80.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AOY",
+      "es": "A la buena",
+      "audio": "../Letra-A/81.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/81.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AP",
+      "es": "Anciano, viejo o abuelo",
+      "audio": "../Letra-A/82.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/82.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APAAM",
+      "es": "Trabajar enfermo",
+      "audio": "../Letra-A/83.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/83.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APAJK",
+      "es": "Quijada",
+      "audio": "../Letra-A/84.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/84.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APAK",
+      "es": "No hay nadie",
+      "audio": "../Letra-A/85.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/85.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APAX",
+      "es": "Cerrar con tira de madera",
+      "audio": "../Letra-A/86.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/86.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APEJT",
+      "es": "Se concluyó",
+      "audio": "../Letra-A/89.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/89.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APËK",
+      "es": "Apréndelo",
+      "audio": "../Letra-A/91.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/91.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APËKËËW",
+      "es": "Servir la comida",
+      "audio": "../Letra-A/92.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/92.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APITY",
+      "es": "Manojos",
+      "audio": "../Letra-A/93.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/93.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APOO",
+      "es": "Barba canosa",
+      "audio": "../Letra-A/94.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/94.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APTEETY",
+      "es": "Abuelo",
+      "audio": "../Letra-A/95.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/95.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APTEJK",
+      "es": "Antepasados",
+      "audio": "../Letra-A/96.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/96.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APU’TS",
+      "es": "De pico amarillo",
+      "audio": "../Letra-A/99.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/99.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APUUTS",
+      "es": "Granos en la boca",
+      "audio": "../Letra-A/100.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/100.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APTY",
+      "es": "Espina",
+      "audio": "../Letra-A/97.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/97.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APTYKAA",
+      "es": "Puerco espín",
+      "audio": "../Letra-A/98.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/98.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APUX",
+      "es": "Abrir camino con machete",
+      "audio": "../Letra-A/101.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/101.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "APUXËËW",
+      "es": "Hacer pedazos con machete",
+      "audio": "../Letra-A/102.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/102.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATA",
+      "es": "Este",
+      "audio": "../Letra-A/104.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/104.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATAAK",
+      "es": "Vete",
+      "audio": "../Letra-A/105.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/105.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATAAKAMP",
+      "es": "Se irá",
+      "audio": "../Letra-A/106.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/106.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATAJP",
+      "es": "Alineado, escarbado",
+      "audio": "../Letra-A/107.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/107.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATAK",
+      "es": "Sin barba",
+      "audio": "../Letra-A/108.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/108.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATAKAMPËTSY",
+      "es": "Me iré",
+      "audio": "../Letra-A/109.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/109.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATEEM",
+      "es": "Labios",
+      "audio": "../Letra-A/110.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/110.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATMSOO",
+      "es": "Por su propia voluntad",
+      "audio": "../Letra-A/111.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/111.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATOOM",
+      "es": "Que duele",
+      "audio": "../Letra-A/112.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/112.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATSAP’TS",
+      "es": "Boca roja",
+      "audio": "../Letra-A/116.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/116.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATSAAM",
+      "es": "Boca gorda",
+      "audio": "../Letra-A/114.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/114.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATSAATSY",
+      "es": "Apenas",
+      "audio": "../Letra-A/115.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/115.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATSËM",
+      "es": "Marrano",
+      "audio": "../Letra-A/117.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/117.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATSËNAPIË",
+      "es": "Avecindado",
+      "audio": "../Letra-A/118.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/118.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATSIP",
+      "es": "Por la fuerza",
+      "audio": "../Letra-A/121.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/121.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATSIPAMAAT",
+      "es": "Violentamente",
+      "audio": "../Letra-A/122.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/122.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATSIITSY",
+      "es": "Tapado",
+      "audio": "../Letra-A/119.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/119.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATSOJKP",
+      "es": "Ambicioso",
+      "audio": "../Letra-A/123.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/123.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATSOW",
+      "es": "Contesta",
+      "audio": "../Letra-A/124.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/124.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATSYUUT",
+      "es": "Achiote",
+      "audio": "../Letra-A/125.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/125.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATUK",
+      "es": "Sin diente",
+      "audio": "../Letra-A/126.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/126.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATUKY",
+      "es": "Cerrado",
+      "audio": "../Letra-A/127.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/127.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ATU’UKATY",
+      "es": "Uno por uno",
+      "audio": "../Letra-A/128.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/128.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AWA’AN",
+      "es": "Bravo",
+      "audio": "../Letra-A/130.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/130.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AWA’ATS",
+      "es": "Abierto",
+      "audio": "../Letra-A/133.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/133.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AWAAY",
+      "es": "Babea",
+      "audio": "../Letra-A/134.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/134.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AWAATS",
+      "es": "Llave / Se abrió",
+      "audio": "../Letra-A/132.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/132.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AWEENËË’PY",
+      "es": "Disminuyendo",
+      "audio": "../Letra-A/138.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/138.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AWEENËËY",
+      "es": "Ofrecido",
+      "audio": "../Letra-A/139.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/139.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AWËËNY",
+      "es": "Amarrado",
+      "audio": "../Letra-A/140.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/140.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AWIIM",
+      "es": "Del otro lado",
+      "audio": "../Letra-A/142.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/142.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AWIINK",
+      "es": "Aparte",
+      "audio": "../Letra-A/143.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/143.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AWOKËËW",
+      "es": "Echar algo con la mano",
+      "audio": "../Letra-A/145.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/145.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXAAM",
+      "es": "Atrás",
+      "audio": "../Letra-A/146.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/146.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXAJTUK",
+      "es": "Atajar",
+      "audio": "../Letra-A/148.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/148.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXËËK",
+      "es": "Mala, sucia",
+      "audio": "../Letra-A/149.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/149.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXËËY",
+      "es": "Ayer",
+      "audio": "../Letra-A/150.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/150.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXIIK",
+      "es": "Risueño",
+      "audio": "../Letra-A/151.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/151.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXIIP",
+      "es": "Irrita la boca",
+      "audio": "../Letra-A/164.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/164.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXKAATS",
+      "es": "Tíralo",
+      "audio": "../Letra-A/152.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/152.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXKAKAK",
+      "es": "Pájaro",
+      "audio": "../Letra-A/153.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/153.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXMATS",
+      "es": "Suéltalo",
+      "audio": "../Letra-A/154.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/154.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXPAJK",
+      "es": "Nalga",
+      "audio": "../Letra-A/155.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/155.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXPËKY",
+      "es": "Educado",
+      "audio": "../Letra-A/156.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/156.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXTAAW",
+      "es": "Buscarlo",
+      "audio": "../Letra-A/158.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/158.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXTAAMËTS",
+      "es": "Por ejemplo",
+      "audio": "../Letra-A/157.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/157.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXTSAATSY",
+      "es": "Sufrimiento",
+      "audio": "../Letra-A/159.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/159.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXTSUK",
+      "es": "Cortar con cuchillo",
+      "audio": "../Letra-A/160.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/160.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXUK",
+      "es": "Enredo (prenda)",
+      "audio": "../Letra-A/161.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/161.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXUUTS",
+      "es": "Estrecho",
+      "audio": "../Letra-A/162.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/162.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXUY",
+      "es": "Coser tela o costal",
+      "audio": "../Letra-A/163.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/163.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXUYËY",
+      "es": "Remendado",
+      "audio": "../Letra-A/165.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/165.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AXWA’ATS",
+      "es": "Desnudo",
+      "audio": "../Letra-A/166.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/166.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AY",
+      "es": "Hermano mayor de la mujer",
+      "audio": "../Letra-A/171.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/171.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AYAAXP",
+      "es": "Grita",
+      "audio": "../Letra-A/172.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/172.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "AYAAXY",
+      "es": "Llorona",
+      "audio": "../Letra-A/173.mp3",
+      "source_html": "letras-spa-lite/A.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-A/173.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAA",
+      "es": "Dónde",
+      "audio": "../Letra-M/M_word_1.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_1.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAAKY",
+      "es": "Maíz o café lavado",
+      "audio": "../Letra-M/M_word_3.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_3.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAAP",
+      "es": "Duerme; durmiendo",
+      "audio": "../Letra-M/M_word_5.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_5.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAAT",
+      "es": "Descompuesto",
+      "audio": "../Letra-M/M_word_8.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_8.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAAW",
+      "es": "Duérmete",
+      "audio": "../Letra-M/M_word_10.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_10.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAAX",
+      "es": "Manso",
+      "audio": "../Letra-M/M_word_12.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_12.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAAXK",
+      "es": "Período (días atrás)",
+      "audio": "../Letra-M/M_word_13.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_13.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAJ",
+      "es": "Sazón",
+      "audio": "../Letra-M/M_word_16.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_16.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAJAA",
+      "es": "Fuerza",
+      "audio": "../Letra-M/M_word_18.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_18.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAJK",
+      "es": "Diez",
+      "audio": "../Letra-M/M_word_20.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_20.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAJT",
+      "es": "Cántaro",
+      "audio": "../Letra-M/M_word_22.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_22.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAPXY",
+      "es": "Grueso",
+      "audio": "../Letra-M/M_word_27.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_27.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MATS",
+      "es": "Agárralo",
+      "audio": "../Letra-M/M_word_29.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_29.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAXTEIKY",
+      "es": "Anteayer",
+      "audio": "../Letra-M/M_word_33.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_33.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAXUUNK",
+      "es": "Bebé, criatura",
+      "audio": "../Letra-M/M_word_35.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_35.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAXYWIITS",
+      "es": "Águila",
+      "audio": "../Letra-M/M_word_38.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_38.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAY",
+      "es": "Bastante",
+      "audio": "../Letra-M/M_word_40.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_40.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAYAJT",
+      "es": "Favor",
+      "audio": "../Letra-M/M_word_42.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_42.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAYË",
+      "es": "Adinerado o Pudiente",
+      "audio": "../Letra-M/M_word_44.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_44.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAYIIPY",
+      "es": "Se reproduce",
+      "audio": "../Letra-M/M_word_47.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_47.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAYJAJP",
+      "es": "Hace falta",
+      "audio": "../Letra-M/M_word_49.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_49.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MAYJUIK",
+      "es": "Despierta",
+      "audio": "../Letra-M/M_word_51.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_51.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ME’EY",
+      "es": "Molido",
+      "audio": "../Letra-M/M_word_53.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_53.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ME’PX",
+      "es": "Tijera",
+      "audio": "../Letra-M/M_word_55.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_55.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "ME’XPË",
+      "es": "Peluquero",
+      "audio": "../Letra-M/M_word_57.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_57.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MEENY",
+      "es": "Dinero",
+      "audio": "../Letra-M/M_word_59.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_59.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MEETSY",
+      "es": "Robado",
+      "audio": "../Letra-M/M_word_61.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_61.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MEJTSP",
+      "es": "Se viene",
+      "audio": "../Letra-M/M_word_65.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_65.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MEJY",
+      "es": "Mar",
+      "audio": "../Letra-M/M_word_67.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_67.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MEKX",
+      "es": "Perdón",
+      "audio": "../Letra-M/M_word_69.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_69.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "METSPË",
+      "es": "Ladrón",
+      "audio": "../Letra-M/M_word_71.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_71.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MI’KA",
+      "es": "Chango",
+      "audio": "../Letra-M/M_word_73.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_73.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MIITSY",
+      "es": "Tú",
+      "audio": "../Letra-M/M_word_75.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_75.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MIITSY AJKX",
+      "es": "Ustedes",
+      "audio": "../Letra-M/M_word_77.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_77.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MIMP",
+      "es": "Viene",
+      "audio": "../Letra-M/M_word_79.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_79.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MIN",
+      "es": "Ven",
+      "audio": "../Letra-M/M_word_82.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_82.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MIXUNK",
+      "es": "Chamaco",
+      "audio": "../Letra-M/M_word_84.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_84.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MIXY",
+      "es": "Varón",
+      "audio": "../Letra-M/M_word_86.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_86.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MË’ËKY",
+      "es": "Tamal",
+      "audio": "../Letra-M/M_word_88.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_88.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "MË’ËT",
+      "es": "Yerno",
+      "audio": "../Letra-M/M_word_90.wav",
+      "source_html": "letras-spa-lite/M.html",
+      "color": null,
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Letra-M/M_word_90.wav",
+      "audio_exists": true
+    },
+    {
+      "mixe": "JINY",
+      "es": "Negro",
+      "audio": "../Colores/JINY.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#0b0b0b",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/JINY.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "POOB",
+      "es": "Blanco",
+      "audio": "../Colores/POOB.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#f3f4f6",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/POOB.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "TSAPTS",
+      "es": "Rojo",
+      "audio": "../Colores/TSAPTS.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#ef4444",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/TSAPTS.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "TSUXK",
+      "es": "Verde",
+      "audio": "../Colores/TSUXK.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#2e7d32",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/TSUXK.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "PU’TS",
+      "es": "Amarillo",
+      "audio": "../Colores/PU’TS.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#facc15",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/PU’TS.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "UKY",
+      "es": "Azul",
+      "audio": "../Colores/UKY.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#2563eb",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/UKY.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "OBYU’TS",
+      "es": "Naranja",
+      "audio": "../Colores/OBYU’TS.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#fb923c",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/OBYU’TS.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "KAMBIIDY",
+      "es": "Morado (lila / vino)",
+      "audio": "../Colores/KAMBIIDY.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#7c3aed",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/KAMBIIDY.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "TSIXY",
+      "es": "Beige (arena / paja)",
+      "audio": "../Colores/TSIXY.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#d6c4a3",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/TSIXY.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "PU’DY",
+      "es": "Crema (blanco con beige)",
+      "audio": "../Colores/PU’DY.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#eadfc8",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/PU’DY.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "JAAMDSUXK",
+      "es": "Verde limón",
+      "audio": "../Colores/JAAMDSUXK.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#a3e635",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/JAAMDSUXK.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "JAAMBU’TS",
+      "es": "Amarillo claro",
+      "audio": "../Colores/JAAMBU’TS.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#fde68a",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/JAAMBU’TS.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "KATS",
+      "es": "Jaspeado",
+      "audio": "../Colores/KATS.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#9ca3af",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/KATS.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "XAAG",
+      "es": "Con manchas (como vaca pinta)",
+      "audio": "../Colores/XAAG.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#93c5fd",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/XAAG.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "NA’ATSAPTS",
+      "es": "Rojizo",
+      "audio": "../Colores/NA’ATSAPTS.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#c24141",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/NA’ATSAPTS.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "NA’AUKY",
+      "es": "Azulado",
+      "audio": "../Colores/NA’AUKY.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#5b7cdb",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/NA’AUKY.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "NA’APU’TS",
+      "es": "Amarillento",
+      "audio": "../Colores/NA’APU’TS.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#f2d35c",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/NA’APU’TS.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "NA’ATSUXK",
+      "es": "Verdoso",
+      "audio": "../Colores/NA’ATSUXK.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#4d7c5a",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/NA’ATSUXK.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "NA’AJAAM",
+      "es": "Grisáceo",
+      "audio": "../Colores/NA’AJAAM.m4a.mp4",
+      "source_html": "pages/colores.html",
+      "color": "#9aa3ad",
+      "numero": null,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Colores/NA’AJAAM.m4a.mp4",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Tu’ug",
+      "es": "Uno",
+      "audio": "Numeros/1.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 1,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/1.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Metsk",
+      "es": "Dos",
+      "audio": "Numeros/2.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 2,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/2.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Tëgëëg",
+      "es": "Tres",
+      "audio": "Numeros/3.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 3,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/3.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Madaaxk",
+      "es": "Cuatro",
+      "audio": "Numeros/4.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 4,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/4.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Mogooxk",
+      "es": "Cinco",
+      "audio": "Numeros/5.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 5,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/5.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Tëdujk",
+      "es": "Seis",
+      "audio": "Numeros/6.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 6,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/6.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Juxtujk",
+      "es": "Siete",
+      "audio": "Numeros/7.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 7,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/7.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Tuktujk",
+      "es": "Ocho",
+      "audio": "Numeros/8.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 8,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/8.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Taaxtujk",
+      "es": "Nueve",
+      "audio": "Numeros/9.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 9,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/9.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Majk",
+      "es": "Diez",
+      "audio": "Numeros/10.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 10,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/10.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Majtu’ug",
+      "es": "Once",
+      "audio": "Numeros/11.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 11,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/11.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Majmetsk",
+      "es": "Doce",
+      "audio": "Numeros/12.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 12,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/12.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Majtëgëëg",
+      "es": "Trece",
+      "audio": "Numeros/13.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 13,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/13.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Majmakts",
+      "es": "Catorce",
+      "audio": "Numeros/14.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 14,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/14.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Majmokx",
+      "es": "Quince",
+      "audio": "Numeros/15.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 15,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/15.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Majmokx tu’ug",
+      "es": "Dieciséis",
+      "audio": "Numeros/16.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 16,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/16.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Majmokx metsk",
+      "es": "Diecisiete",
+      "audio": "Numeros/17.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 17,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/17.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Majmokx tëgëëg",
+      "es": "Dieciocho",
+      "audio": "Numeros/18.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 18,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/18.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Majmokx madaaxk",
+      "es": "Diecinueve",
+      "audio": "Numeros/19.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 19,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/19.mp3",
+      "audio_exists": true
+    },
+    {
+      "mixe": "Ii’x",
+      "es": "Veinte",
+      "audio": "Numeros/20.mp3",
+      "source_html": "1-10-A.html",
+      "color": null,
+      "numero": 20,
+      "audio_resolved": "/Users/PGALEANA/Documents/ayuuk-para-todos-main/Numeros/20.mp3",
+      "audio_exists": true
+    }
+  ]
+}

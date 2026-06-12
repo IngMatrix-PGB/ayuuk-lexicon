@@ -1,0 +1,363 @@
+{
+  "input": "/Users/PGALEANA/Downloads/Palabra-Mixe.docx",
+  "output": "/Users/PGALEANA/Documents/ayuuk_para_todos_mvp/data/diccionario_mixe_dataset.json",
+  "dry_run": false,
+  "metadata": {
+    "name": "Ayuuk para Todos",
+    "total_entries": 1080,
+    "source": "Palabra-Mixe.docx",
+    "audio_convention": "audio/<slug>.mp3",
+    "version": "v4.1-docx-normalized",
+    "raw_entries": 1132,
+    "unique_entries": 1080,
+    "dedupe_rule": "Una tarjeta por palabra Ayuuk normalizada. Si existe en vocabulario_general y en categoría específica, conserva la categoría específica. Significados compatibles se fusionan.",
+    "audio_rule": "No se hacen requests HEAD por cada audio. La app usa data/audio_manifest.json para decidir si muestra botón ▶ Escuchar o Audio pendiente."
+  },
+  "validation": {
+    "valid": true,
+    "issues": [],
+    "total_entries": 1080,
+    "unique_normalized_keys": 1080,
+    "duplicate_normalized_keys": [],
+    "general_vs_specific_conflicts": [],
+    "missing_fields": [],
+    "audio_mismatches": [],
+    "source_category_mismatches": [],
+    "dedupe_count_mismatches": [],
+    "missing_ayuuk": [],
+    "missing_espanol": [],
+    "empty_categories": []
+  },
+  "dedupe_events_count": 49,
+  "dedupe_events_sample": [
+    {
+      "normalized_key": "ajtsy",
+      "kept_ayuuk": "Ajtsy",
+      "kept_categoria": "familia",
+      "merged_count": 2,
+      "source_categories": [
+        "familia",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Hermano mayor"
+    },
+    {
+      "normalized_key": "anee",
+      "kept_ayuuk": "Anee",
+      "kept_categoria": "fenomenos_naturales",
+      "merged_count": 2,
+      "source_categories": [
+        "fenomenos_naturales",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Trueno"
+    },
+    {
+      "normalized_key": "aptykaa",
+      "kept_ayuuk": "Aptykaa",
+      "kept_categoria": "animales",
+      "merged_count": 2,
+      "source_categories": [
+        "animales",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Puerco espín; Puercoespín"
+    },
+    {
+      "normalized_key": "ëëtsy",
+      "kept_ayuuk": "ËËTSY",
+      "kept_categoria": "vocabulario_general",
+      "merged_count": 2,
+      "source_categories": [
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [],
+      "espanol": "Vómito; Yo"
+    },
+    {
+      "normalized_key": "ëyoop",
+      "kept_ayuuk": "ËYOOP",
+      "kept_categoria": "vocabulario_general",
+      "merged_count": 2,
+      "source_categories": [
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [],
+      "espanol": "Pobre; Sufre"
+    },
+    {
+      "normalized_key": "iixy",
+      "kept_ayuuk": "Iixy",
+      "kept_categoria": "animales",
+      "merged_count": 2,
+      "source_categories": [
+        "animales",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Comadreja"
+    },
+    {
+      "normalized_key": "jat",
+      "kept_ayuuk": "Jat",
+      "kept_categoria": "animales",
+      "merged_count": 2,
+      "source_categories": [
+        "animales",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Aprende; Salamandra mal agüero"
+    },
+    {
+      "normalized_key": "jëy",
+      "kept_ayuuk": "Jëy",
+      "kept_categoria": "familia",
+      "merged_count": 2,
+      "source_categories": [
+        "familia",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Cuñado"
+    },
+    {
+      "normalized_key": "jok",
+      "kept_ayuuk": "Jok",
+      "kept_categoria": "fenomenos_naturales",
+      "merged_count": 3,
+      "source_categories": [
+        "fenomenos_naturales",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Nube, humo; Humo; Nube"
+    },
+    {
+      "normalized_key": "kaa",
+      "kept_ayuuk": "Kaa",
+      "kept_categoria": "animales",
+      "merged_count": 2,
+      "source_categories": [
+        "animales",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Tigre"
+    },
+    {
+      "normalized_key": "kapy",
+      "kept_ayuuk": "Kapy",
+      "kept_categoria": "familia",
+      "merged_count": 2,
+      "source_categories": [
+        "familia",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Cuñada; Cuñado por parte de la nuera"
+    },
+    {
+      "normalized_key": "kats",
+      "kept_ayuuk": "KATS",
+      "kept_categoria": "colores",
+      "merged_count": 2,
+      "source_categories": [
+        "colores",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Pintado; Jaspeado"
+    },
+    {
+      "normalized_key": "katsy",
+      "kept_ayuuk": "KATSY",
+      "kept_categoria": "vocabulario_general",
+      "merged_count": 2,
+      "source_categories": [
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [],
+      "espanol": "Canasta; Costilla"
+    },
+    {
+      "normalized_key": "kepy",
+      "kept_ayuuk": "KEPY",
+      "kept_categoria": "vocabulario_general",
+      "merged_count": 3,
+      "source_categories": [
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [],
+      "espanol": "Árbol; palo"
+    },
+    {
+      "normalized_key": "këjx",
+      "kept_ayuuk": "KËJX",
+      "kept_categoria": "vocabulario_general",
+      "merged_count": 2,
+      "source_categories": [
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [],
+      "espanol": "Cama; Se acabó"
+    },
+    {
+      "normalized_key": "kojy",
+      "kept_ayuuk": "KOJY",
+      "kept_categoria": "vocabulario_general",
+      "merged_count": 2,
+      "source_categories": [
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [],
+      "espanol": "Sembrado; Fabricado, hecho"
+    },
+    {
+      "normalized_key": "kom",
+      "kept_ayuuk": "KOM",
+      "kept_categoria": "vocabulario_general",
+      "merged_count": 2,
+      "source_categories": [
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [],
+      "espanol": "Crecido; Hondo o lleno"
+    },
+    {
+      "normalized_key": "kuaay",
+      "kept_ayuuk": "Kuaay",
+      "kept_categoria": "animales",
+      "merged_count": 2,
+      "source_categories": [
+        "animales",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Caballo"
+    },
+    {
+      "normalized_key": "kujx",
+      "kept_ayuuk": "Kujx",
+      "kept_categoria": "animales",
+      "merged_count": 2,
+      "source_categories": [
+        "animales",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Tecolote; Búho"
+    },
+    {
+      "normalized_key": "majk",
+      "kept_ayuuk": "Majk",
+      "kept_categoria": "numeros_1_20",
+      "merged_count": 2,
+      "source_categories": [
+        "numeros_1_20",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Diez Audios  Iguales 20; Diez"
+    },
+    {
+      "normalized_key": "mejy",
+      "kept_ayuuk": "Mejy",
+      "kept_categoria": "naturaleza",
+      "merged_count": 2,
+      "source_categories": [
+        "naturaleza",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Mar"
+    },
+    {
+      "normalized_key": "mëëy",
+      "kept_ayuuk": "Mëëy",
+      "kept_categoria": "familia",
+      "merged_count": 3,
+      "source_categories": [
+        "familia",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Zacate; Concuña; Concuño por parte de la nuera al hermano mayor"
+    },
+    {
+      "normalized_key": "mëjnëë",
+      "kept_ayuuk": "Mëjnëë",
+      "kept_categoria": "naturaleza",
+      "merged_count": 2,
+      "source_categories": [
+        "naturaleza",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Río grande; Río"
+    },
+    {
+      "normalized_key": "mu'u",
+      "kept_ayuuk": "Mu’u",
+      "kept_categoria": "animales",
+      "merged_count": 2,
+      "source_categories": [
+        "animales",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Chapulín"
+    },
+    {
+      "normalized_key": "naan",
+      "kept_ayuuk": "Naan",
+      "kept_categoria": "animales",
+      "merged_count": 2,
+      "source_categories": [
+        "animales",
+        "vocabulario_general"
+      ],
+      "categorias_relacionadas": [
+        "vocabulario_general"
+      ],
+      "espanol": "Venado"
+    }
+  ]
+}

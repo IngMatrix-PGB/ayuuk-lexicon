@@ -1,0 +1,89 @@
+{
+  "version": "v4-normalized-client-dedupe",
+  "raw_entries": 1133,
+  "unique_entries_in_file": 1060,
+  "unique_normalized_keys": 1060,
+  "duplicate_normalized_keys_in_file": 0,
+  "category_counts": {
+    "vocabulario_general": 785,
+    "animales": 80,
+    "familia": 39,
+    "insectos": 32,
+    "numeros_1_20": 20,
+    "numeros_20_99": 20,
+    "formas_geometricas": 19,
+    "colores": 19,
+    "fenomenos_naturales": 18,
+    "naturaleza": 14,
+    "millares": 7,
+    "centenas": 7
+  },
+  "checks": {
+    "uk": [
+      {
+        "id": 924,
+        "ayuuk": "Uk",
+        "espanol": "Perro",
+        "categoria": "animales",
+        "tipo": "lexico",
+        "nota": "",
+        "audio_status": "pendiente",
+        "audio_file": "uk.mp3",
+        "audio_path": "audio/uk.mp3",
+        "slug": "uk",
+        "fuente": "Palabra Mixe.docx",
+        "categorias_relacionadas": [
+          "vocabulario_general"
+        ],
+        "dedupe_count": 2,
+        "source_categories": [
+          "animales",
+          "vocabulario_general"
+        ]
+      }
+    ],
+    "nee": [
+      {
+        "id": 627,
+        "ayuuk": "Nëë",
+        "espanol": "Agua",
+        "categoria": "fenomenos_naturales",
+        "tipo": "lexico",
+        "nota": "",
+        "audio_status": "pendiente",
+        "audio_file": "nee.mp3",
+        "audio_path": "audio/nee.mp3",
+        "slug": "nee",
+        "fuente": "Palabra Mixe.docx",
+        "categorias_relacionadas": [
+          "vocabulario_general"
+        ],
+        "dedupe_count": 2,
+        "source_categories": [
+          "fenomenos_naturales",
+          "vocabulario_general"
+        ]
+      }
+    ],
+    "aat": [
+      {
+        "id": 6,
+        "ayuuk": "AAT",
+        "espanol": "Piojo",
+        "categoria": "vocabulario_general",
+        "tipo": "lexico",
+        "nota": "",
+        "audio_status": "pendiente",
+        "audio_file": "aat.mp3",
+        "audio_path": "audio/aat.mp3",
+        "slug": "aat",
+        "fuente": "Palabra Mixe.docx",
+        "categorias_relacionadas": [],
+        "dedupe_count": 1,
+        "source_categories": [
+          "vocabulario_general"
+        ]
+      }
+    ]
+  }
+}

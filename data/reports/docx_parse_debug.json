@@ -1,0 +1,27 @@
+{
+  "input": "/Users/PGALEANA/Downloads/Palabra-Mixe.docx",
+  "parse_stats": {
+    "paragraphs_scanned": 142,
+    "tables_scanned": 26,
+    "raw_entries": 1132,
+    "skipped_headers": 26,
+    "skipped_empty": 0,
+    "skipped_noise": 4,
+    "categories_seen": {
+      "vocabulario_general": 854,
+      "animales": 80,
+      "insectos": 32,
+      "naturaleza": 15,
+      "fenomenos_naturales": 19,
+      "familia": 40,
+      "colores": 19,
+      "formas_geometricas": 19,
+      "numeros_1_20": 20,
+      "numeros_20_99": 20,
+      "centenas": 7,
+      "millares": 7
+    },
+    "missing_ayuuk": [],
+    "missing_espanol": []
+  }
+}
