@@ -78,31 +78,25 @@ kbd {
     radial-gradient(circle at 10% 100%, rgba(179, 38, 30, .55), transparent 55%),
     linear-gradient(160deg, var(--cacao) 0%, var(--cacao-2) 60%, #7a2a1a 100%);
 }
-.hero__content { max-width: 1120px; margin: 0 auto; padding: 56px 20px 40px; }
+.hero__content { max-width: 1120px; margin: 0 auto; padding: 40px 20px 52px; text-align: center; }
 .hero h1 {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(2.3rem, 7vw, 4.25rem);
-  line-height: 1.04;
+  font-size: clamp(1.9rem, 4.4vw, 3rem);
+  line-height: 1.1;
   letter-spacing: -.01em;
+  text-wrap: balance;
 }
-.hero h1 span { display: block; color: var(--maiz); }
+.hero h1 span { color: var(--maiz); }
 .lead {
   margin: 16px 0 0;
   font-size: clamp(1.05rem, 2.2vw, 1.3rem);
   text-wrap: balance;
   color: #fbe9d7;
 }
-.stats { display: flex; flex-wrap: wrap; gap: 12px 28px; margin: 26px 0 0; }
-.stats div { display: flex; flex-direction: column; }
-.stats dd {
-  order: -1; margin: 0;
-  font-family: var(--font-display); font-weight: 800;
-  font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1; color: #fff;
-}
-.stats dt { font-size: .95rem; color: #f3d9c2; }
-.hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.hero__meta { margin: 10px 0 0; font-size: .95rem; color: #e9cdb8; }
+.hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 22px; }
 
 /* ---------- Botones ---------- */
 .btn {
@@ -138,17 +132,21 @@ kbd {
   border-radius: 24px;
   box-shadow: var(--shadow);
 }
-.search { display: grid; gap: 8px; }
-.search__label, .filter__label {
-  font-weight: 700; font-size: .95rem; color: var(--grana-dark);
-  text-transform: uppercase; letter-spacing: .06em;
+.search { display: block; width: min(560px, 100%); margin: 0 auto; }
+.filter__label {
+  font-weight: 700; font-size: .8rem; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .1em;
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
 .search__field { position: relative; display: block; }
 .search__field svg { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--muted); }
 .search input {
-  width: 100%; min-height: 58px;
-  padding: 0 16px 0 50px;
-  font: inherit; font-size: 1.15rem; color: var(--ink);
+  width: 100%; min-height: 52px;
+  padding: 0 16px 0 48px;
+  font: inherit; font-size: 1.05rem; color: var(--ink);
   background: var(--bg);
   border: 2px solid var(--line); border-radius: 16px;
   transition: border-color .15s ease, box-shadow .15s ease;
@@ -156,25 +154,21 @@ kbd {
 .search input::placeholder { color: var(--muted); }
 .search input:focus { outline: none; border-color: var(--grana); box-shadow: 0 0 0 4px rgba(179, 38, 30, .15); }
 
-.filter { display: grid; gap: 10px; }
+.filter { display: grid; gap: 10px; justify-items: center; text-align: center; }
+.filter .chips, .filter .letters { justify-content: center; }
 .filter--row { grid-template-columns: auto 1fr; align-items: center; gap: 14px; }
 
 .chips, .letters { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip {
-  display: inline-flex; align-items: center; gap: 8px;
-  min-height: 44px; padding: 0 14px;
+  display: inline-flex; align-items: center; gap: 7px;
+  min-height: 42px; padding: 0 14px; font-size: .97rem;
   border-radius: 999px; border: 1px solid var(--line);
   background: var(--chip); cursor: pointer; font-weight: 700;
   transition: background .15s ease, color .15s ease, border-color .15s ease;
 }
 .chip__icon { font-size: 1.15rem; line-height: 1; }
-.chip__count {
-  font-size: .8rem; font-weight: 700; color: var(--muted);
-  background: var(--paper); border-radius: 999px; padding: 2px 8px;
-}
 .chip:hover { border-color: var(--grana); }
 .chip.active { background: var(--grana); border-color: var(--grana); color: #fff; }
-.chip.active .chip__count { background: rgba(255, 255, 255, .22); color: #fff; }
 
 .letter {
   min-width: 44px; height: 44px; padding: 0 10px;
@@ -360,10 +354,14 @@ kbd {
 
 /* ---------- Móvil ---------- */
 @media (max-width: 640px) {
-  .hero__content { padding: 40px 16px 40px; }
+  .hero__content { padding: 28px 16px 44px; }
+  .hero h1 { font-size: 1.6rem; text-wrap: nowrap; }
+  .hero h1 span { display: block; font-size: 1.9rem; }
   .container { padding: 0 16px 48px; }
   .panel { padding: 18px 16px; border-radius: 20px; }
   .hero__actions .btn { flex: 1 1 auto; }
+  .filter { justify-items: stretch; text-align: left; }
+  .filter .chips, .filter .letters { justify-content: flex-start; }
   .chips, .letters {
     flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
     margin: 0 -16px; padding: 2px 16px 6px;

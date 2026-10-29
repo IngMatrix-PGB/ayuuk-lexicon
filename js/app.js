@@ -1,4 +1,4 @@
-const APP_VERSION = 'v5.1.7';
+const APP_VERSION = 'v5.2.0';
 const HOVER_DELAY_MS = 350;
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
 const AUDIO_MANIFEST_URL = `data/audio_manifest.json?v=${APP_VERSION}`;
@@ -13,10 +13,7 @@ const CATEGORY_INFO = {
   formas_geometricas: { label: 'Formas geométricas', icon: '🔷' },
   fenomenos_naturales: { label: 'Fenómenos naturales', icon: '⛈️' },
   naturaleza: { label: 'Naturaleza', icon: '🌿' },
-  numeros_1_20: { label: 'Números 1–20', icon: '🔢' },
-  numeros_20_99: { label: 'Números 20–99', icon: '🔢' },
-  centenas: { label: 'Centenas', icon: '💯' },
-  millares: { label: 'Millares', icon: '🧮' },
+  numeros: { label: 'Números', icon: '🔢' },
   vocabulario_general: { label: 'Vocabulario general', icon: '📖' }
 };
 
@@ -47,8 +44,12 @@ const normalizeText = (value) => (value || '')
 
 const normalizeWord = (value) => normalizeText(value).replace(/\s+/g, '');
 
-const prettyCategory = (cat) => CATEGORY_INFO[cat]?.label || (cat || 'sin categoría').replaceAll('_', ' ');
-const categoryIcon = (cat) => CATEGORY_INFO[cat]?.icon || '📖';
+// Los cuatro grupos de números del dataset se muestran como un solo tema.
+const NUMBER_CATEGORIES = new Set(['numeros_1_20', 'numeros_20_99', 'centenas', 'millares']);
+const topicOf = (cat) => (NUMBER_CATEGORIES.has(cat) ? 'numeros' : cat);
+
+const prettyCategory = (cat) => CATEGORY_INFO[topicOf(cat)]?.label || (cat || 'sin categoría').replaceAll('_', ' ');
+const categoryIcon = (cat) => CATEGORY_INFO[topicOf(cat)]?.icon || '📖';
 const fmt = (n) => n.toLocaleString('es-MX');
 
 function meaningParts(text) {
@@ -199,7 +200,7 @@ function clearSearchInput() {
 
 function applyBaseFilters(entries) {
   return entries.filter((entry) => {
-    const matchCategory = state.category === 'all' || entry.categoria === state.category;
+    const matchCategory = state.category === 'all' || topicOf(entry.categoria) === state.category;
     const matchLetter = state.letter === 'all' || normalizeLetterKey(entry.ayuuk) === state.letter;
     return matchCategory && matchLetter;
   });
@@ -224,7 +225,10 @@ function filteredEntries() {
 
 function categoryCounts(entries = state.entries) {
   const counts = new Map();
-  for (const entry of entries) counts.set(entry.categoria, (counts.get(entry.categoria) || 0) + 1);
+  for (const entry of entries) {
+    const topic = topicOf(entry.categoria);
+    counts.set(topic, (counts.get(topic) || 0) + 1);
+  }
   return [...counts.entries()].sort((a, b) => prettyCategory(a[0]).localeCompare(prettyCategory(b[0]), 'es'));
 }
 
@@ -274,22 +278,19 @@ async function loadAudioManifest() {
 }
 
 function renderStats() {
-  const topics = new Set(state.entries.map((e) => e.categoria)).size;
-  $('stats').innerHTML = `
-    <div><dt>palabras</dt><dd>${fmt(state.entries.length)}</dd></div>
-    <div><dt>temas</dt><dd>${fmt(topics)}</dd></div>`;
+  const topics = new Set(state.entries.map((e) => topicOf(e.categoria))).size;
+  $('stats').textContent = `${fmt(state.entries.length)} palabras · ${fmt(topics)} temas`;
 }
 
 function buildCategoryChips() {
-  const chip = (cat, label, icon, count) => `
+  const chip = (cat, label, icon) => `
     <button class="chip" type="button" data-category="${escapeHtml(cat)}" aria-pressed="false">
       <span class="chip__icon" aria-hidden="true">${icon}</span>
       <span>${escapeHtml(label)}</span>
-      <span class="chip__count">${fmt(count)}</span>
     </button>`;
 
-  $('categoryStats').innerHTML = chip('all', 'Todas', '✨', state.entries.length)
-    + categoryCounts().map(([cat, count]) => chip(cat, prettyCategory(cat), categoryIcon(cat), count)).join('');
+  $('categoryStats').innerHTML = chip('all', 'Todas', '✨')
+    + categoryCounts().map(([cat]) => chip(cat, prettyCategory(cat), categoryIcon(cat))).join('');
 
   $('categoryStats').addEventListener('click', (event) => {
     const button = event.target.closest('.chip');
@@ -446,7 +447,7 @@ function renderList(entries) {
 
 function cardTemplate(entry) {
   const info = getAudioInfo(entry, state.audioManifest);
-  const catClass = `cat-${normalizeAudioKey(entry.categoria)}`;
+  const catClass = `cat-${normalizeAudioKey(topicOf(entry.categoria))}`;
   const index = state.entries.indexOf(entry);
   // La tarjeta misma es el control de audio: sin botón, para un diseño limpio.
   const audioAttrs = info.isReal ? ` tabindex="0" role="button" aria-label="${escapeHtml(entry.ayuuk)}, ${escapeHtml(entry.espanol)}. Escuchar"` : '';
@@ -476,7 +477,7 @@ function renderFlashcards(entries) {
   const entry = entries[state.flashcardIndex];
   const info = getAudioInfo(entry, state.audioManifest);
 
-  $('flashcard').className = `flashcard cat-${normalizeAudioKey(entry.categoria)}${info.isReal ? ' has-audio' : ''}`;
+  $('flashcard').className = `flashcard cat-${normalizeAudioKey(topicOf(entry.categoria))}${info.isReal ? ' has-audio' : ''}`;
   $('flashcardFront').textContent = entry.ayuuk;
   $('flashcardPlay').classList.toggle('hidden', !info.isReal);
   $('flashcardPlay').setAttribute('aria-label', `Escuchar ${entry.ayuuk}`);
