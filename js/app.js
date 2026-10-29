@@ -176,6 +176,7 @@ function getAudioInfo(entry, audioManifest = {}) {
       return {
         isReal: true,
         file: audio.file || entry.audio_path,
+        voz: audio.voz || '',
         manifestKey: key,
         source: 'manifest'
       };
@@ -607,7 +608,7 @@ function cardTemplate(entry) {
   const audioInfo = getAudioInfo(entry, state.audioManifest);
   const categorySlug = normalizeAudioKey(entry.categoria || GENERAL_CATEGORY);
   const audioControl = audioInfo.isReal
-    ? '<span class="audio-icon" aria-hidden="true">🔊</span>'
+    ? `<span class="audio-icon" aria-hidden="true">🔊</span>${audioInfo.voz ? `<span class="voice">Voz: ${escapeHtml(audioInfo.voz)}</span>` : ''}`
     : '<span class="badge missing">Sin audio todavía</span>';
   const note = entry.nota
     ? `<div class="note">Nota: ${escapeHtml(entry.nota)}</div>`
