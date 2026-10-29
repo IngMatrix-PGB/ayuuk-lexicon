@@ -28,7 +28,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/aaxk.webp"
     },
     {
       "id": 2,
@@ -46,7 +47,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/aaxy.webp"
     },
     {
       "id": 3,
@@ -64,7 +66,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/aad.webp"
     },
     {
       "id": 4,
@@ -190,7 +193,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/adsej.webp"
     },
     {
       "id": 11,
@@ -208,7 +212,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/adsem.webp"
     },
     {
       "id": 12,
@@ -226,7 +231,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/adsemdaj.webp"
     },
     {
       "id": 13,
@@ -244,7 +250,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "formas_geometricas"
-      ]
+      ],
+      "imagen": "img/palabras/adegekteek.webp"
     },
     {
       "id": 14,
@@ -280,7 +287,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/agatspeeb.webp"
     },
     {
       "id": 16,
@@ -1039,7 +1047,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "formas_geometricas"
-      ]
+      ],
+      "imagen": "img/palabras/amadyeek.webp"
     },
     {
       "id": 58,
@@ -1057,7 +1066,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "formas_geometricas"
-      ]
+      ],
+      "imagen": "img/palabras/amajmetsteek.webp"
     },
     {
       "id": 59,
@@ -1237,7 +1247,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/amuundsy.webp"
     },
     {
       "id": 69,
@@ -1345,7 +1356,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "formas_geometricas"
-      ]
+      ],
+      "imagen": "img/palabras/amedaxteek.webp"
     },
     {
       "id": 75,
@@ -1474,7 +1486,8 @@
       "source_categories": [
         "fenomenos_naturales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/anee.webp"
     },
     {
       "id": 82,
@@ -1510,7 +1523,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/anekaate.webp"
     },
     {
       "id": 84,
@@ -1981,7 +1995,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/aptykaa.webp"
     },
     {
       "id": 110,
@@ -2989,7 +3004,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/axkagak.webp"
     },
     {
       "id": 166,
@@ -3583,7 +3599,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 20
     },
     {
       "id": 199,
@@ -3601,7 +3618,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 22
     },
     {
       "id": 200,
@@ -3619,7 +3637,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "millares"
-      ]
+      ],
+      "numero": 20000
     },
     {
       "id": 201,
@@ -3637,7 +3656,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 21
     },
     {
       "id": 202,
@@ -3655,7 +3675,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 23
     },
     {
       "id": 203,
@@ -3673,7 +3694,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 30
     },
     {
       "id": 204,
@@ -3691,7 +3713,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 32
     },
     {
       "id": 205,
@@ -3709,7 +3732,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "millares"
-      ]
+      ],
+      "numero": 30000
     },
     {
       "id": 206,
@@ -3727,7 +3751,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 31
     },
     {
       "id": 207,
@@ -3745,7 +3770,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 33
     },
     {
       "id": 208,
@@ -3784,7 +3810,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/iixy.webp"
     },
     {
       "id": 210,
@@ -4216,7 +4243,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#f6e27f"
     },
     {
       "id": 234,
@@ -4234,7 +4262,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#a5d331"
     },
     {
       "id": 235,
@@ -4615,7 +4644,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/jat.webp"
     },
     {
       "id": 256,
@@ -5137,7 +5167,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#1d1a19"
     },
     {
       "id": 285,
@@ -5155,7 +5186,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/jinyjok.webp"
     },
     {
       "id": 286,
@@ -5173,7 +5205,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/jinyxyegaa.webp"
     },
     {
       "id": 287,
@@ -5230,7 +5263,8 @@
       "source_categories": [
         "fenomenos_naturales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/jok.webp"
     },
     {
       "id": 290,
@@ -5428,7 +5462,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "formas_geometricas"
-      ]
+      ],
+      "imagen": "img/palabras/joy.webp"
     },
     {
       "id": 301,
@@ -5464,7 +5499,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/judsyaandy.webp"
     },
     {
       "id": 303,
@@ -5644,7 +5680,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 7
     },
     {
       "id": 313,
@@ -5662,7 +5699,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "millares"
-      ]
+      ],
+      "numero": 7000
     },
     {
       "id": 314,
@@ -5680,7 +5718,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "centenas"
-      ]
+      ],
+      "numero": 700
     },
     {
       "id": 315,
@@ -5698,7 +5737,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 40
     },
     {
       "id": 316,
@@ -5716,7 +5756,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 50
     },
     {
       "id": 317,
@@ -5734,7 +5775,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 54
     },
     {
       "id": 318,
@@ -5752,7 +5794,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 52
     },
     {
       "id": 319,
@@ -5770,7 +5813,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 51
     },
     {
       "id": 320,
@@ -5788,7 +5832,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 55
     },
     {
       "id": 321,
@@ -5806,7 +5851,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 56
     },
     {
       "id": 322,
@@ -5824,7 +5870,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 42
     },
     {
       "id": 323,
@@ -5842,7 +5889,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 41
     },
     {
       "id": 324,
@@ -6043,7 +6091,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/jeyujk_2.webp"
     },
     {
       "id": 335,
@@ -6097,7 +6146,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/jeengudsujxpe.webp"
     },
     {
       "id": 338,
@@ -6244,7 +6294,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/kaa.webp"
     },
     {
       "id": 346,
@@ -6262,7 +6313,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/kaapty.webp"
     },
     {
       "id": 347,
@@ -6352,7 +6404,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/kaate.webp"
     },
     {
       "id": 352,
@@ -6460,7 +6513,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/kambaagy.webp"
     },
     {
       "id": 358,
@@ -6478,7 +6532,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#6e2a5e"
     },
     {
       "id": 359,
@@ -6496,7 +6551,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "naturaleza"
-      ]
+      ],
+      "imagen": "img/palabras/kamdejk.webp"
     },
     {
       "id": 360,
@@ -6736,7 +6792,8 @@
       "source_categories": [
         "colores",
         "vocabulario_general"
-      ]
+      ],
+      "color": "kats"
     },
     {
       "id": 373,
@@ -6898,7 +6955,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/keemy.webp"
     },
     {
       "id": 382,
@@ -6952,7 +7010,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/kejky.webp"
     },
     {
       "id": 385,
@@ -7006,7 +7065,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "naturaleza"
-      ]
+      ],
+      "imagen": "img/palabras/keptsyaa.webp"
     },
     {
       "id": 388,
@@ -7240,7 +7300,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/klambaa.webp"
     },
     {
       "id": 401,
@@ -7348,7 +7409,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "naturaleza"
-      ]
+      ],
+      "imagen": "img/palabras/kojmyaaxy.webp"
     },
     {
       "id": 407,
@@ -7564,7 +7626,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/koy.webp"
     },
     {
       "id": 419,
@@ -7582,7 +7645,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/kuubaky.webp"
     },
     {
       "id": 420,
@@ -7600,7 +7664,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/kuuy.webp"
     },
     {
       "id": 421,
@@ -7639,7 +7704,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/kuaay.webp"
     },
     {
       "id": 423,
@@ -7786,7 +7852,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/kujx.webp"
     },
     {
       "id": 431,
@@ -7912,7 +7979,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/kulejtee.webp"
     },
     {
       "id": 438,
@@ -8020,7 +8088,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/kumyoo.webp"
     },
     {
       "id": 444,
@@ -8056,7 +8125,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/kun.webp"
     },
     {
       "id": 446,
@@ -8344,7 +8414,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/kuuke.webp"
     },
     {
       "id": 462,
@@ -8362,7 +8433,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/kuxyeebejt.webp"
     },
     {
       "id": 463,
@@ -8686,7 +8758,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/luud.webp"
     },
     {
       "id": 481,
@@ -8830,7 +8903,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 4
     },
     {
       "id": 489,
@@ -8848,7 +8922,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 90
     },
     {
       "id": 490,
@@ -8866,7 +8941,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 80
     },
     {
       "id": 491,
@@ -8884,7 +8960,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/madsaa.webp"
     },
     {
       "id": 492,
@@ -8902,7 +8979,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/madsaawiixpe.webp"
     },
     {
       "id": 493,
@@ -8959,7 +9037,8 @@
       "source_categories": [
         "numeros_1_20",
         "vocabulario_general"
-      ]
+      ],
+      "numero": 10
     },
     {
       "id": 496,
@@ -8977,7 +9056,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "millares"
-      ]
+      ],
+      "numero": 10000
     },
     {
       "id": 497,
@@ -8995,7 +9075,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 14
     },
     {
       "id": 498,
@@ -9013,7 +9094,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 12
     },
     {
       "id": 499,
@@ -9031,7 +9113,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 15
     },
     {
       "id": 500,
@@ -9049,7 +9132,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 19
     },
     {
       "id": 501,
@@ -9067,7 +9151,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 17
     },
     {
       "id": 502,
@@ -9085,7 +9170,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 16
     },
     {
       "id": 503,
@@ -9103,7 +9189,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 18
     },
     {
       "id": 504,
@@ -9139,7 +9226,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/majtsumy.webp"
     },
     {
       "id": 506,
@@ -9157,7 +9245,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 11
     },
     {
       "id": 507,
@@ -9175,7 +9264,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 13
     },
     {
       "id": 508,
@@ -9301,7 +9391,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/maxyoon.webp"
     },
     {
       "id": 515,
@@ -9319,7 +9410,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/maxywiiste.webp"
     },
     {
       "id": 516,
@@ -9517,7 +9609,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/meeg.webp"
     },
     {
       "id": 527,
@@ -9592,7 +9685,8 @@
       "source_categories": [
         "naturaleza",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/mejy.webp"
     },
     {
       "id": 531,
@@ -9628,7 +9722,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 2
     },
     {
       "id": 533,
@@ -9808,7 +9903,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 5
     },
     {
       "id": 543,
@@ -9826,7 +9922,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "centenas"
-      ]
+      ],
+      "numero": 500
     },
     {
       "id": 544,
@@ -9844,7 +9941,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "centenas"
-      ]
+      ],
+      "numero": 100
     },
     {
       "id": 545,
@@ -9934,7 +10032,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/moox.webp"
     },
     {
       "id": 550,
@@ -10006,7 +10105,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/moxtambuug.webp"
     },
     {
       "id": 554,
@@ -10081,7 +10181,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/muu.webp"
     },
     {
       "id": 558,
@@ -10099,7 +10200,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/muug.webp"
     },
     {
       "id": 559,
@@ -10462,7 +10564,8 @@
       "source_categories": [
         "naturaleza",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/mejnee.webp"
     },
     {
       "id": 579,
@@ -10480,7 +10583,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/mejtsiin.webp"
     },
     {
       "id": 580,
@@ -10624,7 +10728,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/meruxmejtsiin.webp"
     },
     {
       "id": 588,
@@ -10753,7 +10858,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "formas_geometricas"
-      ]
+      ],
+      "imagen": "img/palabras/naadeekkuudeeek.webp"
     },
     {
       "id": 595,
@@ -10771,7 +10877,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#9b968f"
     },
     {
       "id": 596,
@@ -10789,7 +10896,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#e2c35f"
     },
     {
       "id": 597,
@@ -10807,7 +10915,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#c45a43"
     },
     {
       "id": 598,
@@ -10825,7 +10934,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#7da46a"
     },
     {
       "id": 599,
@@ -10843,7 +10953,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#6e93c6"
     },
     {
       "id": 600,
@@ -10861,7 +10972,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/naabyuub.webp"
     },
     {
       "id": 601,
@@ -10900,7 +11012,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/naan.webp"
     },
     {
       "id": 603,
@@ -10921,7 +11034,8 @@
       "source_categories": [
         "naturaleza",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/naax.webp"
     },
     {
       "id": 604,
@@ -10939,7 +11053,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/naaxkaa.webp"
     },
     {
       "id": 605,
@@ -10957,7 +11072,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/naaxtiindsy.webp"
     },
     {
       "id": 606,
@@ -10993,7 +11109,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "naturaleza"
-      ]
+      ],
+      "imagen": "img/palabras/nadun.webp"
     },
     {
       "id": 608,
@@ -11086,7 +11203,8 @@
       "source_categories": [
         "formas_geometricas",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/nak.webp"
     },
     {
       "id": 613,
@@ -11428,7 +11546,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/niiw.webp"
     },
     {
       "id": 632,
@@ -11770,7 +11889,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/nuub.webp"
     },
     {
       "id": 651,
@@ -11791,7 +11911,8 @@
       "source_categories": [
         "insectos",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/nuj.webp"
     },
     {
       "id": 652,
@@ -11863,7 +11984,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/neadsegak.webp"
     },
     {
       "id": 656,
@@ -11881,7 +12003,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/nedoogy.webp"
     },
     {
       "id": 657,
@@ -12061,7 +12184,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/nemaa.webp"
     },
     {
       "id": 667,
@@ -12172,7 +12296,8 @@
       "source_categories": [
         "fenomenos_naturales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/nee.webp"
     },
     {
       "id": 673,
@@ -12190,7 +12315,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/neejyaay.webp"
     },
     {
       "id": 674,
@@ -12226,7 +12352,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/neem.webp"
     },
     {
       "id": 676,
@@ -12265,7 +12392,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/neets.webp"
     },
     {
       "id": 678,
@@ -12301,7 +12429,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#f08a24"
     },
     {
       "id": 680,
@@ -12394,7 +12523,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/omyejtsiin.webp"
     },
     {
       "id": 685,
@@ -12826,7 +12956,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/pats.webp"
     },
     {
       "id": 709,
@@ -13099,7 +13230,8 @@
       "source_categories": [
         "formas_geometricas",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/pik.webp"
     },
     {
       "id": 724,
@@ -13189,7 +13321,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/pixk.webp"
     },
     {
       "id": 729,
@@ -13228,7 +13361,8 @@
       "source_categories": [
         "naturaleza",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/poo.webp"
     },
     {
       "id": 731,
@@ -13249,7 +13383,8 @@
       "source_categories": [
         "fenomenos_naturales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/poj.webp"
     },
     {
       "id": 732,
@@ -13321,7 +13456,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/pojtuu.webp"
     },
     {
       "id": 736,
@@ -13339,7 +13475,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "naturaleza"
-      ]
+      ],
+      "imagen": "img/palabras/pojtexaa.webp"
     },
     {
       "id": 737,
@@ -13396,7 +13533,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/poo_2.webp"
     },
     {
       "id": 740,
@@ -13414,7 +13552,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#ffffff"
     },
     {
       "id": 741,
@@ -13525,7 +13664,8 @@
       "source_categories": [
         "insectos",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/pooxyp.webp"
     },
     {
       "id": 747,
@@ -13597,7 +13737,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#efe4cc"
     },
     {
       "id": 751,
@@ -13618,7 +13759,8 @@
       "source_categories": [
         "colores",
         "vocabulario_general"
-      ]
+      ],
+      "color": "#f6c419"
     },
     {
       "id": 752,
@@ -13906,7 +14048,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/pyokaa.webp"
     },
     {
       "id": 768,
@@ -13924,7 +14067,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/peex.webp"
     },
     {
       "id": 769,
@@ -13996,7 +14140,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 9
     },
     {
       "id": 773,
@@ -14014,7 +14159,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "centenas"
-      ]
+      ],
+      "numero": 900
     },
     {
       "id": 774,
@@ -14338,7 +14484,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/tiig.webp"
     },
     {
       "id": 792,
@@ -14626,7 +14773,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tsapeteeng.webp"
     },
     {
       "id": 808,
@@ -14647,7 +14795,8 @@
       "source_categories": [
         "naturaleza",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/tsaa.webp"
     },
     {
       "id": 809,
@@ -14683,7 +14832,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "naturaleza"
-      ]
+      ],
+      "imagen": "img/palabras/tsabyuu.webp"
     },
     {
       "id": 811,
@@ -14701,7 +14851,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/tsadyuu.webp"
     },
     {
       "id": 812,
@@ -14719,7 +14870,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tsagyaa.webp"
     },
     {
       "id": 813,
@@ -14737,7 +14889,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/tsajp.webp"
     },
     {
       "id": 814,
@@ -14755,7 +14908,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#d12a1f"
     },
     {
       "id": 815,
@@ -14773,7 +14927,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tsaptsnejyaay.webp"
     },
     {
       "id": 816,
@@ -14791,7 +14946,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tsaptskaa.webp"
     },
     {
       "id": 817,
@@ -14809,7 +14965,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/tsaptskubaky.webp"
     },
     {
       "id": 818,
@@ -14827,7 +14984,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/tsaptsukt.webp"
     },
     {
       "id": 819,
@@ -14845,7 +15003,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/tsatsy.webp"
     },
     {
       "id": 820,
@@ -14863,7 +15022,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tsedyaj.webp"
     },
     {
       "id": 821,
@@ -14881,7 +15041,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tseey.webp"
     },
     {
       "id": 822,
@@ -14899,7 +15060,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tsenyaaa.webp"
     },
     {
       "id": 823,
@@ -15064,7 +15226,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/tsik.webp"
     },
     {
       "id": 832,
@@ -15172,7 +15335,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tsinuup.webp"
     },
     {
       "id": 838,
@@ -15298,7 +15462,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#d8c08a"
     },
     {
       "id": 845,
@@ -15316,7 +15481,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/tsoog.webp"
     },
     {
       "id": 846,
@@ -15532,7 +15698,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tsudsyenijky.webp"
     },
     {
       "id": 858,
@@ -15640,7 +15807,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tsukt.webp"
     },
     {
       "id": 864,
@@ -15715,7 +15883,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/tsuuk.webp"
     },
     {
       "id": 868,
@@ -15790,7 +15959,8 @@
       "source_categories": [
         "colores",
         "vocabulario_general"
-      ]
+      ],
+      "color": "#2f9b4b"
     },
     {
       "id": 872,
@@ -15826,7 +15996,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/tsuxpojtuu.webp"
     },
     {
       "id": 874,
@@ -15844,7 +16015,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/tsuxteeng.webp"
     },
     {
       "id": 875,
@@ -15952,7 +16124,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tsyiid.webp"
     },
     {
       "id": 881,
@@ -15970,7 +16143,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tsyooxyp.webp"
     },
     {
       "id": 882,
@@ -15988,7 +16162,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/tsetyayoon.webp"
     },
     {
       "id": 883,
@@ -16060,7 +16235,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/tsegak.webp"
     },
     {
       "id": 887,
@@ -16168,7 +16344,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 1
     },
     {
       "id": 893,
@@ -16186,7 +16363,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tudsej.webp"
     },
     {
       "id": 894,
@@ -16204,7 +16382,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tukyaaw.webp"
     },
     {
       "id": 895,
@@ -16222,7 +16401,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 8
     },
     {
       "id": 896,
@@ -16240,7 +16420,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "millares"
-      ]
+      ],
+      "numero": 8000
     },
     {
       "id": 897,
@@ -16258,7 +16439,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "centenas"
-      ]
+      ],
+      "numero": 800
     },
     {
       "id": 898,
@@ -16276,7 +16458,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/tuu.webp"
     },
     {
       "id": 899,
@@ -16294,7 +16477,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tuumuuxy.webp"
     },
     {
       "id": 900,
@@ -16312,7 +16496,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/tuutk.webp"
     },
     {
       "id": 901,
@@ -16330,7 +16515,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 6
     },
     {
       "id": 902,
@@ -16348,7 +16534,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "millares"
-      ]
+      ],
+      "numero": 6000
     },
     {
       "id": 903,
@@ -16366,7 +16553,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "centenas"
-      ]
+      ],
+      "numero": 600
     },
     {
       "id": 904,
@@ -16384,7 +16572,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "formas_geometricas"
-      ]
+      ],
+      "imagen": "img/palabras/tegen.webp"
     },
     {
       "id": 905,
@@ -16402,7 +16591,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 60
     },
     {
       "id": 906,
@@ -16420,7 +16610,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_20_99"
-      ]
+      ],
+      "numero": 70
     },
     {
       "id": 907,
@@ -16438,7 +16629,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "millares"
-      ]
+      ],
+      "numero": 3000
     },
     {
       "id": 908,
@@ -16456,7 +16648,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "centenas"
-      ]
+      ],
+      "numero": 300
     },
     {
       "id": 909,
@@ -16474,7 +16667,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "numeros_1_20"
-      ]
+      ],
+      "numero": 3
     },
     {
       "id": 910,
@@ -16621,7 +16815,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/teptsy.webp"
     },
     {
       "id": 918,
@@ -16693,7 +16888,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/tetsypoj.webp"
     },
     {
       "id": 922,
@@ -16765,7 +16961,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/teeng.webp"
     },
     {
       "id": 926,
@@ -16801,7 +16998,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "naturaleza"
-      ]
+      ],
+      "imagen": "img/palabras/ujts.webp"
     },
     {
       "id": 928,
@@ -16819,7 +17017,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/ujtsadsem.webp"
     },
     {
       "id": 929,
@@ -16855,7 +17054,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "fenomenos_naturales"
-      ]
+      ],
+      "imagen": "img/palabras/ujx.webp"
     },
     {
       "id": 931,
@@ -16876,7 +17076,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/uk.webp"
     },
     {
       "id": 932,
@@ -16894,7 +17095,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/uktooxy.webp"
     },
     {
       "id": 933,
@@ -16912,7 +17114,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/uktaj.webp"
     },
     {
       "id": 934,
@@ -16930,7 +17133,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "#1f5fbf"
     },
     {
       "id": 935,
@@ -16948,7 +17152,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/ukyaay.webp"
     },
     {
       "id": 936,
@@ -17077,7 +17282,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/uuxk.webp"
     },
     {
       "id": 943,
@@ -17095,7 +17301,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/uxyp.webp"
     },
     {
       "id": 944,
@@ -17242,7 +17449,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/waj.webp"
     },
     {
       "id": 952,
@@ -17296,7 +17504,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/weegoo.webp"
     },
     {
       "id": 955,
@@ -17386,7 +17595,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/wiist.webp"
     },
     {
       "id": 960,
@@ -17749,7 +17959,8 @@
       "source_categories": [
         "insectos",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/wok.webp"
     },
     {
       "id": 980,
@@ -17806,7 +18017,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/woon.webp"
     },
     {
       "id": 983,
@@ -17896,7 +18108,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/weegy.webp"
     },
     {
       "id": 988,
@@ -17950,7 +18163,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/xatoore.webp"
     },
     {
       "id": 991,
@@ -17968,7 +18182,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "colores"
-      ]
+      ],
+      "color": "xaag"
     },
     {
       "id": 992,
@@ -18598,7 +18813,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/xuux_2.webp"
     },
     {
       "id": 1027,
@@ -18706,7 +18922,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/xebiingy.webp"
     },
     {
       "id": 1033,
@@ -18724,7 +18941,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/xegaa.webp"
     },
     {
       "id": 1034,
@@ -18781,7 +18999,8 @@
       "source_categories": [
         "naturaleza",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/xee.webp"
     },
     {
       "id": 1037,
@@ -18889,7 +19108,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/yaawdeeng.webp"
     },
     {
       "id": 1043,
@@ -19015,7 +19235,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "formas_geometricas"
-      ]
+      ],
+      "imagen": "img/palabras/yakts.webp"
     },
     {
       "id": 1050,
@@ -19105,7 +19326,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/yermepooxyp.webp"
     },
     {
       "id": 1055,
@@ -19321,7 +19543,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "naturaleza"
-      ]
+      ],
+      "imagen": "img/palabras/yuuk_2.webp"
     },
     {
       "id": 1067,
@@ -19339,7 +19562,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "naturaleza"
-      ]
+      ],
+      "imagen": "img/palabras/yuuktsooy.webp"
     },
     {
       "id": 1068,
@@ -19360,7 +19584,8 @@
       "source_categories": [
         "animales",
         "vocabulario_general"
-      ]
+      ],
+      "imagen": "img/palabras/yuuktsy.webp"
     },
     {
       "id": 1069,
@@ -19396,7 +19621,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/yegoo.webp"
     },
     {
       "id": 1071,
@@ -19450,7 +19676,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "insectos"
-      ]
+      ],
+      "imagen": "img/palabras/exjodsyim.webp"
     },
     {
       "id": 1074,
@@ -19468,7 +19695,8 @@
       "dedupe_count": 1,
       "source_categories": [
         "animales"
-      ]
+      ],
+      "imagen": "img/palabras/extuktseey.webp"
     },
     {
       "id": 1075,

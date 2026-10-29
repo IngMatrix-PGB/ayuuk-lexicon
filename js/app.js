@@ -1,4 +1,4 @@
-const APP_VERSION = 'v5.6.0';
+const APP_VERSION = 'v5.7.0';
 const HOVER_DELAY_MS = 350;
 const SLOW_RATE = 0.9;
 // El himno es un «tema» más: al elegirlo, en lugar de palabras se muestra su reproductor y letra.
@@ -287,7 +287,9 @@ function filteredEntries() {
     const mode = getSearchMode(state.entries, qText, qWord);
     return applyAudioFilter(state.entries.filter((entry) => matchesQuery(entry, qText, qWord, mode)));
   }
-  return applyAudioFilter(applyBaseFilters(state.entries));
+  const entries = applyAudioFilter(applyBaseFilters(state.entries));
+  // En «Números» se aprende contando: 1, 2, 3… en vez de orden alfabético.
+  return state.category === 'numeros' ? [...entries].sort((a, b) => a.numero - b.numero) : entries;
 }
 
 function categoryCounts(entries = state.entries) {
@@ -564,6 +566,25 @@ function renderList(entries) {
     : '';
 }
 
+// Imagen de apoyo (aprendizaje visual): foto del CD 2009, muestra del color o el número escrito.
+function visualTemplate(entry) {
+  if (entry.imagen) {
+    return `<img class="visual" src="${escapeHtml(entry.imagen)}?v=${APP_VERSION}" alt="" width="256" height="256" loading="lazy" decoding="async">`;
+  }
+  if (entry.color) {
+    const pattern = entry.color.startsWith('#') ? '' : ` visual--${entry.color}`;
+    const swatch = pattern ? '' : ` style="--swatch: ${entry.color}"`;
+    return `<span class="visual visual--color${pattern}"${swatch} aria-hidden="true"></span>`;
+  }
+  if (entry.numero) {
+    const digits = fmt(entry.numero);
+    return `<span class="visual visual--num" data-len="${digits.length}" aria-hidden="true">${digits}</span>`;
+  }
+  return '';
+}
+
+const longestToken = (text) => Math.max(...text.split(/\s+/).map((token) => token.length));
+
 function cardTemplate(entry) {
   const info = getAudioInfo(entry, state.audioManifest);
   const catClass = `cat-${normalizeAudioKey(topicOf(entry.categoria))}`;
@@ -572,9 +593,11 @@ function cardTemplate(entry) {
   const audioAttrs = info.isReal ? ` tabindex="0" role="button" aria-label="${escapeHtml(entry.ayuuk)}, ${escapeHtml(entry.espanol)}. Escuchar"` : '';
   const pending = info.isReal ? '' : '<span class="pending"> · sin audio aún</span>';
   const note = entry.nota ? `<div class="voice">Nota: ${escapeHtml(entry.nota)}</div>` : '';
+  const visual = visualTemplate(entry);
 
-  return `<article class="card ${catClass}${info.isReal ? ' has-audio' : ''}" data-index="${index}"${audioAttrs}>
-    <div class="word" lang="mir">${escapeHtml(entry.ayuuk)}</div>
+  return `<article class="card ${catClass}${info.isReal ? ' has-audio' : ''}${visual ? ' has-visual' : ''}" data-index="${index}"${audioAttrs}>
+    ${visual}
+    <div class="word${visual && longestToken(entry.ayuuk) > 8 ? ' word--long' : ''}" lang="mir">${escapeHtml(entry.ayuuk)}</div>
     <div class="meaning">${escapeHtml(entry.espanol)}</div>
     <div class="tag">${escapeHtml(prettyCategory(entry.categoria))}${pending}</div>
     ${note}
@@ -585,6 +608,7 @@ function renderFlashcards(entries) {
   const disabled = entries.length === 0;
   ['nextCardBtn', 'prevCardBtn'].forEach((id) => { $(id).disabled = disabled; });
   if (disabled) {
+    $('flashcardVisual').innerHTML = '';
     $('flashcardFront').textContent = 'Sin tarjetas';
     $('flashcardBack').textContent = '';
     $('flashcardMeta').textContent = 'No hay palabras con estos filtros.';
@@ -596,6 +620,7 @@ function renderFlashcards(entries) {
   const info = getAudioInfo(entry, state.audioManifest);
 
   $('flashcard').className = `flashcard cat-${normalizeAudioKey(topicOf(entry.categoria))}${info.isReal ? ' has-audio' : ''}`;
+  $('flashcardVisual').innerHTML = visualTemplate(entry);
   $('flashcardFront').textContent = entry.ayuuk;
   $('flashcard').setAttribute('aria-label', `${entry.ayuuk}, ${entry.espanol}. Escuchar`);
   $('flashcardBack').textContent = entry.espanol;
