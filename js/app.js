@@ -1,4 +1,4 @@
-const APP_VERSION = 'v5.1.5';
+const APP_VERSION = 'v5.1.7';
 const HOVER_DELAY_MS = 350;
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
 const AUDIO_MANIFEST_URL = `data/audio_manifest.json?v=${APP_VERSION}`;
@@ -274,11 +274,9 @@ async function loadAudioManifest() {
 }
 
 function renderStats() {
-  const withAudio = state.entries.filter(hasAudio).length;
   const topics = new Set(state.entries.map((e) => e.categoria)).size;
   $('stats').innerHTML = `
     <div><dt>palabras</dt><dd>${fmt(state.entries.length)}</dd></div>
-    <div><dt>con audio</dt><dd>${fmt(withAudio)}</dd></div>
     <div><dt>temas</dt><dd>${fmt(topics)}</dd></div>`;
 }
 
@@ -417,26 +415,9 @@ function setViewMode(mode) {
   if (mode === 'flashcards') playCurrentFlashcard();
 }
 
-function resultsTitle() {
-  const q = state.query.trim();
-  if (q) return `Resultados para “${q}”`;
-  const parts = [];
-  if (state.category !== 'all') parts.push(prettyCategory(state.category));
-  if (state.letter !== 'all') parts.push(`Letra ${state.letter}`);
-  return parts.length ? parts.join(' · ') : 'Todas las palabras';
-}
-
 function render() {
+  // Sin título de resultados: el encabezado da los totales y cada tarjeta dice su tema.
   const entries = filteredEntries();
-  const withAudio = entries.filter(hasAudio).length;
-  // Sin filtros el encabezado ya dice cuántas palabras hay: el título solo aparece al filtrar.
-  const filtered = state.category !== 'all' || state.letter !== 'all' || state.query.trim();
-  $('resultsTitle').textContent = resultsTitle();
-  $('resultsTitle').classList.toggle('hidden', !filtered);
-  $('resultCount').classList.toggle('hidden', !filtered);
-  $('resultCount').textContent = entries.length === 1
-    ? '1 palabra'
-    : `${fmt(entries.length)} palabras · ${fmt(withAudio)} con audio`;
 
   if (state.viewMode === 'flashcards') renderFlashcards(entries);
   else renderList(entries);
