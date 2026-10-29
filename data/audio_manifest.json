@@ -83,11 +83,11 @@
     "categoria": "insectos",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2530",
-    "verificado": true
+    "swf_sound": "#2488",
+    "verificado": false
   },
   "aaxy": {
     "file": "audio/aaxy.mp3",
@@ -129,14 +129,18 @@
   },
   "adegekteek": {
     "file": "audio/adegekteek.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 13,
     "ayuuk": "Adëgëkteek",
     "espanol": "Triángulo",
     "categoria": "formas_geometricas",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_foto_debajo_del_nombre",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#1622",
+    "verificado": false
   },
   "adsej": {
     "file": "audio/adsej.mp3",
@@ -177,10 +181,10 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#3270",
+    "swf_sound": "#3276",
     "verificado": false
   },
   "agatspeeb": {
@@ -704,10 +708,10 @@
     "categoria": "formas_geometricas",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#1651",
+    "swf_sound": "#1627",
     "verificado": false
   },
   "amajmetsteek": {
@@ -719,10 +723,10 @@
     "categoria": "formas_geometricas",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#1646",
+    "swf_sound": "#1651",
     "verificado": false
   },
   "amay": {
@@ -758,10 +762,10 @@
     "categoria": "formas_geometricas",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#1622",
+    "swf_sound": "#1646",
     "verificado": false
   },
   "amej": {
@@ -929,10 +933,10 @@
     "categoria": "insectos",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2488",
+    "swf_sound": "#2494",
     "verificado": false
   },
   "amuutsy": {
@@ -992,8 +996,11 @@
     "categoria": "fenomenos_naturales",
     "legacy_source": "Letra-A/65.mp3",
     "source_html": "letras-spa-lite/A.html",
-    "matched_by": "legacy_html_mixe_exact",
-    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)"
+    "matched_by": "swf_foto_debajo_del_nombre",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#2682",
+    "verificado": false
   },
   "anee_2": {
     "file": "audio/anee_2.mp3",
@@ -1072,14 +1079,18 @@
   },
   "annee": {
     "file": "audio/annee.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 86,
     "ayuuk": "ANNËË",
     "espanol": "Agua caliente",
     "categoria": "vocabulario_general",
     "legacy_source": "Letra-A/72.mp3",
     "source_html": "letras-spa-lite/A.html",
-    "matched_by": "legacy_html_mixe_exact"
+    "matched_by": "swf_texto_y_pagina_anterior",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "a72",
+    "verificado": false
   },
   "anokepetsy": {
     "file": "audio/anokepetsy.mp3",
@@ -1384,8 +1395,11 @@
     "categoria": "animales",
     "legacy_source": "Letra-A/98.mp3",
     "source_html": "letras-spa-lite/A.html",
-    "matched_by": "legacy_html_mixe_exact",
-    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)"
+    "matched_by": "swf_foto_debajo_del_nombre",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#3067",
+    "verificado": false
   },
   "aputs": {
     "file": "audio/aputs.mp3",
@@ -2547,10 +2561,10 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#3154",
+    "swf_sound": "#3160",
     "verificado": false
   },
   "exuk": {
@@ -4031,10 +4045,10 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#3300",
+    "swf_sound": "#3306",
     "verificado": false
   },
   "jii": {
@@ -4102,10 +4116,10 @@
     "categoria": "fenomenos_naturales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2706",
+    "swf_sound": "#2712",
     "verificado": false
   },
   "jinyxyegaa": {
@@ -4357,10 +4371,10 @@
     "categoria": "formas_geometricas",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#1609",
+    "swf_sound": "#1613",
     "verificado": false
   },
   "judsyaandy": {
@@ -4788,10 +4802,10 @@
     "categoria": "insectos",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2524",
+    "swf_sound": "#2530",
     "verificado": false
   },
   "kaapy": {
@@ -4964,10 +4978,10 @@
     "categoria": "naturaleza",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#1772",
+    "swf_sound": "#1778",
     "verificado": false
   },
   "kamiixy": {
@@ -5571,10 +5585,10 @@
     "categoria": "naturaleza",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#1784",
+    "swf_sound": "#1790",
     "verificado": false
   },
   "kepy": {
@@ -5909,14 +5923,18 @@
   },
   "kojmyaaxy": {
     "file": "audio/kojmyaaxy.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 406,
     "ayuuk": "Kojmyaa’xy",
     "espanol": "Huertos",
     "categoria": "naturaleza",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_foto_debajo_del_nombre",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#1784",
+    "verificado": false
   },
   "kojxtenaa": {
     "file": "audio/kojxtenaa.mp3",
@@ -6392,10 +6410,10 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2950",
+    "swf_sound": "#2956",
     "verificado": false
   },
   "kum": {
@@ -6512,10 +6530,10 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#3184",
+    "swf_sound": "#3190",
     "verificado": false
   },
   "kunaax": {
@@ -6745,14 +6763,18 @@
   },
   "kuubaky": {
     "file": "audio/kuubaky.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 419,
     "ayuuk": "Ku’ubáky",
     "espanol": "Abeja negra",
     "categoria": "insectos",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_foto_debajo_del_nombre",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#2548",
+    "verificado": false
   },
   "kuuke": {
     "file": "audio/kuuke.mp3",
@@ -6763,10 +6785,10 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2956",
+    "swf_sound": "#2944",
     "verificado": false
   },
   "kuuy": {
@@ -6808,11 +6830,11 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#3276",
-    "verificado": true
+    "swf_sound": "#3270",
+    "verificado": false
   },
   "maa": {
     "file": "audio/maa.mp3",
@@ -6941,11 +6963,11 @@
     "categoria": "fenomenos_naturales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2754",
-    "verificado": true
+    "swf_sound": "#2730",
+    "verificado": false
   },
   "madsaawiixpe": {
     "file": "audio/madsaawiixpe.mp3",
@@ -6956,10 +6978,10 @@
     "categoria": "fenomenos_naturales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2730",
+    "swf_sound": "#2736",
     "verificado": false
   },
   "maj": {
@@ -7530,10 +7552,10 @@
     "categoria": "insectos",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2548",
+    "swf_sound": "#2554",
     "verificado": false
   },
   "mejtsp": {
@@ -7571,7 +7593,11 @@
     "categoria": "naturaleza",
     "legacy_source": "Letra-M/M_word_67.wav",
     "source_html": "letras-spa-lite/M.html",
-    "matched_by": "legacy_html_mixe_exact"
+    "matched_by": "swf_foto_debajo_del_nombre",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#1802",
+    "verificado": false
   },
   "mekaapy": {
     "file": "audio/mekaapy.mp3",
@@ -7690,10 +7716,10 @@
     "categoria": "insectos",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2554",
+    "swf_sound": "#2560",
     "verificado": false
   },
   "meteye": {
@@ -8321,10 +8347,10 @@
     "categoria": "formas_geometricas",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#1627",
+    "swf_sound": "#1656",
     "verificado": false
   },
   "naajaam": {
@@ -8477,10 +8503,10 @@
     "categoria": "naturaleza",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#1766",
+    "swf_sound": "#1772",
     "verificado": false
   },
   "naiky": {
@@ -9046,10 +9072,10 @@
     "categoria": "fenomenos_naturales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2718",
+    "swf_sound": "#2724",
     "verificado": false
   },
   "nemaay": {
@@ -9470,14 +9496,18 @@
   },
   "nuub": {
     "file": "audio/nuub.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 650,
     "ayuuk": "Nu’ub",
     "espanol": "Zopilote blanco, buitre",
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_foto_debajo_del_nombre",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#3184",
+    "verificado": false
   },
   "nuun": {
     "file": "audio/nuun.mp3",
@@ -9964,11 +9994,11 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#3160",
-    "verificado": true
+    "swf_sound": "#3148",
+    "verificado": false
   },
   "paye": {
     "file": "audio/paye.mp3",
@@ -10324,10 +10354,10 @@
     "categoria": "insectos",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2634",
+    "swf_sound": "#2640",
     "verificado": false
   },
   "pixy": {
@@ -10399,10 +10429,10 @@
     "categoria": "naturaleza",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#1752",
+    "swf_sound": "#1740",
     "verificado": false
   },
   "pojtspe": {
@@ -10429,10 +10459,10 @@
     "categoria": "fenomenos_naturales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2670",
+    "swf_sound": "#2676",
     "verificado": false
   },
   "pok": {
@@ -10875,14 +10905,18 @@
   },
   "puyaay": {
     "file": "audio/puyaay.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 766,
     "ayuuk": "Puya’ay",
     "espanol": "Hermano por sanguinidad",
     "categoria": "familia",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_nombre_del_sonido",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "puyaay",
+    "verificado": false
   },
   "pyokaa": {
     "file": "audio/pyokaa.mp3",
@@ -10893,10 +10927,10 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#3148",
+    "swf_sound": "#3154",
     "verificado": false
   },
   "taaxtujk": {
@@ -11151,10 +11185,10 @@
     "categoria": "formas_geometricas",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#1600",
+    "swf_sound": "#1605",
     "verificado": false
   },
   "teikwaats": {
@@ -11406,10 +11440,10 @@
     "categoria": "fenomenos_naturales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2736",
+    "swf_sound": "#2742",
     "verificado": false
   },
   "tetyap": {
@@ -11807,22 +11841,26 @@
     "categoria": "vocabulario_general",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_texto_adyacente",
+    "matched_by": "swf_orden_de_linea",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "2TS",
+    "swf_sound": "3TS",
     "verificado": false
   },
   "tsaam_2": {
     "file": "audio/tsaam_2.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 809,
     "ayuuk": "TSAAM",
     "espanol": "Mojarra",
     "categoria": "vocabulario_general",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_orden_de_linea",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "2TS",
+    "verificado": false
   },
   "tsabyuu": {
     "file": "audio/tsabyuu.mp3",
@@ -11833,10 +11871,10 @@
     "categoria": "naturaleza",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#1820",
+    "swf_sound": "#1826",
     "verificado": false
   },
   "tsadyuu": {
@@ -11848,10 +11886,10 @@
     "categoria": "fenomenos_naturales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2760",
+    "swf_sound": "#2766",
     "verificado": false
   },
   "tsagyaa": {
@@ -11863,10 +11901,10 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#3124",
+    "swf_sound": "#3130",
     "verificado": false
   },
   "tsajp": {
@@ -11919,11 +11957,11 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#3130",
-    "verificado": true
+    "swf_sound": "#3124",
+    "verificado": false
   },
   "tsaptskubaky": {
     "file": "audio/tsaptskubaky.mp3",
@@ -12144,10 +12182,10 @@
     "categoria": "fenomenos_naturales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2748",
+    "swf_sound": "#2754",
     "verificado": false
   },
   "tsii": {
@@ -12478,14 +12516,18 @@
   },
   "tsojneex": {
     "file": "audio/tsojneex.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 848,
     "ayuuk": "Tsojnëëx",
     "espanol": "Sobrina",
     "categoria": "familia",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_nombre_del_sonido",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "tsojnex",
+    "verificado": false
   },
   "tsok": {
     "file": "audio/tsok.mp3",
@@ -12526,10 +12568,10 @@
     "categoria": "fenomenos_naturales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2766",
+    "swf_sound": "#2772",
     "verificado": false
   },
   "tsooy": {
@@ -12875,14 +12917,18 @@
   },
   "tsuxpojtuu": {
     "file": "audio/tsuxpojtuu.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 873,
     "ayuuk": "Tsuxpoj tuu",
     "espanol": "Viento con lluvia del norte",
     "categoria": "fenomenos_naturales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_foto_debajo_del_nombre",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#2670",
+    "verificado": false
   },
   "tsuxteeng": {
     "file": "audio/tsuxteeng.mp3",
@@ -13177,11 +13223,11 @@
     "categoria": "naturaleza",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#1778",
-    "verificado": true
+    "swf_sound": "#1760",
+    "verificado": false
   },
   "ujtsadsem": {
     "file": "audio/ujtsadsem.mp3",
@@ -13222,10 +13268,10 @@
     "categoria": "fenomenos_naturales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#2682",
+    "swf_sound": "#2688",
     "verificado": false
   },
   "uk": {
@@ -13286,14 +13332,18 @@
   },
   "ukyaay": {
     "file": "audio/ukyaay.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 935,
     "ayuuk": "Ukya’ay",
     "espanol": "Perro macho",
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_foto_debajo_del_nombre",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#3300",
+    "verificado": false
   },
   "unk": {
     "file": "audio/unk.mp3",
@@ -13709,11 +13759,11 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#3256",
-    "verificado": true
+    "swf_sound": "#3250",
+    "verificado": false
   },
   "wiit": {
     "file": "audio/wiit.mp3",
@@ -14305,10 +14355,10 @@
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": "swf_boton_imagen",
+    "matched_by": "swf_foto_debajo_del_nombre",
     "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
     "origen": "DICCIONARIO.swf",
-    "swf_sound": "#3037",
+    "swf_sound": "#3043",
     "verificado": false
   },
   "xejk": {
