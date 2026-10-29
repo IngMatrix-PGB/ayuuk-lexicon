@@ -1,5 +1,6 @@
-const APP_VERSION = 'v5.4.0';
+const APP_VERSION = 'v5.5.0';
 const HOVER_DELAY_MS = 350;
+const SLOW_RATE = 0.9;
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
 const AUDIO_MANIFEST_URL = `data/audio_manifest.json?v=${APP_VERSION}`;
 const GENERAL_CATEGORY = 'vocabulario_general';
@@ -240,8 +241,19 @@ function playEntryAudio(entry, el = null) {
     currentAudio.addEventListener('error', () => setPlaying(null));
   }
   currentAudio.currentTime = 0;
+  // Modo lento: 90% de velocidad sin cambiar el tono de la voz.
+  currentAudio.preservesPitch = true;
+  currentAudio.playbackRate = slowMode ? SLOW_RATE : 1;
   setPlaying(el);
   currentAudio.play().catch(() => setPlaying(null));
+}
+
+let slowMode = false;
+function setSlowMode(on) {
+  slowMode = on;
+  $('slowBtn').setAttribute('aria-pressed', String(on));
+  $('slowState').textContent = on ? 'activado' : 'apagado';
+  try { localStorage.setItem('ayuuk-lento', on ? '1' : '0'); } catch { /* sin almacenamiento: solo esta visita */ }
 }
 
 /* ---------- Filtros ---------- */
@@ -399,6 +411,14 @@ function bindEvents() {
   $('nextCardBtn').addEventListener('click', () => stepFlashcard(1));
   $('prevCardBtn').addEventListener('click', () => stepFlashcard(-1));
   // Toda la tarjeta (no solo el botón) reproduce el audio.
+  let savedSlow = false;
+  try { savedSlow = localStorage.getItem('ayuuk-lento') === '1'; } catch { /* sin almacenamiento */ }
+  setSlowMode(savedSlow);
+  $('slowBtn').addEventListener('click', () => {
+    setSlowMode(!slowMode);
+    playCurrentFlashcard();
+  });
+
   $('flashcard').addEventListener('click', () => {
     const entry = filteredEntries()[state.flashcardIndex];
     if (entry) playEntryAudio(entry, $('flashcard'));

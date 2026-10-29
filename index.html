@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" />
-  <link rel="stylesheet" href="css/styles.css?v=v5.4.2" />
+  <link rel="stylesheet" href="css/styles.css?v=v5.5.0" />
 </head>
 <body>
   <header class="hero">
@@ -74,6 +74,9 @@
         <span class="flashcard__meta" id="flashcardMeta"></span>
         <button id="nextCardBtn" class="btn btn--primary" type="button">Siguiente →</button>
       </div>
+      <button class="slow-toggle" id="slowBtn" type="button" aria-pressed="false">
+        <span aria-hidden="true">🐢</span> Lento <span class="slow-toggle__state" id="slowState">apagado</span>
+      </button>
     </section>
     <section class="anthem" id="himno" aria-labelledby="himnoTitle">
       <p class="anthem__kicker">Himno Nacional Mexicano en Mixe</p>
@@ -189,13 +192,13 @@
       </li>
       <li>
         <h3>Lista o Tarjetas</h3>
-        <p><strong>Lista</strong> muestra muchas palabras a la vez para consultar. <strong>Tarjetas</strong> es para practicar una palabra a la vez: la ves, la escuchas y pasas a la siguiente con las flechas.</p>
+        <p><strong>Lista</strong> muestra muchas palabras a la vez para consultar. <strong>Tarjetas</strong> es para practicar una palabra a la vez: la ves, la escuchas y pasas a la siguiente con las flechas. Con <strong>🐢 Lento</strong> la escuchas más despacio.</p>
       </li>
     </ol>
     <p class="help__foot">Toca una palabra o pasa el mouse sobre ella para escucharla; se ilumina mientras suena. Los temas y la letra se pueden combinar, por ejemplo Animales + letra K.</p>
     <button class="btn btn--primary help__ok" type="button" id="helpOk">Entendido</button>
   </dialog>
 
-  <script src="js/app.js?v=v5.4.0"></script>
+  <script src="js/app.js?v=v5.5.0"></script>
 </body>
 </html>
