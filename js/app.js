@@ -1,4 +1,4 @@
-const APP_VERSION = 'v5.3.0';
+const APP_VERSION = 'v5.4.0';
 const HOVER_DELAY_MS = 350;
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
 const AUDIO_MANIFEST_URL = `data/audio_manifest.json?v=${APP_VERSION}`;
@@ -174,7 +174,8 @@ function hoverPlay(el, getEntry) {
     if (node.dataset.hovering === '1') return;
     node.dataset.hovering = '1';
     clearTimeout(hoverTimer);
-    hoverTimer = setTimeout(() => playEntryAudio(entry, node), HOVER_DELAY_MS);
+    // Mientras suena el himno, pasar el mouse por la lista no lo interrumpe.
+    hoverTimer = setTimeout(() => { if (!isAnthemPlaying()) playEntryAudio(entry, node); }, HOVER_DELAY_MS);
   });
   el.addEventListener('pointerout', (event) => {
     const target = getEntry(event);
@@ -190,10 +191,47 @@ function setPlaying(el) {
   if (el) el.classList.add('is-playing');
 }
 
+/* ---------- Himno ---------- */
+
+const anthem = () => $('anthemAudio');
+const isAnthemPlaying = () => !anthem().paused;
+const mmss = (t) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
+
+function setupAnthem() {
+  const audio = anthem();
+  const btn = $('anthemBtn');
+  const bar = $('anthemBar');
+  const sync = () => {
+    const d = audio.duration || 172;
+    bar.value = Math.round((audio.currentTime / d) * 1000);
+    $('anthemTime').textContent = `${mmss(audio.currentTime)} / ${mmss(d)}`;
+  };
+  btn.addEventListener('click', () => {
+    if (audio.paused) {
+      if (currentAudio) currentAudio.pause();
+      setPlaying(null);
+      audio.play().catch(() => {});
+    } else {
+      audio.pause();
+    }
+  });
+  audio.addEventListener('play', () => { $('anthemPlayer').classList.add('is-on'); btn.setAttribute('aria-label', 'Pausar el himno'); });
+  audio.addEventListener('pause', () => { $('anthemPlayer').classList.remove('is-on'); btn.setAttribute('aria-label', 'Reproducir el himno'); });
+  audio.addEventListener('timeupdate', sync);
+  audio.addEventListener('loadedmetadata', sync);
+  bar.addEventListener('input', () => {
+    if (audio.readyState === 0) audio.load();
+    const d = audio.duration || 172;
+    audio.currentTime = (bar.value / 1000) * d;
+    sync();
+  });
+}
+
 function playEntryAudio(entry, el = null) {
   const info = getAudioInfo(entry, state.audioManifest);
   if (!info.isReal || !info.file) return;
 
+  if (isAnthemPlaying()) anthem().pause();
   if (currentAudio && currentAudioKey !== info.file) currentAudio.pause();
   if (!currentAudio || currentAudioKey !== info.file) {
     currentAudio = new Audio(info.file);
@@ -532,6 +570,7 @@ async function bootstrap() {
   buildCategoryChips();
   buildAlphabet();
   bindEvents();
+  setupAnthem();
   setupSoundHint();
   syncFilterControls();
   render();
