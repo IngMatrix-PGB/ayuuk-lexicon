@@ -9,14 +9,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" />
-  <link rel="stylesheet" href="css/styles.css?v=v5.0.1" />
+  <link rel="stylesheet" href="css/styles.css?v=v5.1.1" />
 </head>
 <body>
   <header class="hero">
     <div class="hero__content">
-      <p class="eyebrow">Diccionario interactivo · Mixe / Ayuuk</p>
-      <h1>Ayuuk para Todos</h1>
-      <p class="lead">Escucha y aprende palabras del Ayuuk (Mixe) de San Juan Guichicovi, Oaxaca, con su significado en español.</p>
+      <h1>Diccionario interactivo <span>Mixe / Ayuuk</span></h1>
+      <p class="lead">Escucha y aprende palabras del Ayuuk (Mixe) de San Juan Guichicovi, Oaxaca.</p>
       <dl class="stats" id="stats" aria-live="polite"><div><dt>Cargando…</dt></div></dl>
       <div class="hero__actions">
         <button class="btn btn--light" type="button" id="helpBtn">
@@ -50,10 +49,9 @@
 
       <div class="filter filter--row">
         <span class="filter__label" id="audioLabel">Audio</span>
-        <div class="segmented" id="audioFilter" role="group" aria-labelledby="audioLabel">
-          <button type="button" data-audio="all" class="active">Todas</button>
-          <button type="button" data-audio="available">Con audio</button>
-          <button type="button" data-audio="missing">Sin audio</button>
+        <div class="toggles" id="audioFilter" role="group" aria-labelledby="audioLabel">
+          <button type="button" class="chip chip--toggle" data-audio="available" aria-pressed="false"><span class="chip__icon" aria-hidden="true">🔊</span>Con audio</button>
+          <button type="button" class="chip chip--toggle" data-audio="missing" aria-pressed="false">Sin audio</button>
         </div>
       </div>
     </section>
@@ -62,6 +60,7 @@
       <div>
         <h2 id="resultsTitle">Todas las palabras</h2>
         <p id="resultCount"></p>
+        <button class="link-btn hidden" type="button" id="clearFilters">✕ Limpiar filtros</button>
       </div>
       <div class="segmented segmented--view" role="group" aria-label="Forma de ver las palabras">
         <button id="listModeBtn" type="button" class="active">Lista</button>
@@ -74,20 +73,17 @@
 
     <section class="flashcard-panel hidden" id="flashcardPanel" aria-live="polite">
       <article class="flashcard" id="flashcard">
-        <p class="flashcard__label">¿Qué significa?</p>
-        <p class="flashcard__front" id="flashcardFront"></p>
+        <p class="flashcard__front" id="flashcardFront" lang="mir"></p>
+        <p class="flashcard__answer" id="flashcardBack"></p>
         <button class="play play--big" type="button" id="flashcardPlay" aria-label="Escuchar">
           <svg aria-hidden="true" viewBox="0 0 24 24" width="30" height="30"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
         </button>
-        <div class="flashcard__back hidden" id="flashcardBack"></div>
       </article>
       <div class="flashcard__actions">
         <button id="prevCardBtn" class="btn btn--soft" type="button" aria-label="Tarjeta anterior">←</button>
-        <button id="revealBtn" class="btn btn--primary" type="button">Mostrar significado</button>
+        <span class="flashcard__meta" id="flashcardMeta"></span>
         <button id="nextCardBtn" class="btn btn--soft" type="button" aria-label="Tarjeta siguiente">→</button>
       </div>
-      <p class="flashcard__meta" id="flashcardMeta"></p>
-      <p class="flashcard__tip">Teclado: <kbd>Espacio</kbd> mostrar · <kbd>←</kbd> <kbd>→</kbd> cambiar · <kbd>A</kbd> escuchar</p>
     </section>
   </main>
 
@@ -95,13 +91,27 @@
     <div class="textile textile--thin" aria-hidden="true"></div>
     <div class="footer__inner">
       <h2>Voces de la comunidad</h2>
-      <p>Este acervo existe gracias a quienes compartieron su voz:</p>
+      <p class="footer__lead">Este acervo existe gracias a quienes compartieron su voz.</p>
       <ul class="voices">
-        <li>Profa. Ginaloyobrigida Cruz Iturbe</li>
-        <li>Madelin Escobedo Cayetano</li>
-        <li>Grabación original de 2009 del CD <em>Tecnología Lingüística Mixe</em></li>
+        <li class="voice-card">
+          <span class="voice-card__avatar" aria-hidden="true">GC</span>
+          <span class="voice-card__name">Profa. Ginaloyobrigida Cruz Iturbe</span>
+        </li>
+        <li class="voice-card voice-card--jade">
+          <span class="voice-card__avatar" aria-hidden="true">ME</span>
+          <span class="voice-card__name">Madelin Escobedo Cayetano</span>
+        </li>
+        <li class="voice-card voice-card--grana">
+          <span class="voice-card__avatar" aria-hidden="true">CD</span>
+          <span class="voice-card__name">Grabación original 2009<small>CD <em>Tecnología Lingüística Mixe</em></small></span>
+        </li>
       </ul>
-      <p class="footer__small">Proyecto de Pablo Galeana Bailey para preservar y enseñar la lengua Ayuuk. Este sitio no reemplaza a la lengua viva: escúchala, háblala y compártela.</p>
+      <div class="author">
+        <p class="author__role">Fundador y autor del proyecto</p>
+        <p class="author__name">Pablo Galeana Bailey</p>
+        <p class="author__since">Preservando la lengua Ayuuk desde 2009</p>
+      </div>
+      <p class="footer__motto">Este sitio no reemplaza a la lengua viva: <strong>escúchala, háblala y compártela.</strong></p>
     </div>
   </footer>
 
@@ -117,25 +127,25 @@
       </li>
       <li>
         <h3>Temas</h3>
-        <p>Toca un tema como <strong>Animales</strong>, <strong>Familia</strong> o <strong>Colores</strong> para ver solo esas palabras. <strong>Todas</strong> vuelve al diccionario completo.</p>
+        <p>Toca un tema como <strong>Animales</strong>, <strong>Familia</strong> o <strong>Colores</strong> para ver solo esas palabras. <strong>Todas</strong> quita todos los filtros y vuelve al diccionario completo.</p>
       </li>
       <li>
         <h3>Letra inicial</h3>
-        <p>Muestra las palabras en Ayuuk que empiezan con esa letra, como en un diccionario de papel.</p>
+        <p>Muestra las palabras en Ayuuk que empiezan con esa letra, como en un diccionario de papel. Vuelve a tocarla para quitarla.</p>
       </li>
       <li>
         <h3>Audio</h3>
-        <p><strong>Con audio</strong> muestra solo palabras que puedes escuchar. <strong>Sin audio</strong> muestra las que aún esperan una voz. Toca el botón <span class="help__play">▶</span> de una palabra para escucharla.</p>
+        <p><strong>Con audio</strong> muestra solo palabras que puedes escuchar y <strong>Sin audio</strong> las que aún esperan una voz. Vuelve a tocarlo para quitarlo. Pasa el mouse sobre una palabra o toca su botón <span class="help__play">▶</span> para escucharla.</p>
       </li>
       <li>
         <h3>Lista o Tarjetas</h3>
-        <p><strong>Lista</strong> muestra muchas palabras a la vez para consultar. <strong>Tarjetas</strong> es para practicar: ves la palabra en Ayuuk, la escuchas, intentas recordar qué significa y luego tocas <em>Mostrar significado</em>.</p>
+        <p><strong>Lista</strong> muestra muchas palabras a la vez para consultar. <strong>Tarjetas</strong> es para practicar una palabra a la vez: la ves, la escuchas y pasas a la siguiente con las flechas.</p>
       </li>
     </ol>
     <p class="help__foot">Los temas, la letra y el audio se pueden combinar. Por ejemplo: Animales + Con audio + Tarjetas.</p>
     <button class="btn btn--primary help__ok" type="button" id="helpOk">Entendido</button>
   </dialog>
 
-  <script src="js/app.js?v=v5.0.1"></script>
+  <script src="js/app.js?v=v5.1.1"></script>
 </body>
 </html>

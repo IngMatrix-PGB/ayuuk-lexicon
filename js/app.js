@@ -1,4 +1,5 @@
-const APP_VERSION = 'v5.0.1';
+const APP_VERSION = 'v5.1.1';
+const HOVER_DELAY_MS = 350;
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
 const AUDIO_MANIFEST_URL = `data/audio_manifest.json?v=${APP_VERSION}`;
 const GENERAL_CATEGORY = 'vocabulario_general';
@@ -29,7 +30,6 @@ const state = {
   viewMode: 'list',
   visible: PAGE_SIZE,
   flashcardIndex: 0,
-  flashcardRevealed: false,
   audioManifest: {},
   manifestLoaded: false
 };
@@ -126,19 +126,14 @@ function isRealAudio(audio) {
   return Boolean(audio && (['real', 'available', 'disponible'].includes(audio.status) || audio.exists === true));
 }
 
-function shortVoice(voz) {
-  if (!voz) return '';
-  return /2009/.test(voz) ? 'Voz original 2009' : voz;
-}
-
 // Solo por slug: buscar por la palabra normalizada quitaba la ë y mezclaba audios
 // de palabras distintas (ANËË «baba» sonaba como ANEE «trueno»).
 function getAudioInfo(entry, audioManifest = {}) {
   const audio = audioManifest[entry.slug];
   if (isRealAudio(audio)) {
-    return { isReal: true, file: audio.file || entry.audio_path, voz: audio.voz || '' };
+    return { isReal: true, file: audio.file || entry.audio_path };
   }
-  return { isReal: false, file: entry.audio_path, voz: '' };
+  return { isReal: false, file: entry.audio_path };
 }
 
 const hasAudio = (entry) => getAudioInfo(entry, state.audioManifest).isReal;
@@ -148,6 +143,30 @@ const hasAudio = (entry) => getAudioInfo(entry, state.audioManifest).isReal;
 let currentAudio = null;
 let currentAudioKey = null;
 let playingEl = null;
+
+// Con mouse: al detenerse sobre una palabra un instante, suena sola.
+// La pausa evita que suenen todas al pasar el cursor por la lista.
+let hoverTimer = null;
+const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+function hoverPlay(el, getEntry) {
+  if (!canHover) return;
+  el.addEventListener('pointerover', (event) => {
+    const target = getEntry(event);
+    if (!target) return;
+    const { entry, node } = target;
+    if (node.dataset.hovering === '1') return;
+    node.dataset.hovering = '1';
+    clearTimeout(hoverTimer);
+    hoverTimer = setTimeout(() => playEntryAudio(entry, node), HOVER_DELAY_MS);
+  });
+  el.addEventListener('pointerout', (event) => {
+    const target = getEntry(event);
+    if (!target || target.node.contains(event.relatedTarget)) return;
+    delete target.node.dataset.hovering;
+    clearTimeout(hoverTimer);
+  });
+}
 
 function setPlaying(el) {
   if (playingEl) playingEl.classList.remove('is-playing');
@@ -212,11 +231,10 @@ function categoryCounts(entries = state.entries) {
 function resetPaging() {
   state.visible = PAGE_SIZE;
   state.flashcardIndex = 0;
-  state.flashcardRevealed = false;
 }
 
 function syncFilterControls() {
-  document.querySelectorAll('.chip').forEach((chip) => {
+  document.querySelectorAll('#categoryStats .chip').forEach((chip) => {
     const on = chip.dataset.category === state.category && !state.query.trim();
     chip.classList.toggle('active', on);
     chip.setAttribute('aria-pressed', String(on));
@@ -227,8 +245,22 @@ function syncFilterControls() {
     btn.setAttribute('aria-pressed', String(on));
   });
   document.querySelectorAll('#audioFilter button').forEach((btn) => {
-    btn.classList.toggle('active', btn.dataset.audio === state.audio);
+    const on = btn.dataset.audio === state.audio;
+    btn.classList.toggle('active', on);
+    btn.setAttribute('aria-pressed', String(on));
   });
+  const filtered = state.category !== 'all' || state.letter !== 'all' || state.audio !== 'all' || state.query.trim();
+  $('clearFilters').classList.toggle('hidden', !filtered);
+}
+
+function clearAllFilters() {
+  state.category = 'all';
+  state.letter = 'all';
+  state.audio = 'all';
+  clearSearchInput();
+  resetPaging();
+  syncFilterControls();
+  render();
 }
 
 /* ---------- Construcción ---------- */
@@ -269,6 +301,8 @@ function buildCategoryChips() {
   $('categoryStats').addEventListener('click', (event) => {
     const button = event.target.closest('.chip');
     if (!button) return;
+    // «Todas» es el único reinicio: muestra el diccionario completo sin ningún filtro.
+    if (button.dataset.category === 'all') { clearAllFilters(); return; }
     state.category = button.dataset.category;
     state.letter = 'all';
     clearSearchInput();
@@ -282,13 +316,13 @@ function buildAlphabet() {
   const letters = [...new Set(state.entries.map((entry) => normalizeLetterKey(entry.ayuuk)).filter(Boolean))]
     .sort((a, b) => a.localeCompare(b, 'es'));
 
-  $('alphabet').innerHTML = `<button class="letter letter--all" type="button" data-letter="all">Todas</button>`
-    + letters.map((letter) => `<button class="letter" type="button" data-letter="${letter}">${letter}</button>`).join('');
+  $('alphabet').innerHTML = letters.map((letter) => `<button class="letter" type="button" data-letter="${letter}">${letter}</button>`).join('');
 
   $('alphabet').addEventListener('click', (event) => {
     const button = event.target.closest('.letter');
     if (!button) return;
-    state.letter = button.dataset.letter;
+    // Tocar la letra activa la quita.
+    state.letter = state.letter === button.dataset.letter ? 'all' : button.dataset.letter;
     clearSearchInput();
     resetPaging();
     syncFilterControls();
@@ -311,12 +345,13 @@ function bindEvents() {
   $('audioFilter').addEventListener('click', (event) => {
     const button = event.target.closest('button');
     if (!button) return;
-    state.audio = button.dataset.audio;
+    state.audio = state.audio === button.dataset.audio ? 'all' : button.dataset.audio;
     resetPaging();
     syncFilterControls();
     render();
   });
 
+  $('clearFilters').addEventListener('click', clearAllFilters);
   $('listModeBtn').addEventListener('click', () => setViewMode('list'));
   $('flashcardModeBtn').addEventListener('click', () => setViewMode('flashcards'));
   $('practiceBtn').addEventListener('click', () => {
@@ -326,12 +361,22 @@ function bindEvents() {
     setViewMode('flashcards');
     $('resultsTitle').scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
-  $('revealBtn').addEventListener('click', revealFlashcard);
   $('nextCardBtn').addEventListener('click', () => stepFlashcard(1));
   $('prevCardBtn').addEventListener('click', () => stepFlashcard(-1));
-  $('flashcardPlay').addEventListener('click', () => {
+  // Toda la tarjeta (no solo el botón) reproduce el audio.
+  $('flashcard').addEventListener('click', () => {
     const entry = filteredEntries()[state.flashcardIndex];
     if (entry) playEntryAudio(entry, $('flashcard'));
+  });
+
+  hoverPlay($('results'), (event) => {
+    const node = event.target.closest('.card.has-audio');
+    const entry = node && state.entries[Number(node.dataset.index)];
+    return entry ? { entry, node } : null;
+  });
+  hoverPlay($('flashcard'), () => {
+    const entry = filteredEntries()[state.flashcardIndex];
+    return entry && hasAudio(entry) ? { entry, node: $('flashcard') } : null;
   });
 
   $('results').addEventListener('click', (event) => {
@@ -357,10 +402,9 @@ function bindEvents() {
     if (state.viewMode !== 'flashcards' || dialog.open) return;
     if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
     if (event.metaKey || event.ctrlKey || event.altKey) return;
-    if (event.key === ' ') { event.preventDefault(); revealFlashcard(); }
-    else if (event.key === 'ArrowRight') stepFlashcard(1);
+    if (event.key === 'ArrowRight') stepFlashcard(1);
     else if (event.key === 'ArrowLeft') stepFlashcard(-1);
-    else if (event.key.toLowerCase() === 'a') $('flashcardPlay').click();
+    else if (event.key === ' ' || event.key.toLowerCase() === 'a') { event.preventDefault(); $('flashcard').click(); }
   });
 }
 
@@ -429,7 +473,6 @@ function cardTemplate(entry) {
          <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
        </button>`
     : '<span class="pending">Sin audio aún</span>';
-  const voice = info.isReal && info.voz ? `<div class="voice">${escapeHtml(shortVoice(info.voz))}</div>` : '';
   const note = entry.nota ? `<div class="voice">Nota: ${escapeHtml(entry.nota)}</div>` : '';
 
   return `<article class="card ${catClass}${info.isReal ? ' has-audio' : ''}" data-index="${index}">
@@ -440,7 +483,7 @@ function cardTemplate(entry) {
     <div class="card__foot">
       <div>
         <span class="tag">${escapeHtml(prettyCategory(entry.categoria))}</span>
-        ${voice}${note}
+        ${note}
       </div>
       ${playBtn}
     </div>
@@ -449,10 +492,10 @@ function cardTemplate(entry) {
 
 function renderFlashcards(entries) {
   const disabled = entries.length === 0;
-  ['revealBtn', 'nextCardBtn', 'prevCardBtn', 'flashcardPlay'].forEach((id) => { $(id).disabled = disabled; });
+  ['nextCardBtn', 'prevCardBtn', 'flashcardPlay'].forEach((id) => { $(id).disabled = disabled; });
   if (disabled) {
     $('flashcardFront').textContent = 'Sin tarjetas';
-    $('flashcardBack').classList.add('hidden');
+    $('flashcardBack').textContent = '';
     $('flashcardPlay').classList.add('hidden');
     $('flashcardMeta').textContent = 'No hay palabras con estos filtros.';
     return;
@@ -462,16 +505,12 @@ function renderFlashcards(entries) {
   const entry = entries[state.flashcardIndex];
   const info = getAudioInfo(entry, state.audioManifest);
 
-  $('flashcard').className = `flashcard cat-${normalizeAudioKey(entry.categoria)}`;
+  $('flashcard').className = `flashcard cat-${normalizeAudioKey(entry.categoria)}${info.isReal ? ' has-audio' : ''}`;
   $('flashcardFront').textContent = entry.ayuuk;
   $('flashcardPlay').classList.toggle('hidden', !info.isReal);
   $('flashcardPlay').setAttribute('aria-label', `Escuchar ${entry.ayuuk}`);
-  $('flashcardBack').innerHTML = `
-    <div class="flashcard__answer">${escapeHtml(entry.espanol)}</div>
-    <div class="flashcard__category">${categoryIcon(entry.categoria)} ${escapeHtml(prettyCategory(entry.categoria))}</div>`;
-  $('flashcardBack').classList.toggle('hidden', !state.flashcardRevealed);
-  $('revealBtn').textContent = state.flashcardRevealed ? 'Ocultar significado' : 'Mostrar significado';
-  $('flashcardMeta').textContent = `Tarjeta ${fmt(state.flashcardIndex + 1)} de ${fmt(entries.length)}${info.isReal ? '' : ' · esta palabra aún no tiene audio'}`;
+  $('flashcardBack').textContent = entry.espanol;
+  $('flashcardMeta').textContent = `${fmt(state.flashcardIndex + 1)} de ${fmt(entries.length)}`;
 }
 
 function playCurrentFlashcard() {
@@ -479,16 +518,10 @@ function playCurrentFlashcard() {
   if (entry && hasAudio(entry)) playEntryAudio(entry, $('flashcard'));
 }
 
-function revealFlashcard() {
-  state.flashcardRevealed = !state.flashcardRevealed;
-  renderFlashcards(filteredEntries());
-}
-
 function stepFlashcard(delta) {
   const entries = filteredEntries();
   if (!entries.length) return;
   state.flashcardIndex = (state.flashcardIndex + delta + entries.length) % entries.length;
-  state.flashcardRevealed = false;
   renderFlashcards(entries);
   playCurrentFlashcard();
 }
