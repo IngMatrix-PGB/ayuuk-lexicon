@@ -293,6 +293,8 @@ html { scroll-behavior: smooth; }
   object-fit: cover; background: #fff;
   box-shadow: inset 0 0 0 1px rgba(58, 29, 20, .12), 0 1px 3px rgba(58, 29, 20, .12);
 }
+.visual--illus { padding: 14%; background: #fbf1e3; }
+@media (prefers-color-scheme: dark) { .visual--illus { background: #3a2a21; } }
 .visual--color { background: var(--swatch); }
 .visual--kats {
   background:
@@ -421,6 +423,8 @@ html { scroll-behavior: smooth; }
 .footer__lead { margin: 6px 0 20px; color: #e9cdb8; }
 .footer__motto { margin: 22px auto 0; max-width: 640px; font-size: 1.1rem; color: #f3dccb; }
 .footer__motto strong { color: #fff7ec; }
+.footer__credit { margin: 14px 0 0; font-size: .82rem; color: #cfae98; }
+.footer__credit a { color: inherit; }
 
 /* ---------- Móvil ---------- */
 /* Letras: hasta 900 px, cuadrícula de 8 columnas (filas de 8 y 7) en vez de cortes desbalanceados */

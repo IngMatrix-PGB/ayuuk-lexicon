@@ -566,10 +566,13 @@ function renderList(entries) {
     : '';
 }
 
-// Imagen de apoyo (aprendizaje visual): foto del CD 2009, muestra del color o el número escrito.
+// Imagen de apoyo (aprendizaje visual): foto del CD 2009, ilustración, muestra del color o el número escrito.
 function visualTemplate(entry) {
   if (entry.imagen) {
     return `<img class="visual" src="${escapeHtml(entry.imagen)}?v=${APP_VERSION}" alt="" width="256" height="256" loading="lazy" decoding="async">`;
+  }
+  if (entry.ilustracion) {
+    return `<img class="visual visual--illus" src="${escapeHtml(entry.ilustracion)}?v=${APP_VERSION}" alt="" width="256" height="256" loading="lazy" decoding="async">`;
   }
   if (entry.color) {
     const pattern = entry.color.startsWith('#') ? '' : ` visual--${entry.color}`;
