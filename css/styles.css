@@ -349,14 +349,6 @@ kbd {
 .footer__inner { max-width: 980px; margin: 0 auto; padding: 32px 20px 28px; text-align: center; }
 .footer h2 { margin: 0; font-family: var(--font-display); color: #fff7ec; font-size: 1.6rem; }
 .footer__lead { margin: 6px 0 20px; color: #e9cdb8; }
-.author {
-  margin: 28px auto 0; padding-top: 24px; max-width: 520px;
-  border-top: 1px solid rgba(255, 247, 236, .14);
-}
-.author p { margin: 0; }
-.author__role { font-size: .9rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--maiz); }
-.author__name { margin-top: 4px !important; font-family: var(--font-display); font-weight: 800; font-size: clamp(1.6rem, 4.5vw, 2rem); color: #fff7ec; }
-.author__since { margin-top: 2px !important; color: #e9cdb8; }
 .footer__motto { margin: 22px auto 0; max-width: 640px; font-size: 1.1rem; color: #f3dccb; }
 .footer__motto strong { color: #fff7ec; }
 
