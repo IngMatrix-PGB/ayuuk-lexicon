@@ -134,7 +134,7 @@ kbd {
 }
 .search { display: block; width: min(560px, 100%); margin: 0 auto; }
 .filter__label {
-  font-weight: 800; font-size: .9rem; color: var(--ink);
+  font-weight: 800; font-size: 1rem; color: var(--grana);
   text-transform: uppercase; letter-spacing: .12em;
 }
 .sr-only {
@@ -176,8 +176,21 @@ kbd {
   background: var(--paper); cursor: pointer;
   font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; color: var(--cacao-2);
 }
-.letter:hover { border-color: var(--jade); color: var(--jade-dark); }
-.letter.active { background: var(--jade); border-color: var(--jade); color: #fff; }
+/* Fichas levemente giradas (alternando), que se enderezan y crecen al apuntarlas */
+.letter {
+  font-size: 1.2rem; border-width: 2px;
+  transform: rotate(-4deg);
+  transition: transform .18s cubic-bezier(.3, 1.6, .5, 1), background .15s ease, color .15s ease, border-color .15s ease;
+}
+.letter:nth-child(even) { transform: rotate(4deg); }
+.letter:nth-child(3n) { transform: rotate(-2deg); }
+.letter:hover, .letter:focus-visible {
+  transform: rotate(0) scale(1.35);
+  border-color: var(--jade); color: var(--jade-dark); background: var(--paper);
+  position: relative; z-index: 1;
+  box-shadow: 0 6px 16px rgba(15, 124, 116, .25);
+}
+.letter.active, .letter.active:hover { background: var(--jade); border-color: var(--jade); color: #fff; }
 @media (prefers-color-scheme: dark) { .letter { color: var(--ink); } }
 
 .toggles { display: flex; flex-wrap: wrap; gap: 8px; }
