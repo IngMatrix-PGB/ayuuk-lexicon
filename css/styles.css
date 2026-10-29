@@ -89,17 +89,26 @@ kbd {
   text-wrap: balance;
 }
 .hero h1 span { color: var(--maiz); }
-.lead {
-  margin: 16px 0 0;
-  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
-  text-wrap: balance;
-  color: #fbe9d7;
+/* Botón «Conoce la historia»: brilla suave y se expande al apuntarlo */
+.story-btn {
+  display: inline-flex; align-items: center; gap: 8px; column-gap: 6px;
+  margin-top: 16px; padding: 10px 18px;
+  border-radius: 999px; border: 1px solid rgba(242, 179, 61, .6);
+  background: rgba(242, 179, 61, .12); color: #fff7ec;
+  font-weight: 700; text-decoration: none; white-space: nowrap; max-width: 100%;
+  animation: glow 2.6s ease-in-out 3;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
 }
-.hero__link {
-  display: inline-block; margin-top: 10px;
-  color: #f3d9c2; font-size: .95rem; text-underline-offset: 3px;
+.story-btn__icon { color: var(--maiz); transition: transform .4s ease; }
+.story-btn__more {
+  display: inline-block; max-width: 0; overflow: hidden; white-space: nowrap;
+  opacity: 0; transition: max-width .35s ease, opacity .25s ease;
 }
-.hero__link:hover { color: var(--maiz); }
+.story-btn:hover, .story-btn:focus-visible { background: rgba(242, 179, 61, .24); border-color: var(--maiz); transform: translateY(-1px); }
+.story-btn:hover .story-btn__more, .story-btn:focus-visible .story-btn__more { max-width: 220px; opacity: 1; }
+.story-btn:hover .story-btn__icon { transform: rotate(180deg); }
+@keyframes glow { 50% { box-shadow: 0 0 0 6px rgba(242, 179, 61, .18), 0 0 24px rgba(242, 179, 61, .35); } }
+@media (hover: none) { .story-btn__more { max-width: none; opacity: 1; } .story-btn { font-size: .95rem; padding: 10px 16px; } }
 html { scroll-behavior: smooth; }
 .hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 22px; }
 
@@ -492,3 +501,34 @@ html { scroll-behavior: smooth; }
   .timeline__year { text-align: left; }
   .timeline__body { padding-left: 0; }
 }
+
+/* ---------- Himno ---------- */
+.anthem {
+  max-width: 760px; margin: 64px auto 0; padding: 32px 28px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 24px;
+  box-shadow: var(--shadow); text-align: center;
+  border-top: 6px solid var(--grana);
+}
+.anthem__kicker { margin: 0; font-weight: 800; font-size: .9rem; letter-spacing: .12em; text-transform: uppercase; color: var(--grana); }
+.anthem h2 { margin: 6px 0 18px; font-family: var(--font-display); font-weight: 800; font-size: clamp(1.8rem, 5vw, 2.4rem); color: var(--cacao-2); }
+@media (prefers-color-scheme: dark) { .anthem h2 { color: #ffd9c4; } }
+.player {
+  display: flex; align-items: center; gap: 14px;
+  max-width: 520px; margin: 0 auto 22px; padding: 10px 14px 10px 10px;
+  background: var(--chip); border: 1px solid var(--line); border-radius: 999px;
+}
+.player__btn {
+  flex: none; display: grid; place-items: center;
+  width: 52px; height: 52px; border-radius: 50%; border: 0;
+  background: var(--grana); color: #fff; cursor: pointer;
+}
+.player__btn svg { margin-left: 2px; }
+.player__pause { display: none; }
+.player.is-on .player__play { display: none; }
+.player.is-on .player__pause { display: block; margin-left: 0; }
+.player__bar { flex: 1; accent-color: var(--grana); min-width: 0; }
+.player__time { flex: none; font-variant-numeric: tabular-nums; color: var(--muted); font-size: .9rem; }
+.anthem__lyrics { text-align: left; max-width: 620px; margin: 0 auto; }
+.anthem__lyrics p { margin: 0 0 14px; font-size: 1.08rem; line-height: 1.7; }
+.anthem__credits { max-width: 620px; margin: 18px auto 0; text-align: left; font-size: .88rem; color: var(--muted); }
+@media (max-width: 640px) { .anthem { padding: 24px 18px; margin-top: 48px; } }

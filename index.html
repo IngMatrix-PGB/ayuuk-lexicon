@@ -9,14 +9,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" />
-  <link rel="stylesheet" href="css/styles.css?v=v5.3.0" />
+  <link rel="stylesheet" href="css/styles.css?v=v5.4.0" />
 </head>
 <body>
   <header class="hero">
     <div class="hero__content">
       <h1>Diccionario interactivo <span>Mixe / Ayuuk</span></h1>
-      <p class="lead">Escucha y aprende palabras del Ayuuk (Mixe) de San Juan Guichicovi, Oaxaca.</p>
-      <a class="hero__link" href="#historia">Conoce la historia del proyecto ↓</a>
+      <a class="story-btn" href="#historia">
+        <span class="story-btn__icon" aria-hidden="true">✦</span>
+        <span>Conoce la historia</span><span class="story-btn__more">de este proyecto ↓</span>
+      </a>
       <div class="hero__actions">
         <button class="btn btn--light" type="button" id="helpBtn">
           <span aria-hidden="true">?</span> ¿Cómo funciona?
@@ -74,6 +76,28 @@
         <button id="nextCardBtn" class="btn btn--primary" type="button">Siguiente →</button>
       </div>
     </section>
+    <section class="anthem" id="himno" aria-labelledby="himnoTitle">
+      <p class="anthem__kicker">Himno Nacional Mexicano en Mixe</p>
+      <h2 id="himnoTitle" lang="mir">Nëëawiimpë’ëy</h2>
+      <div class="player" id="anthemPlayer">
+        <button class="player__btn" type="button" id="anthemBtn" aria-label="Reproducir el himno">
+          <svg class="player__play" aria-hidden="true" viewBox="0 0 24 24" width="28" height="28"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+          <svg class="player__pause" aria-hidden="true" viewBox="0 0 24 24" width="28" height="28"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+        </button>
+        <input class="player__bar" id="anthemBar" type="range" min="0" max="1000" value="0" aria-label="Avance del himno" />
+        <span class="player__time" id="anthemTime">0:00 / 2:52</span>
+      </div>
+      <audio id="anthemAudio" preload="none" src="audio/himno-nacional-mixe.mp3"></audio>
+      <div class="anthem__lyrics" lang="mir">
+        <p>Nëëawiimpëdëjk pëdë'këm tsiptuumbë ja mguaay ja mdujt aixëdya'ag, ja juuny byujxt ween naaxwiinbë yajtsëyúy ko ja tujt ko ja joky y'awaandsë'ëy.</p>
+        <p>Wë'ënda'ads!, yajkudëgóy ja axëëkpë ja agujk ja jotkujpë nebyë pii'pë, nej myamiiny nej myaga'ay ma tsajpootyp ma kyujaay ma kyugeedsy ja jugëëny.</p>
+        <p>Ko wiing jya'ay myédsët madsibëëbyë ma mnëëawiimb, ma mnaaxwiinbë je'e tyeky'ëjxën kajpt jya'ay, tajmáy mnëëxmajk, ja kyajpt ja nyaax nyëwa'anaamby.</p>
+        <p>¡Naaxwiin, naaxwiin! nyë'adsooby ja m'uung miidsy kyëxpë jugyájt nyëdújky, ko ja xuuxt yaaxtsooy tsiptuumbë nya'adënaaby jyëjtënaaby jotmëjtëjk.</p>
+        <p>Xuu'pë pëjy xuu'pë ujts nyajna'adíjpy jamyejtsëëk myajmamëëy tsajpootyp, ja kyu'udëgén yajxón wyinmaay jamyejtsëëk naaxjút je'e nyëgeek.</p>
+      </div>
+      <p class="anthem__credits"><strong>Traductores oficiales:</strong> Profes. Isabel Méndez Rosas, Gina Cruz Iturbe, Atelvina Zacarías Glez., Herlinda Montero López, Alicia Hdez. López, Suilma Antonio Cruz, Medardo Bailey Bustamante, Apolinar Luis, Gildardo Luis, Constantino Antonio Ignacio, Rutilio Escobar y Baltazar Arnulfo T. Escuela Primaria Bilingüe «Julio de la Fuente», San Juan Guichicovi, Oaxaca.</p>
+    </section>
+
     <section class="history" id="historia" aria-labelledby="historiaTitle">
       <h2 id="historiaTitle">Historia del proyecto</h2>
       <p class="history__intro">El Ayuuk de San Juan Guichicovi, en la zona húmeda del Istmo de Tehuantepec, había llegado hasta nuestros días solo de forma oral, de generación en generación. No existía un diccionario en Mixe, y quienes querían aprenderlo no tenían cómo consultar su escritura ni su pronunciación.</p>
@@ -84,7 +108,7 @@
           <div class="timeline__body">
             <h3>Nace el CD <em>Tecnología Lingüística Mixe</em></h3>
             <p>Pablo Galeana Bailey, entonces catedrático del Campus Matías Romero de la Universidad del Golfo de México, diseñó y programó en Flash un diccionario multimedia interactivo como parte del Programa de Alfabetización en Lengua Ayuuk (Mixe bajo). Lo hizo solo, en su tiempo libre y sin apoyo institucional.</p>
-            <p>Reunió cerca de 1,200 palabras recogidas directamente de la voz y el uso cotidiano de las comunidades de habla Mixe, con su escritura, su traducción al español y su pronunciación grabada. Las organizó por letra inicial y por temas: parentesco, números, colores, formas geométricas, animales, insectos, fenómenos naturales y naturaleza. Incluyó también el Himno Nacional Mexicano en Mixe.</p>
+            <p>Reunió cerca de 1,200 palabras recogidas directamente de la voz y el uso cotidiano de las comunidades de habla Mixe, con su escritura, su traducción al español y su pronunciación grabada. Las organizó por letra inicial y por temas: parentesco, números, colores, formas geométricas, animales, insectos, fenómenos naturales y naturaleza. Incluyó también el <a href="#himno">Himno Nacional Mexicano en Mixe</a>.</p>
             <figure class="history__figure">
               <img src="img/cd-2009-menu.jpg" width="900" height="672" loading="lazy" alt="Pantalla principal del CD Tecnología Lingüística Mixe: menú de opciones a la izquierda, foto del templo de Guichicovi y letras del alfabeto en bloques de colores" />
               <figcaption>Pantalla principal del CD original (2009).</figcaption>
@@ -173,6 +197,6 @@
     <button class="btn btn--primary help__ok" type="button" id="helpOk">Entendido</button>
   </dialog>
 
-  <script src="js/app.js?v=v5.3.0"></script>
+  <script src="js/app.js?v=v5.4.0"></script>
 </body>
 </html>
