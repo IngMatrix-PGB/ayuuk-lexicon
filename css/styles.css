@@ -173,6 +173,7 @@ html { scroll-behavior: smooth; }
 .filter--row { grid-template-columns: auto 1fr; align-items: center; gap: 14px; }
 
 .chips, .letters { display: flex; flex-wrap: wrap; gap: 8px; }
+.letters { gap: 10px; padding: 6px 0 8px; }
 .chip {
   display: inline-flex; align-items: center; gap: 7px;
   min-height: 42px; padding: 0 14px; font-size: .97rem;
@@ -184,28 +185,41 @@ html { scroll-behavior: smooth; }
 .chip:hover { border-color: var(--grana); }
 .chip.active { background: var(--grana); border-color: var(--grana); color: #fff; }
 
+/* Letras como los bloques de colores del CD 2009: fichas grandes que se balancean
+   lento (cada una a su ritmo) para invitar a tocarlas; al apuntar se enderezan y crecen. */
 .letter {
-  min-width: 44px; height: 44px; padding: 0 10px;
-  border-radius: 12px; border: 1px solid var(--line);
-  background: var(--paper); cursor: pointer;
-  font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; color: var(--cacao-2);
+  --tone: var(--grana); --tint: rgba(179, 38, 30, .10); --tilt: -5deg;
+  width: 54px; height: 54px; padding: 0;
+  border-radius: 14px; border: 2px solid var(--tone);
+  background: var(--tint); color: var(--tone); cursor: pointer;
+  font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; line-height: 1;
+  box-shadow: 0 3px 0 var(--tone);
+  transform: rotate(var(--tilt));
+  animation: sway 4.2s ease-in-out infinite;
+  transition: transform .2s cubic-bezier(.3, 1.6, .5, 1), background .15s ease, color .15s ease, box-shadow .15s ease;
 }
-/* Fichas levemente giradas (alternando), que se enderezan y crecen al apuntarlas */
-.letter {
-  font-size: 1.2rem; border-width: 2px;
-  transform: rotate(-4deg);
-  transition: transform .18s cubic-bezier(.3, 1.6, .5, 1), background .15s ease, color .15s ease, border-color .15s ease;
+.letter:nth-child(3n + 2) { --tone: var(--jade); --tint: rgba(15, 124, 116, .10); --tilt: 4deg; animation-duration: 5s; animation-delay: -1.2s; }
+.letter:nth-child(3n) { --tone: #b07a12; --tint: rgba(242, 179, 61, .22); --tilt: -3deg; animation-duration: 3.6s; animation-delay: -2.4s; }
+.letter:nth-child(4n) { animation-delay: -.7s; }
+@keyframes sway {
+  0%, 100% { transform: rotate(var(--tilt)); }
+  50% { transform: rotate(calc(var(--tilt) * -1)) translateY(-2px); }
 }
-.letter:nth-child(even) { transform: rotate(4deg); }
-.letter:nth-child(3n) { transform: rotate(-2deg); }
 .letter:hover, .letter:focus-visible {
-  transform: rotate(0) scale(1.35);
-  border-color: var(--jade); color: var(--jade-dark); background: var(--paper);
+  animation: none;
+  transform: rotate(0) scale(1.3);
+  background: var(--tone); color: #fff;
   position: relative; z-index: 1;
-  box-shadow: 0 6px 16px rgba(15, 124, 116, .25);
+  box-shadow: 0 8px 18px rgba(58, 29, 20, .25);
 }
-.letter.active, .letter.active:hover { background: var(--jade); border-color: var(--jade); color: #fff; }
-@media (prefers-color-scheme: dark) { .letter { color: var(--ink); } }
+.letter.active, .letter.active:hover {
+  animation: none; transform: rotate(0) scale(1.08);
+  background: var(--tone); color: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  .letter { --tint: rgba(255, 255, 255, .06); }
+  .letter:nth-child(3n) { --tone: var(--maiz); }
+}
 
 .toggles { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip--toggle.active { background: var(--jade); border-color: var(--jade); color: #fff; }
@@ -388,7 +402,7 @@ html { scroll-behavior: smooth; }
 /* ---------- Móvil ---------- */
 /* Letras: hasta 900 px, cuadrícula de 8 columnas (filas de 8 y 7) en vez de cortes desbalanceados */
 @media (max-width: 900px) {
-  .letters { display: grid; grid-template-columns: repeat(8, 44px); gap: 8px; justify-content: center; }
+  .letters { display: grid; grid-template-columns: repeat(8, 54px); gap: 10px; justify-content: center; }
 }
 
 @media (max-width: 640px) {
@@ -400,10 +414,10 @@ html { scroll-behavior: smooth; }
   .hero__actions .btn { flex: 1 1 auto; }
   .filter .chips { justify-self: stretch; justify-content: flex-start; }
   .letters {
-    grid-template-columns: repeat(8, 1fr); gap: 6px;
+    grid-template-columns: repeat(8, 1fr); gap: 7px;
     width: 100%;
   }
-  .letter { min-width: 0; height: 42px; padding: 0; }
+  .letter { width: auto; height: auto; aspect-ratio: 1; font-size: 1.2rem; border-radius: 10px; }
   .chips {
     flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
     margin: 0 -16px; padding: 2px 16px 6px;
