@@ -1,4 +1,4 @@
-const APP_VERSION = 'v5.2.0';
+const APP_VERSION = 'v5.2.2';
 const HOVER_DELAY_MS = 350;
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
 const AUDIO_MANIFEST_URL = `data/audio_manifest.json?v=${APP_VERSION}`;
@@ -248,7 +248,8 @@ function syncFilterControls() {
     btn.classList.toggle('active', on);
     btn.setAttribute('aria-pressed', String(on));
   });
-  const filtered = state.category !== 'all' || state.letter !== 'all' || state.audio !== 'all' || state.query.trim();
+  // El filtro de audio es interno (lo usa «Practicar»): no cuenta como filtro visible.
+  const filtered = state.category !== 'all' || state.letter !== 'all' || state.query.trim();
   $('clearFilters').classList.toggle('hidden', !filtered);
 }
 
@@ -338,7 +339,7 @@ function bindEvents() {
 
 
   $('clearFilters').addEventListener('click', clearAllFilters);
-  $('listModeBtn').addEventListener('click', () => setViewMode('list'));
+  $('listModeBtn').addEventListener('click', () => { state.audio = 'all'; setViewMode('list'); });
   $('flashcardModeBtn').addEventListener('click', () => setViewMode('flashcards'));
   $('practiceBtn').addEventListener('click', () => {
     // Practicar es escuchar: empezar solo con palabras que tienen audio.
@@ -398,7 +399,9 @@ function bindEvents() {
     if (event.metaKey || event.ctrlKey || event.altKey) return;
     if (event.key === 'ArrowRight') stepFlashcard(1);
     else if (event.key === 'ArrowLeft') stepFlashcard(-1);
-    else if (event.key === ' ' || event.key.toLowerCase() === 'a') { event.preventDefault(); $('flashcard').click(); }
+    else if (event.key === ' ' || event.key.toLowerCase() === 'a' || (event.key === 'Enter' && document.activeElement === $('flashcard'))) {
+      event.preventDefault(); $('flashcard').click();
+    }
   });
 }
 
@@ -464,11 +467,10 @@ function cardTemplate(entry) {
 
 function renderFlashcards(entries) {
   const disabled = entries.length === 0;
-  ['nextCardBtn', 'prevCardBtn', 'flashcardPlay'].forEach((id) => { $(id).disabled = disabled; });
+  ['nextCardBtn', 'prevCardBtn'].forEach((id) => { $(id).disabled = disabled; });
   if (disabled) {
     $('flashcardFront').textContent = 'Sin tarjetas';
     $('flashcardBack').textContent = '';
-    $('flashcardPlay').classList.add('hidden');
     $('flashcardMeta').textContent = 'No hay palabras con estos filtros.';
     return;
   }
@@ -479,8 +481,7 @@ function renderFlashcards(entries) {
 
   $('flashcard').className = `flashcard cat-${normalizeAudioKey(topicOf(entry.categoria))}${info.isReal ? ' has-audio' : ''}`;
   $('flashcardFront').textContent = entry.ayuuk;
-  $('flashcardPlay').classList.toggle('hidden', !info.isReal);
-  $('flashcardPlay').setAttribute('aria-label', `Escuchar ${entry.ayuuk}`);
+  $('flashcard').setAttribute('aria-label', `${entry.ayuuk}, ${entry.espanol}. Escuchar`);
   $('flashcardBack').textContent = entry.espanol;
   $('flashcardMeta').textContent = `${fmt(state.flashcardIndex + 1)} de ${fmt(entries.length)}`;
 }
