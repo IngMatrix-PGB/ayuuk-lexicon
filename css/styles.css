@@ -283,13 +283,13 @@ kbd {
 .more { display: flex; justify-content: center; margin-top: 22px; }
 
 /* ---------- Tarjetas de práctica ---------- */
-.flashcard-panel { display: grid; gap: 18px; justify-items: center; }
+.flashcard-panel { display: grid; gap: 14px; justify-items: center; }
 .flashcard {
   --cat: var(--grana);
   position: relative; overflow: hidden;
   width: min(520px, 100%);
   display: grid; justify-items: center; gap: 10px;
-  padding: 44px 24px 36px;
+  padding: 36px 24px 32px;
   background: var(--paper); border: 1px solid var(--line); border-radius: 28px;
   box-shadow: var(--shadow); text-align: center;
 }
@@ -302,11 +302,12 @@ kbd {
   overflow-wrap: anywhere;
 }
 @media (prefers-color-scheme: dark) { .flashcard__front { color: #ffd9c4; } }
-.flashcard__answer { margin: 0 0 14px; font-size: 1.4rem; color: var(--muted); }
+.flashcard__answer { margin: 0; font-size: 1.4rem; color: var(--muted); }
+.flashcard:focus-visible { outline-offset: 4px; border-radius: 28px; }
 .play--big { width: 68px; height: 68px; }
 .flashcard__actions { display: flex; align-items: center; gap: 18px; }
-.flashcard__actions .btn--soft { width: 52px; min-width: 52px; padding: 0; }
-.flashcard__meta { min-width: 96px; text-align: center; color: var(--muted); font-variant-numeric: tabular-nums; }
+.flashcard__actions .btn { min-width: 132px; font-size: 1rem; white-space: nowrap; }
+.flashcard__meta { min-width: 84px; font-size: .95rem; text-align: center; color: var(--muted); font-variant-numeric: tabular-nums; }
 
 /* ---------- Ayuda ---------- */
 .help {
@@ -371,6 +372,10 @@ kbd {
   .chip, .letter { flex: none; scroll-snap-align: start; }
   .filter--row { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr; }
+  .flashcard-panel { justify-items: stretch; }
+  .flashcard { width: 100%; }
+  .flashcard__actions { justify-content: space-between; gap: 8px; }
+  .flashcard__actions .btn { min-width: 0; padding: 0 16px; }
   .results-head { margin-top: 28px; }
 }
 
