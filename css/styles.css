@@ -281,6 +281,41 @@ html { scroll-behavior: smooth; }
 }
 .tag::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--cat); }
 .voice { font-size: .82rem; color: var(--muted); }
+
+/* ---------- Imágenes de apoyo: todas del mismo tamaño ---------- */
+.card.has-visual { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 14px; align-content: start; }
+.card.has-visual > :not(.visual) { grid-column: 1; }
+.card.has-visual > .visual { grid-column: 2; grid-row: 1 / span 4; align-self: center; }
+.visual {
+  --size: 72px;
+  display: grid; place-items: center;
+  width: var(--size); height: var(--size); border-radius: 14px;
+  object-fit: cover; background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(58, 29, 20, .12), 0 1px 3px rgba(58, 29, 20, .12);
+}
+.visual--illus { padding: 14%; background: #fbf1e3; }
+@media (prefers-color-scheme: dark) { .visual--illus { background: #3a2a21; } }
+.visual--color { background: var(--swatch); }
+.visual--kats {
+  background:
+    radial-gradient(circle at 20% 30%, #d12a1f 0 9%, transparent 10%),
+    radial-gradient(circle at 70% 25%, #1f5fbf 0 8%, transparent 9%),
+    radial-gradient(circle at 45% 70%, #f6c419 0 10%, transparent 11%),
+    radial-gradient(circle at 80% 75%, #2f9b4b 0 8%, transparent 9%),
+    radial-gradient(circle at 25% 80%, #1d1a19 0 6%, transparent 7%),
+    #f3ead8;
+}
+.visual--xaag { background: repeating-linear-gradient(135deg, #1d1a19 0 9px, #f3ead8 9px 18px); }
+.visual--num {
+  background: #5b3fb5; color: #fff;
+  font-family: var(--font-display); font-weight: 800; line-height: 1;
+  font-size: calc(var(--size) * .46); font-variant-numeric: lining-nums;
+}
+.visual--num[data-len="3"] { font-size: calc(var(--size) * .38); }
+.visual--num[data-len="5"], .visual--num[data-len="6"] { font-size: calc(var(--size) * .23); }
+.card.has-visual .word--long { font-size: 1.35rem; }
+.flashcard__visual:empty { display: none; }
+.flashcard__visual .visual { --size: 180px; border-radius: 22px; }
 .pending { font-weight: 400; font-style: italic; }
 
 .play {
@@ -306,7 +341,7 @@ html { scroll-behavior: smooth; }
 .cat-formasgeometricas { --cat: #e8711a; }
 .cat-fenomenosnaturales { --cat: #2b7bb9; }
 .cat-naturaleza { --cat: #138a5a; }
-.cat-numeros120, .cat-numeros2099, .cat-centenas, .cat-millares { --cat: #5b3fb5; }
+.cat-numeros, .cat-numeros120, .cat-numeros2099, .cat-centenas, .cat-millares { --cat: #5b3fb5; }
 .cat-vocabulariogeneral { --cat: var(--grana); }
 
 .empty {
@@ -388,6 +423,8 @@ html { scroll-behavior: smooth; }
 .footer__lead { margin: 6px 0 20px; color: #e9cdb8; }
 .footer__motto { margin: 22px auto 0; max-width: 640px; font-size: 1.1rem; color: #f3dccb; }
 .footer__motto strong { color: #fff7ec; }
+.footer__credit { margin: 14px 0 0; font-size: .82rem; color: #cfae98; }
+.footer__credit a { color: inherit; }
 
 /* ---------- Móvil ---------- */
 /* Letras: hasta 900 px, cuadrícula de 8 columnas (filas de 8 y 7) en vez de cortes desbalanceados */
