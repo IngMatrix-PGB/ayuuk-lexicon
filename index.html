@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" />
-  <link rel="stylesheet" href="css/styles.css?v=v5.1.2" />
+  <link rel="stylesheet" href="css/styles.css?v=v5.1.5" />
 </head>
 <body>
   <header class="hero">
@@ -47,13 +47,6 @@
         <div class="letters" id="alphabet" role="group" aria-labelledby="lettersLabel"></div>
       </div>
 
-      <div class="filter filter--row">
-        <span class="filter__label" id="audioLabel">Audio</span>
-        <div class="toggles" id="audioFilter" role="group" aria-labelledby="audioLabel">
-          <button type="button" class="chip chip--toggle" data-audio="available" aria-pressed="false"><span class="chip__icon" aria-hidden="true">🔊</span>Con audio</button>
-          <button type="button" class="chip chip--toggle" data-audio="missing" aria-pressed="false">Sin audio</button>
-        </div>
-      </div>
     </section>
 
     <section class="results-head">
@@ -101,7 +94,7 @@
           <span class="voice-card__avatar" aria-hidden="true">ME</span>
           <span class="voice-card__name">Madelin Escobedo Cayetano</span>
         </li>
-        <li class="voice-card voice-card--grana">
+        <li class="voice-card voice-card--grana voice-card--author">
           <span class="voice-card__avatar" aria-hidden="true">PG</span>
           <span class="voice-card__name">Pablo Galeana Bailey<small>Fundador y autor del proyecto</small></span>
         </li>
@@ -129,18 +122,14 @@
         <p>Muestra las palabras en Ayuuk que empiezan con esa letra, como en un diccionario de papel. Vuelve a tocarla para quitarla.</p>
       </li>
       <li>
-        <h3>Audio</h3>
-        <p><strong>Con audio</strong> muestra solo palabras que puedes escuchar y <strong>Sin audio</strong> las que aún esperan una voz. Vuelve a tocarlo para quitarlo. Pasa el mouse sobre una palabra o toca su botón <span class="help__play">▶</span> para escucharla.</p>
-      </li>
-      <li>
         <h3>Lista o Tarjetas</h3>
         <p><strong>Lista</strong> muestra muchas palabras a la vez para consultar. <strong>Tarjetas</strong> es para practicar una palabra a la vez: la ves, la escuchas y pasas a la siguiente con las flechas.</p>
       </li>
     </ol>
-    <p class="help__foot">Los temas, la letra y el audio se pueden combinar. Por ejemplo: Animales + Con audio + Tarjetas.</p>
+    <p class="help__foot">Toca una palabra o pasa el mouse sobre ella para escucharla; se ilumina mientras suena. Los temas y la letra se pueden combinar, por ejemplo Animales + letra K.</p>
     <button class="btn btn--primary help__ok" type="button" id="helpOk">Entendido</button>
   </dialog>
 
-  <script src="js/app.js?v=v5.1.2"></script>
+  <script src="js/app.js?v=v5.1.5"></script>
 </body>
 </html>

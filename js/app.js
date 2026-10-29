@@ -1,4 +1,4 @@
-const APP_VERSION = 'v5.1.2';
+const APP_VERSION = 'v5.1.5';
 const HOVER_DELAY_MS = 350;
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
 const AUDIO_MANIFEST_URL = `data/audio_manifest.json?v=${APP_VERSION}`;
@@ -244,11 +244,6 @@ function syncFilterControls() {
     btn.classList.toggle('active', on);
     btn.setAttribute('aria-pressed', String(on));
   });
-  document.querySelectorAll('#audioFilter button').forEach((btn) => {
-    const on = btn.dataset.audio === state.audio;
-    btn.classList.toggle('active', on);
-    btn.setAttribute('aria-pressed', String(on));
-  });
   const filtered = state.category !== 'all' || state.letter !== 'all' || state.audio !== 'all' || state.query.trim();
   $('clearFilters').classList.toggle('hidden', !filtered);
 }
@@ -342,14 +337,6 @@ function bindEvents() {
     render();
   });
 
-  $('audioFilter').addEventListener('click', (event) => {
-    const button = event.target.closest('button');
-    if (!button) return;
-    state.audio = state.audio === button.dataset.audio ? 'all' : button.dataset.audio;
-    resetPaging();
-    syncFilterControls();
-    render();
-  });
 
   $('clearFilters').addEventListener('click', clearAllFilters);
   $('listModeBtn').addEventListener('click', () => setViewMode('list'));
@@ -359,7 +346,7 @@ function bindEvents() {
     state.audio = 'available';
     syncFilterControls();
     setViewMode('flashcards');
-    $('resultsTitle').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    $('flashcardPanel').scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
   $('nextCardBtn').addEventListener('click', () => stepFlashcard(1));
   $('prevCardBtn').addEventListener('click', () => stepFlashcard(-1));
@@ -384,6 +371,14 @@ function bindEvents() {
     if (!card) return;
     const entry = state.entries[Number(card.dataset.index)];
     if (entry) playEntryAudio(entry, card);
+  });
+
+  $('results').addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const card = event.target.closest('.card.has-audio');
+    if (!card) return;
+    event.preventDefault();
+    card.click();
   });
 
   $('moreBox').addEventListener('click', (event) => {
@@ -434,7 +429,11 @@ function resultsTitle() {
 function render() {
   const entries = filteredEntries();
   const withAudio = entries.filter(hasAudio).length;
+  // Sin filtros el encabezado ya dice cuántas palabras hay: el título solo aparece al filtrar.
+  const filtered = state.category !== 'all' || state.letter !== 'all' || state.query.trim();
   $('resultsTitle').textContent = resultsTitle();
+  $('resultsTitle').classList.toggle('hidden', !filtered);
+  $('resultCount').classList.toggle('hidden', !filtered);
   $('resultCount').textContent = entries.length === 1
     ? '1 palabra'
     : `${fmt(entries.length)} palabras · ${fmt(withAudio)} con audio`;
@@ -468,25 +467,16 @@ function cardTemplate(entry) {
   const info = getAudioInfo(entry, state.audioManifest);
   const catClass = `cat-${normalizeAudioKey(entry.categoria)}`;
   const index = state.entries.indexOf(entry);
-  const playBtn = info.isReal
-    ? `<button class="play" type="button" aria-label="Escuchar ${escapeHtml(entry.ayuuk)}">
-         <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
-       </button>`
-    : '<span class="pending">Sin audio aún</span>';
+  // La tarjeta misma es el control de audio: sin botón, para un diseño limpio.
+  const audioAttrs = info.isReal ? ` tabindex="0" role="button" aria-label="${escapeHtml(entry.ayuuk)}, ${escapeHtml(entry.espanol)}. Escuchar"` : '';
+  const pending = info.isReal ? '' : '<span class="pending"> · sin audio aún</span>';
   const note = entry.nota ? `<div class="voice">Nota: ${escapeHtml(entry.nota)}</div>` : '';
 
-  return `<article class="card ${catClass}${info.isReal ? ' has-audio' : ''}" data-index="${index}">
-    <div>
-      <div class="word" lang="mir">${escapeHtml(entry.ayuuk)}</div>
-      <div class="meaning">${escapeHtml(entry.espanol)}</div>
-    </div>
-    <div class="card__foot">
-      <div>
-        <span class="tag">${escapeHtml(prettyCategory(entry.categoria))}</span>
-        ${note}
-      </div>
-      ${playBtn}
-    </div>
+  return `<article class="card ${catClass}${info.isReal ? ' has-audio' : ''}" data-index="${index}"${audioAttrs}>
+    <div class="word" lang="mir">${escapeHtml(entry.ayuuk)}</div>
+    <div class="meaning">${escapeHtml(entry.espanol)}</div>
+    <div class="tag">${escapeHtml(prettyCategory(entry.categoria))}${pending}</div>
+    ${note}
   </article>`;
 }
 
