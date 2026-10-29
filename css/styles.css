@@ -537,3 +537,16 @@ html { scroll-behavior: smooth; }
 .anthem__lyrics p { margin: 0 0 14px; font-size: 1.08rem; line-height: 1.7; }
 .anthem__credits { max-width: 620px; margin: 18px auto 0; text-align: left; font-size: .88rem; color: var(--muted); }
 @media (max-width: 640px) { .anthem { padding: 24px 18px; margin-top: 48px; } }
+
+/* ---------- Modo lento (práctica) ---------- */
+.slow-toggle {
+  justify-self: center;
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 44px; padding: 0 16px;
+  border-radius: 999px; border: 2px solid var(--line);
+  background: var(--paper); color: var(--muted); font-weight: 700; cursor: pointer;
+  transition: background .15s ease, border-color .15s ease, color .15s ease;
+}
+.slow-toggle__state { font-weight: 400; font-size: .9rem; }
+.slow-toggle:hover { border-color: var(--jade); color: var(--jade-dark); }
+.slow-toggle[aria-pressed="true"] { background: var(--jade); border-color: var(--jade); color: #fff; }
