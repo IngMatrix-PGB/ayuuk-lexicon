@@ -1,6 +1,8 @@
-const APP_VERSION = 'v5.5.1';
+const APP_VERSION = 'v5.6.0';
 const HOVER_DELAY_MS = 350;
 const SLOW_RATE = 0.9;
+// El himno es un «tema» más: al elegirlo, en lugar de palabras se muestra su reproductor y letra.
+const ANTHEM_TOPIC = 'himno';
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
 const AUDIO_MANIFEST_URL = `data/audio_manifest.json?v=${APP_VERSION}`;
 const GENERAL_CATEGORY = 'vocabulario_general';
@@ -340,6 +342,13 @@ function revealResults() {
 
 // Enlaces internos (#historia, #himno): desplazamiento suave sin dejar el «#» pegado en la dirección.
 function scrollToSection(id, smooth = true) {
+  if (id === ANTHEM_TOPIC) {
+    state.category = ANTHEM_TOPIC;
+    state.letter = 'all';
+    clearSearchInput();
+    syncFilterControls();
+    render();
+  }
   const target = document.getElementById(id);
   if (!target) return;
   target.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
@@ -380,7 +389,8 @@ function buildCategoryChips() {
     </button>`;
 
   $('categoryStats').innerHTML = chip('all', 'Todas', '✨')
-    + categoryCounts().map(([cat]) => chip(cat, prettyCategory(cat), categoryIcon(cat))).join('');
+    + categoryCounts().map(([cat]) => chip(cat, prettyCategory(cat), categoryIcon(cat))).join('')
+    + chip(ANTHEM_TOPIC, 'Himno', '🎶');
 
   $('categoryStats').addEventListener('click', (event) => {
     const button = event.target.closest('.chip');
@@ -408,6 +418,7 @@ function buildAlphabet() {
     if (!button) return;
     // Tocar la letra activa la quita.
     state.letter = state.letter === button.dataset.letter ? 'all' : button.dataset.letter;
+    if (state.category === ANTHEM_TOPIC) state.category = 'all';
     clearSearchInput();
     resetPaging();
     syncFilterControls();
@@ -430,9 +441,11 @@ function bindEvents() {
 
 
   $('clearFilters').addEventListener('click', clearAllFilters);
-  $('listModeBtn').addEventListener('click', () => { state.audio = 'all'; setViewMode('list'); });
-  $('flashcardModeBtn').addEventListener('click', () => setViewMode('flashcards'));
+  const leaveAnthem = () => { if (state.category === ANTHEM_TOPIC) state.category = 'all'; };
+  $('listModeBtn').addEventListener('click', () => { leaveAnthem(); state.audio = 'all'; setViewMode('list'); });
+  $('flashcardModeBtn').addEventListener('click', () => { leaveAnthem(); setViewMode('flashcards'); });
   $('practiceBtn').addEventListener('click', () => {
+    leaveAnthem();
     // Practicar es escuchar: empezar solo con palabras que tienen audio.
     state.audio = 'available';
     syncFilterControls();
@@ -519,6 +532,10 @@ function setViewMode(mode) {
 }
 
 function render() {
+  const showAnthem = state.category === ANTHEM_TOPIC;
+  document.body.classList.toggle('is-anthem', showAnthem);
+  if (showAnthem) return;
+  if (isAnthemPlaying()) anthem().pause();
   // Sin título de resultados: el encabezado da los totales y cada tarjeta dice su tema.
   const entries = filteredEntries();
 
