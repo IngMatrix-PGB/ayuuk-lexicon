@@ -76,14 +76,18 @@
   },
   "aaxk": {
     "file": "audio/aaxk.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 1,
     "ayuuk": "A’axk",
     "espanol": "Liendre",
     "categoria": "insectos",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#2530",
+    "verificado": true
   },
   "aaxy": {
     "file": "audio/aaxy.mp3",
@@ -6797,14 +6801,18 @@
   },
   "luud": {
     "file": "audio/luud.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 480,
     "ayuuk": "Luud",
     "espanol": "Zopilote",
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#3276",
+    "verificado": true
   },
   "maa": {
     "file": "audio/maa.mp3",
@@ -6926,14 +6934,18 @@
   },
   "madsaa": {
     "file": "audio/madsaa.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 491,
     "ayuuk": "Madsa’a",
     "espanol": "Estrella",
     "categoria": "fenomenos_naturales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#2754",
+    "verificado": true
   },
   "madsaawiixpe": {
     "file": "audio/madsaawiixpe.mp3",
@@ -9945,14 +9957,18 @@
   },
   "pats": {
     "file": "audio/pats.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 708,
     "ayuuk": "Pats",
     "espanol": "Zorrillo",
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#3160",
+    "verificado": true
   },
   "paye": {
     "file": "audio/paye.mp3",
@@ -11896,14 +11912,18 @@
   },
   "tsaptskaa": {
     "file": "audio/tsaptskaa.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 816,
     "ayuuk": "Tsaptskaa",
     "espanol": "Puma",
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#3130",
+    "verificado": true
   },
   "tsaptskubaky": {
     "file": "audio/tsaptskubaky.mp3",
@@ -13150,14 +13170,18 @@
   },
   "ujts": {
     "file": "audio/ujts.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 927,
     "ayuuk": "Ujts",
     "espanol": "Hierba",
     "categoria": "naturaleza",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#1778",
+    "verificado": true
   },
   "ujtsadsem": {
     "file": "audio/ujtsadsem.mp3",
@@ -13678,14 +13702,18 @@
   },
   "wiist": {
     "file": "audio/wiist.mp3",
-    "status": "pendiente",
+    "status": "real",
     "id": 959,
     "ayuuk": "Wiist",
     "espanol": "Gavilán",
     "categoria": "animales",
     "legacy_source": null,
     "source_html": null,
-    "matched_by": null
+    "matched_by": "swf_boton_imagen_confirmado_por_pablo",
+    "voz": "Grabación original 2009 (CD Tecnología Lingüística Mixe)",
+    "origen": "DICCIONARIO.swf",
+    "swf_sound": "#3256",
+    "verificado": true
   },
   "wiit": {
     "file": "audio/wiit.mp3",
