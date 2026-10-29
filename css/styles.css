@@ -89,26 +89,16 @@ kbd {
   text-wrap: balance;
 }
 .hero h1 span { color: var(--maiz); }
-/* Botón «Conoce la historia»: brilla suave y se expande al apuntarlo */
+/* Botón «Conoce la historia»: va en la fila de acciones, brilla al cargar para invitar */
 .story-btn {
-  display: inline-flex; align-items: center; gap: 8px; column-gap: 6px;
-  margin-top: 16px; padding: 10px 18px;
-  border-radius: 999px; border: 1px solid rgba(242, 179, 61, .6);
-  background: rgba(242, 179, 61, .12); color: #fff7ec;
-  font-weight: 700; text-decoration: none; white-space: nowrap; max-width: 100%;
+  background: rgba(242, 179, 61, .16); color: #fff7ec;
+  border-color: rgba(242, 179, 61, .75); text-decoration: none;
   animation: glow 2.6s ease-in-out 3;
-  transition: background .2s ease, border-color .2s ease, transform .2s ease;
 }
-.story-btn__icon { color: var(--maiz); transition: transform .4s ease; }
-.story-btn__more {
-  display: inline-block; max-width: 0; overflow: hidden; white-space: nowrap;
-  opacity: 0; transition: max-width .35s ease, opacity .25s ease;
-}
-.story-btn:hover, .story-btn:focus-visible { background: rgba(242, 179, 61, .24); border-color: var(--maiz); transform: translateY(-1px); }
-.story-btn:hover .story-btn__more, .story-btn:focus-visible .story-btn__more { max-width: 220px; opacity: 1; }
-.story-btn:hover .story-btn__icon { transform: rotate(180deg); }
+.story-btn__icon { color: var(--maiz); display: inline-block; transition: transform .4s ease; }
+.story-btn:hover, .story-btn:focus-visible { background: rgba(242, 179, 61, .3); border-color: var(--maiz); }
+.story-btn:hover .story-btn__icon { transform: rotate(180deg) scale(1.2); }
 @keyframes glow { 50% { box-shadow: 0 0 0 6px rgba(242, 179, 61, .18), 0 0 24px rgba(242, 179, 61, .35); } }
-@media (hover: none) { .story-btn__more { max-width: none; opacity: 1; } .story-btn { font-size: .95rem; padding: 10px 16px; } }
 html { scroll-behavior: smooth; }
 .hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 22px; }
 
@@ -412,6 +402,7 @@ html { scroll-behavior: smooth; }
   .container { padding: 0 16px 48px; }
   .panel { padding: 18px 16px; border-radius: 20px; }
   .hero__actions .btn { flex: 1 1 auto; }
+  .story-btn { white-space: nowrap; font-size: .95rem; padding: 0 14px; gap: 6px; }
   .filter .chips { justify-self: stretch; justify-content: flex-start; }
   .letters {
     grid-template-columns: repeat(8, 1fr); gap: 7px;
