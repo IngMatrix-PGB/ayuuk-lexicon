@@ -438,3 +438,8 @@ kbd {
   font-size: .8rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
   color: var(--maiz);
 }
+.voice-card__mail {
+  text-transform: none; letter-spacing: 0; font-weight: 700;
+  color: #fff7ec; text-decoration: underline; text-underline-offset: 3px;
+}
+.voice-card__mail:hover { color: var(--maiz); }
