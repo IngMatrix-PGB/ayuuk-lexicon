@@ -1,7 +1,23 @@
-const APP_VERSION = 'v4.1.4-audio-hover-tap';
+const APP_VERSION = 'v5.0.1';
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
 const AUDIO_MANIFEST_URL = `data/audio_manifest.json?v=${APP_VERSION}`;
 const GENERAL_CATEGORY = 'vocabulario_general';
+const PAGE_SIZE = 120;
+
+const CATEGORY_INFO = {
+  animales: { label: 'Animales', icon: '🦜' },
+  insectos: { label: 'Insectos', icon: '🐞' },
+  familia: { label: 'Familia', icon: '👪' },
+  colores: { label: 'Colores', icon: '🎨' },
+  formas_geometricas: { label: 'Formas geométricas', icon: '🔷' },
+  fenomenos_naturales: { label: 'Fenómenos naturales', icon: '⛈️' },
+  naturaleza: { label: 'Naturaleza', icon: '🌿' },
+  numeros_1_20: { label: 'Números 1–20', icon: '🔢' },
+  numeros_20_99: { label: 'Números 20–99', icon: '🔢' },
+  centenas: { label: 'Centenas', icon: '💯' },
+  millares: { label: 'Millares', icon: '🧮' },
+  vocabulario_general: { label: 'Vocabulario general', icon: '📖' }
+};
 
 const state = {
   entries: [],
@@ -11,6 +27,7 @@ const state = {
   audio: 'all',
   letter: 'all',
   viewMode: 'list',
+  visible: PAGE_SIZE,
   flashcardIndex: 0,
   flashcardRevealed: false,
   audioManifest: {},
@@ -30,7 +47,9 @@ const normalizeText = (value) => (value || '')
 
 const normalizeWord = (value) => normalizeText(value).replace(/\s+/g, '');
 
-const prettyCategory = (cat) => (cat || 'sin_categoria').replaceAll('_', ' ');
+const prettyCategory = (cat) => CATEGORY_INFO[cat]?.label || (cat || 'sin categoría').replaceAll('_', ' ');
+const categoryIcon = (cat) => CATEGORY_INFO[cat]?.icon || '📖';
+const fmt = (n) => n.toLocaleString('es-MX');
 
 function meaningParts(text) {
   return normalizeText(text)
@@ -50,10 +69,7 @@ function prepareEntries(rawEntries) {
       audio_file: entry.audio_file || `${entry.slug || normalizeWord(entry.ayuuk)}.mp3`,
       audio_path: entry.audio_path || `audio/${entry.audio_file || `${entry.slug || normalizeWord(entry.ayuuk)}.mp3`}`,
       categorias_relacionadas: Array.isArray(entry.categorias_relacionadas) ? entry.categorias_relacionadas : [],
-      source_categories: Array.isArray(entry.source_categories) ? entry.source_categories : [entry.categoria || GENERAL_CATEGORY],
-      dedupe_count: entry.dedupe_count || 1,
-      nota: entry.nota || '',
-      audio_status: entry.audio_status || 'pendiente'
+      nota: entry.nota || ''
     }));
 }
 
@@ -81,36 +97,22 @@ function matchesPartial(entry, qText, qWord) {
 
 function matchesQuery(entry, qText, qWord, mode) {
   if (!qText) return true;
-
-  if (mode === 'ayuuk-exact') {
-    return normalizeWord(entry.ayuuk) === qWord;
-  }
-
-  if (mode === 'espanol-exact') {
-    return matchesEspanolExact(entry, qText);
-  }
-
+  if (mode === 'ayuuk-exact') return normalizeWord(entry.ayuuk) === qWord;
+  if (mode === 'espanol-exact') return matchesEspanolExact(entry, qText);
   return matchesPartial(entry, qText, qWord);
 }
 
 function getSearchMode(entries, qText, qWord) {
   if (!qText) return 'all';
-
-  if (entries.some((entry) => normalizeWord(entry.ayuuk) === qWord)) {
-    return 'ayuuk-exact';
-  }
-
-  if (entries.some((entry) => matchesEspanolExact(entry, qText))) {
-    return 'espanol-exact';
-  }
-
+  if (entries.some((entry) => normalizeWord(entry.ayuuk) === qWord)) return 'ayuuk-exact';
+  if (entries.some((entry) => matchesEspanolExact(entry, qText))) return 'espanol-exact';
   return 'partial';
 }
 
 function normalizeAudioKey(value) {
   return String(value || '')
     .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[̀-ͯ]/g, '')
     .replace(/[’'ʼ´‘`]/g, '')
     .replace(/[^a-zA-Z0-9]/g, '')
     .toLowerCase();
@@ -120,475 +122,361 @@ function normalizeLetterKey(value) {
   return normalizeAudioKey(value).charAt(0).toUpperCase();
 }
 
-function resetLetterFilter() {
-  state.letter = 'all';
-  document.querySelectorAll('.letter').forEach((item) => {
-    item.classList.toggle('active', item.dataset.letter === 'all');
-  });
-}
-
-function resetCategoryFilter() {
-  state.category = 'all';
-  const select = $('categorySelect');
-  if (select) select.value = 'all';
-  updateCategoryPills();
-}
-
-function resetAudioFilter() {
-  state.audio = 'all';
-  const select = $('audioSelect');
-  if (select) select.value = 'all';
-}
-
-function clearSearchInput() {
-  state.query = '';
-  const input = $('searchInput');
-  if (input) input.value = '';
-}
-
 function isRealAudio(audio) {
-  return Boolean(
-    audio
-    && (
-      audio.status === 'real'
-      || audio.status === 'available'
-      || audio.status === 'disponible'
-      || audio.exists === true
-    )
-  );
+  return Boolean(audio && (['real', 'available', 'disponible'].includes(audio.status) || audio.exists === true));
 }
 
+function shortVoice(voz) {
+  if (!voz) return '';
+  return /2009/.test(voz) ? 'Voz original 2009' : voz;
+}
+
+// Solo por slug: buscar por la palabra normalizada quitaba la ë y mezclaba audios
+// de palabras distintas (ANËË «baba» sonaba como ANEE «trueno»).
 function getAudioInfo(entry, audioManifest = {}) {
-  const candidates = [
-    entry.slug,
-    normalizeAudioKey(entry.slug),
-    entry.audio_file,
-    normalizeAudioKey(entry.audio_file),
-    entry.audio_path,
-    normalizeAudioKey(entry.audio_path),
-    String(entry.id),
-    normalizeAudioKey(entry.ayuuk)
-  ].filter(Boolean);
-
-  for (const key of candidates) {
-    const audio = audioManifest[key] || audioManifest[normalizeAudioKey(key)];
-    if (isRealAudio(audio)) {
-      return {
-        isReal: true,
-        file: audio.file || entry.audio_path,
-        voz: audio.voz || '',
-        manifestKey: key,
-        source: 'manifest'
-      };
-    }
+  const audio = audioManifest[entry.slug];
+  if (isRealAudio(audio)) {
+    return { isReal: true, file: audio.file || entry.audio_path, voz: audio.voz || '' };
   }
-
-  return {
-    isReal: false,
-    file: entry.audio_path,
-    manifestKey: null,
-    source: 'pending'
-  };
+  return { isReal: false, file: entry.audio_path, voz: '' };
 }
 
-function hasAudio(entry) {
-  return getAudioInfo(entry, state.audioManifest).isReal;
-}
+const hasAudio = (entry) => getAudioInfo(entry, state.audioManifest).isReal;
 
-function audioPath(entry) {
-  const info = getAudioInfo(entry, state.audioManifest);
-  return info.file || entry.audio_path || `audio/${entry.audio_file}`;
-}
+/* ---------- Audio ---------- */
 
 let currentAudio = null;
 let currentAudioKey = null;
+let playingEl = null;
 
-function canAutoPlayFromPointer() {
-  return window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+function setPlaying(el) {
+  if (playingEl) playingEl.classList.remove('is-playing');
+  playingEl = el;
+  if (el) el.classList.add('is-playing');
 }
 
-function stopCurrentAudio() {
-  if (currentAudio) {
-    currentAudio.pause();
-    currentAudio.currentTime = 0;
+function playEntryAudio(entry, el = null) {
+  const info = getAudioInfo(entry, state.audioManifest);
+  if (!info.isReal || !info.file) return;
+
+  if (currentAudio && currentAudioKey !== info.file) currentAudio.pause();
+  if (!currentAudio || currentAudioKey !== info.file) {
+    currentAudio = new Audio(info.file);
+    currentAudioKey = info.file;
+    currentAudio.addEventListener('ended', () => setPlaying(null));
+    currentAudio.addEventListener('error', () => setPlaying(null));
   }
-}
-
-function playEntryAudio(entry, audioManifest) {
-  const audioInfo = getAudioInfo(entry, audioManifest);
-
-  if (!audioInfo.isReal || !audioInfo.file) return;
-
-  const nextKey = audioInfo.file;
-
-  if (currentAudio && currentAudioKey !== nextKey) {
-    stopCurrentAudio();
-  }
-
-  if (!currentAudio || currentAudioKey !== nextKey) {
-    currentAudio = new Audio(audioInfo.file);
-    currentAudioKey = nextKey;
-  }
-
   currentAudio.currentTime = 0;
-
-  currentAudio.play().catch(() => {
-    // Browser autoplay policy may block until first user interaction.
-  });
+  setPlaying(el);
+  currentAudio.play().catch(() => setPlaying(null));
 }
 
-function bindCardAudio(card, entry) {
-  const audioInfo = getAudioInfo(entry, state.audioManifest);
-  if (!audioInfo.isReal) return;
+/* ---------- Filtros ---------- */
 
-  card.addEventListener('pointerenter', () => {
-    if (canAutoPlayFromPointer()) playEntryAudio(entry, state.audioManifest);
-  });
-
-  card.addEventListener('click', () => {
-    if (!canAutoPlayFromPointer()) playEntryAudio(entry, state.audioManifest);
-  });
-}
-
-function syncFilterControls() {
-  const categorySelect = $('categorySelect');
-  const audioSelect = $('audioSelect');
-  if (categorySelect) categorySelect.value = state.category;
-  if (audioSelect) audioSelect.value = state.audio;
-  updateCategoryPills();
-  document.querySelectorAll('.letter').forEach((item) => {
-    item.classList.toggle('active', item.dataset.letter === state.letter);
-  });
-  const controls = $('controls');
-  if (controls) controls.classList.toggle('is-searching', Boolean(state.query.trim()));
+function clearSearchInput() {
+  state.query = '';
+  $('searchInput').value = '';
 }
 
 function applyBaseFilters(entries) {
   return entries.filter((entry) => {
     const matchCategory = state.category === 'all' || entry.categoria === state.category;
-    const first = normalizeLetterKey(entry.ayuuk);
-    const matchLetter = state.letter === 'all' || first === state.letter;
-    const audioAvailable = hasAudio(entry);
-    const matchAudio = state.audio === 'all'
-      || (state.audio === 'available' && audioAvailable)
-      || (state.audio === 'missing' && !audioAvailable);
-
-    return matchCategory && matchLetter && matchAudio;
+    const matchLetter = state.letter === 'all' || normalizeLetterKey(entry.ayuuk) === state.letter;
+    return matchCategory && matchLetter;
   });
 }
 
 function applyAudioFilter(entries) {
   if (state.audio === 'all') return entries;
-
-  return entries.filter((entry) => {
-    const audioAvailable = hasAudio(entry);
-    return (state.audio === 'available' && audioAvailable)
-      || (state.audio === 'missing' && !audioAvailable);
-  });
+  return entries.filter((entry) => (state.audio === 'available') === hasAudio(entry));
 }
 
 function filteredEntries() {
   const qText = normalizeText(state.query);
   const qWord = normalizeWord(state.query);
 
-  // La búsqueda es global: no debe quedarse pegada a una categoría, letra o filtro de audio anterior.
+  // La búsqueda es global: no se queda pegada a un tema o letra anterior.
   if (qText) {
-    const searchMode = getSearchMode(state.entries, qText, qWord);
-    return applyAudioFilter(state.entries.filter((entry) => matchesQuery(entry, qText, qWord, searchMode)));
+    const mode = getSearchMode(state.entries, qText, qWord);
+    return applyAudioFilter(state.entries.filter((entry) => matchesQuery(entry, qText, qWord, mode)));
   }
-
-  return applyBaseFilters(state.entries);
+  return applyAudioFilter(applyBaseFilters(state.entries));
 }
 
 function categoryCounts(entries = state.entries) {
   const counts = new Map();
-  for (const entry of entries) {
-    const cat = entry.categoria || GENERAL_CATEGORY;
-    counts.set(cat, (counts.get(cat) || 0) + 1);
-  }
+  for (const entry of entries) counts.set(entry.categoria, (counts.get(entry.categoria) || 0) + 1);
   return [...counts.entries()].sort((a, b) => prettyCategory(a[0]).localeCompare(prettyCategory(b[0]), 'es'));
 }
 
-async function bootstrap() {
-  let datasetLoaded = false;
-
-  try {
-    const dataRes = await fetch(DATA_URL, { cache: 'no-store' });
-    if (!dataRes.ok) {
-      throw new Error(`No se pudo cargar el dataset (${dataRes.status})`);
-    }
-
-    const data = await dataRes.json();
-    state.metadata = data.metadata || {};
-    state.entries = prepareEntries(data.entries || data);
-    datasetLoaded = true;
-  } catch (error) {
-    console.error(error);
-    $('stats').textContent = 'No se pudo cargar el dataset';
-    $('metaStats').textContent = '';
-    $('results').innerHTML = `<div class="empty">No pudimos cargar <code>${escapeHtml(DATA_URL)}</code>. Verifica que el archivo exista y vuelve a intentar.</div>`;
-    return;
-  }
-
-  state.audioManifest = await loadAudioManifest();
-
-  const totalEntries = state.metadata.total_entries || state.entries.length;
-  const datasetVersion = state.metadata.version || APP_VERSION;
-  const rawEntries = state.metadata.raw_entries || state.entries.length;
-  const uniqueEntries = state.metadata.unique_entries || state.entries.length;
-
-  $('stats').textContent = `${uniqueEntries.toLocaleString('es-MX')} palabras en el diccionario`;
-  $('metaStats').innerHTML = `
-    <span>Versión ${escapeHtml(datasetVersion)}</span>
-    <span>${totalEntries.toLocaleString('es-MX')} entradas totales</span>
-    <span>${rawEntries.toLocaleString('es-MX')} registros fuente</span>
-    ${state.manifestLoaded ? '' : '<span>Audio manifest no disponible</span>'}
-  `;
-
-  if (!datasetLoaded || state.entries.length === 0) {
-    $('results').innerHTML = '<div class="empty">El dataset está vacío o no contiene entradas válidas.</div>';
-    return;
-  }
-
-  buildCategories();
-  buildCategoryStats();
-  buildAlphabet();
-  bindEvents();
-  syncFilterControls();
-  render();
+function resetPaging() {
+  state.visible = PAGE_SIZE;
+  state.flashcardIndex = 0;
+  state.flashcardRevealed = false;
 }
+
+function syncFilterControls() {
+  document.querySelectorAll('.chip').forEach((chip) => {
+    const on = chip.dataset.category === state.category && !state.query.trim();
+    chip.classList.toggle('active', on);
+    chip.setAttribute('aria-pressed', String(on));
+  });
+  document.querySelectorAll('.letter').forEach((btn) => {
+    const on = btn.dataset.letter === state.letter && !state.query.trim();
+    btn.classList.toggle('active', on);
+    btn.setAttribute('aria-pressed', String(on));
+  });
+  document.querySelectorAll('#audioFilter button').forEach((btn) => {
+    btn.classList.toggle('active', btn.dataset.audio === state.audio);
+  });
+}
+
+/* ---------- Construcción ---------- */
 
 async function loadAudioManifest() {
   try {
     const res = await fetch(AUDIO_MANIFEST_URL, { cache: 'no-store' });
-    if (!res.ok) {
-      state.manifestLoaded = false;
-      return {};
-    }
-
+    if (!res.ok) return {};
     const manifest = await res.json();
     state.manifestLoaded = true;
-
-    if (Array.isArray(manifest.files)) {
-      const legacy = {};
-      for (const file of manifest.files) {
-        const slug = file.replace(/\.mp3$/i, '');
-        legacy[slug] = {
-          file: file.startsWith('audio/') ? file : `audio/${file}`,
-          status: 'disponible'
-        };
-      }
-      return legacy;
-    }
-
     return manifest && typeof manifest === 'object' ? manifest : {};
   } catch (error) {
     console.warn('Audio manifest no disponible:', error);
-    state.manifestLoaded = false;
     return {};
   }
 }
 
-function buildCategories() {
-  const select = $('categorySelect');
-  select.innerHTML = `<option value="all">Todas (${state.entries.length.toLocaleString('es-MX')})</option>`;
-
-  for (const [cat, count] of categoryCounts()) {
-    const option = document.createElement('option');
-    option.value = cat;
-    option.textContent = `${prettyCategory(cat)} (${count.toLocaleString('es-MX')})`;
-    select.appendChild(option);
-  }
+function renderStats() {
+  const withAudio = state.entries.filter(hasAudio).length;
+  const topics = new Set(state.entries.map((e) => e.categoria)).size;
+  $('stats').innerHTML = `
+    <div><dt>palabras</dt><dd>${fmt(state.entries.length)}</dd></div>
+    <div><dt>con audio</dt><dd>${fmt(withAudio)}</dd></div>
+    <div><dt>temas</dt><dd>${fmt(topics)}</dd></div>`;
 }
 
-function buildCategoryStats() {
-  const container = $('categoryStats');
-  const counts = categoryCounts();
-  const total = state.entries.length;
+function buildCategoryChips() {
+  const chip = (cat, label, icon, count) => `
+    <button class="chip" type="button" data-category="${escapeHtml(cat)}" aria-pressed="false">
+      <span class="chip__icon" aria-hidden="true">${icon}</span>
+      <span>${escapeHtml(label)}</span>
+      <span class="chip__count">${fmt(count)}</span>
+    </button>`;
 
-  container.innerHTML = `
-    <button class="category-pill ${state.category === 'all' ? 'active' : ''}" type="button" data-category="all">
-      <span>Todas</span>
-      <strong>${total.toLocaleString('es-MX')}</strong>
-    </button>
-  ` + counts.map(([cat, count]) => `
-    <button class="category-pill ${state.category === cat ? 'active' : ''}" type="button" data-category="${escapeHtml(cat)}">
-      <span>${escapeHtml(prettyCategory(cat))}</span>
-      <strong>${count.toLocaleString('es-MX')}</strong>
-    </button>
-  `).join('');
+  $('categoryStats').innerHTML = chip('all', 'Todas', '✨', state.entries.length)
+    + categoryCounts().map(([cat, count]) => chip(cat, prettyCategory(cat), categoryIcon(cat), count)).join('');
 
-  container.querySelectorAll('[data-category]').forEach((button) => {
-    button.addEventListener('click', () => {
-      state.category = button.dataset.category;
-      $('categorySelect').value = state.category;
-      clearSearchInput();
-      resetLetterFilter();
-      resetAudioFilter();
-      state.flashcardIndex = 0;
-      state.flashcardRevealed = false;
-      syncFilterControls();
-      render();
-    });
-  });
-}
-
-function updateCategoryPills() {
-  document.querySelectorAll('.category-pill').forEach((pill) => {
-    pill.classList.toggle('active', pill.dataset.category === state.category);
+  $('categoryStats').addEventListener('click', (event) => {
+    const button = event.target.closest('.chip');
+    if (!button) return;
+    state.category = button.dataset.category;
+    state.letter = 'all';
+    clearSearchInput();
+    resetPaging();
+    syncFilterControls();
+    render();
   });
 }
 
 function buildAlphabet() {
-  const letters = ['Todas', ...new Set(state.entries.map((entry) => normalizeLetterKey(entry.ayuuk)).filter(Boolean))]
-    .sort((a, b) => (a === 'Todas' ? -1 : b === 'Todas' ? 1 : a.localeCompare(b, 'es')));
+  const letters = [...new Set(state.entries.map((entry) => normalizeLetterKey(entry.ayuuk)).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b, 'es'));
 
-  $('alphabet').innerHTML = letters.map((letter) => `
-    <button class="letter ${letter === 'Todas' ? 'active' : ''}" type="button" data-letter="${letter === 'Todas' ? 'all' : letter}">${letter}</button>
-  `).join('');
+  $('alphabet').innerHTML = `<button class="letter letter--all" type="button" data-letter="all">Todas</button>`
+    + letters.map((letter) => `<button class="letter" type="button" data-letter="${letter}">${letter}</button>`).join('');
 
   $('alphabet').addEventListener('click', (event) => {
     const button = event.target.closest('.letter');
     if (!button) return;
     state.letter = button.dataset.letter;
     clearSearchInput();
-    resetAudioFilter();
-    state.flashcardIndex = 0;
-    state.flashcardRevealed = false;
+    resetPaging();
     syncFilterControls();
     render();
   });
 }
 
 function bindEvents() {
-  const onSearchChange = (event) => {
+  $('searchInput').addEventListener('input', (event) => {
     state.query = event.target.value;
-
     if (state.query.trim()) {
-      // Search is intentionally global: writing in the search box clears category, letter and audio filters.
       state.category = 'all';
       state.letter = 'all';
-      state.audio = 'all';
     }
-
-    state.flashcardIndex = 0;
-    state.flashcardRevealed = false;
-    syncFilterControls();
-    render();
-  };
-
-  ['input', 'keyup', 'search', 'change'].forEach((eventName) => {
-    $('searchInput').addEventListener(eventName, onSearchChange);
-  });
-
-  $('categorySelect').addEventListener('change', (event) => {
-    state.category = event.target.value;
-    clearSearchInput();
-    resetLetterFilter();
-    resetAudioFilter();
-    state.flashcardIndex = 0;
-    state.flashcardRevealed = false;
+    resetPaging();
     syncFilterControls();
     render();
   });
 
-  $('audioSelect').addEventListener('change', (event) => {
-    state.audio = event.target.value;
-    state.flashcardIndex = 0;
-    state.flashcardRevealed = false;
+  $('audioFilter').addEventListener('click', (event) => {
+    const button = event.target.closest('button');
+    if (!button) return;
+    state.audio = button.dataset.audio;
+    resetPaging();
     syncFilterControls();
     render();
   });
 
   $('listModeBtn').addEventListener('click', () => setViewMode('list'));
   $('flashcardModeBtn').addEventListener('click', () => setViewMode('flashcards'));
+  $('practiceBtn').addEventListener('click', () => {
+    // Practicar es escuchar: empezar solo con palabras que tienen audio.
+    state.audio = 'available';
+    syncFilterControls();
+    setViewMode('flashcards');
+    $('resultsTitle').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
   $('revealBtn').addEventListener('click', revealFlashcard);
-  $('nextCardBtn').addEventListener('click', nextFlashcard);
+  $('nextCardBtn').addEventListener('click', () => stepFlashcard(1));
+  $('prevCardBtn').addEventListener('click', () => stepFlashcard(-1));
+  $('flashcardPlay').addEventListener('click', () => {
+    const entry = filteredEntries()[state.flashcardIndex];
+    if (entry) playEntryAudio(entry, $('flashcard'));
+  });
+
+  $('results').addEventListener('click', (event) => {
+    const card = event.target.closest('.card.has-audio');
+    if (!card) return;
+    const entry = state.entries[Number(card.dataset.index)];
+    if (entry) playEntryAudio(entry, card);
+  });
+
+  $('moreBox').addEventListener('click', (event) => {
+    if (!event.target.closest('button')) return;
+    state.visible += PAGE_SIZE;
+    renderList(filteredEntries());
+  });
+
+  const dialog = $('helpDialog');
+  $('helpBtn').addEventListener('click', () => dialog.showModal());
+  $('helpClose').addEventListener('click', () => dialog.close());
+  $('helpOk').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+
+  document.addEventListener('keydown', (event) => {
+    if (state.viewMode !== 'flashcards' || dialog.open) return;
+    if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
+    if (event.metaKey || event.ctrlKey || event.altKey) return;
+    if (event.key === ' ') { event.preventDefault(); revealFlashcard(); }
+    else if (event.key === 'ArrowRight') stepFlashcard(1);
+    else if (event.key === 'ArrowLeft') stepFlashcard(-1);
+    else if (event.key.toLowerCase() === 'a') $('flashcardPlay').click();
+  });
 }
+
+/* ---------- Render ---------- */
 
 function setViewMode(mode) {
   state.viewMode = mode;
-  state.flashcardIndex = 0;
-  state.flashcardRevealed = false;
+  resetPaging();
   $('listModeBtn').classList.toggle('active', mode === 'list');
   $('flashcardModeBtn').classList.toggle('active', mode === 'flashcards');
   $('results').classList.toggle('hidden', mode === 'flashcards');
+  $('moreBox').classList.toggle('hidden', mode === 'flashcards');
   $('flashcardPanel').classList.toggle('hidden', mode !== 'flashcards');
-  $('alphabet').classList.toggle('hidden', mode === 'flashcards');
-  $('resultsTitle').textContent = mode === 'flashcards' ? 'Modo tarjetas' : 'Resultados';
   render();
+  if (mode === 'flashcards') playCurrentFlashcard();
+}
+
+function resultsTitle() {
+  const q = state.query.trim();
+  if (q) return `Resultados para “${q}”`;
+  const parts = [];
+  if (state.category !== 'all') parts.push(prettyCategory(state.category));
+  if (state.letter !== 'all') parts.push(`Letra ${state.letter}`);
+  return parts.length ? parts.join(' · ') : 'Todas las palabras';
 }
 
 function render() {
   const entries = filteredEntries();
-  $('resultCount').textContent = `${entries.length.toLocaleString('es-MX')} resultado(s)`;
+  const withAudio = entries.filter(hasAudio).length;
+  $('resultsTitle').textContent = resultsTitle();
+  $('resultCount').textContent = entries.length === 1
+    ? '1 palabra'
+    : `${fmt(entries.length)} palabras · ${fmt(withAudio)} con audio`;
 
-  if (state.viewMode === 'flashcards') {
-    renderFlashcards(entries);
-    return;
-  }
+  if (state.viewMode === 'flashcards') renderFlashcards(entries);
+  else renderList(entries);
+}
 
-  renderList(entries);
+function emptyMessage() {
+  const q = state.query.trim();
+  return q
+    ? `<div class="empty">No encontramos <strong>“${escapeHtml(q)}”</strong>.<br>Revisa la ë o el apóstrofo (’), o prueba buscar en español.</div>`
+    : '<div class="empty">No hay palabras con estos filtros. Prueba con <strong>Todas</strong> en Temas o en Audio.</div>';
 }
 
 function renderList(entries) {
-  const max = 120;
-
   if (entries.length === 0) {
-    const label = state.query.trim() ? `“${escapeHtml(state.query.trim())}”` : 'la búsqueda actual';
-    $('results').innerHTML = `<div class="empty">No existe ${label} en el diccionario cargado. Revisa acentos, apóstrofes o prueba otra categoría.</div>`;
+    $('results').innerHTML = emptyMessage();
+    $('moreBox').innerHTML = '';
     return;
   }
+  const visibleEntries = entries.slice(0, state.visible);
+  $('results').innerHTML = visibleEntries.map(cardTemplate).join('');
+  const left = entries.length - visibleEntries.length;
+  $('moreBox').innerHTML = left > 0
+    ? `<button class="btn btn--soft" type="button">Ver ${fmt(Math.min(left, PAGE_SIZE))} palabras más</button>`
+    : '';
+}
 
-  const visibleEntries = entries.slice(0, max);
-  $('results').innerHTML = visibleEntries.map(cardTemplate).join('')
-    + (entries.length > max ? `<div class="empty">Mostrando ${max} de ${entries.length}. Usa búsqueda o filtros para acotar más.</div>` : '');
+function cardTemplate(entry) {
+  const info = getAudioInfo(entry, state.audioManifest);
+  const catClass = `cat-${normalizeAudioKey(entry.categoria)}`;
+  const index = state.entries.indexOf(entry);
+  const playBtn = info.isReal
+    ? `<button class="play" type="button" aria-label="Escuchar ${escapeHtml(entry.ayuuk)}">
+         <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+       </button>`
+    : '<span class="pending">Sin audio aún</span>';
+  const voice = info.isReal && info.voz ? `<div class="voice">${escapeHtml(shortVoice(info.voz))}</div>` : '';
+  const note = entry.nota ? `<div class="voice">Nota: ${escapeHtml(entry.nota)}</div>` : '';
 
-  $('results').querySelectorAll('.card').forEach((card, index) => {
-    bindCardAudio(card, visibleEntries[index]);
-  });
+  return `<article class="card ${catClass}${info.isReal ? ' has-audio' : ''}" data-index="${index}">
+    <div>
+      <div class="word" lang="mir">${escapeHtml(entry.ayuuk)}</div>
+      <div class="meaning">${escapeHtml(entry.espanol)}</div>
+    </div>
+    <div class="card__foot">
+      <div>
+        <span class="tag">${escapeHtml(prettyCategory(entry.categoria))}</span>
+        ${voice}${note}
+      </div>
+      ${playBtn}
+    </div>
+  </article>`;
 }
 
 function renderFlashcards(entries) {
-  if (entries.length === 0) {
+  const disabled = entries.length === 0;
+  ['revealBtn', 'nextCardBtn', 'prevCardBtn', 'flashcardPlay'].forEach((id) => { $(id).disabled = disabled; });
+  if (disabled) {
     $('flashcardFront').textContent = 'Sin tarjetas';
-    $('flashcardBack').textContent = '';
     $('flashcardBack').classList.add('hidden');
-    $('flashcardMeta').textContent = 'No hay entradas para la categoría o búsqueda actual.';
-    $('revealBtn').disabled = true;
-    $('nextCardBtn').disabled = true;
+    $('flashcardPlay').classList.add('hidden');
+    $('flashcardMeta').textContent = 'No hay palabras con estos filtros.';
     return;
   }
 
-  if (state.flashcardIndex >= entries.length) {
-    state.flashcardIndex = 0;
-  }
-
+  if (state.flashcardIndex >= entries.length) state.flashcardIndex = 0;
   const entry = entries[state.flashcardIndex];
-  const audioInfo = getAudioInfo(entry, state.audioManifest);
-  const flashcard = $('flashcard');
-  const freshFlashcard = flashcard.cloneNode(true);
+  const info = getAudioInfo(entry, state.audioManifest);
 
-  freshFlashcard.classList.toggle('has-audio', audioInfo.isReal);
-  flashcard.replaceWith(freshFlashcard);
-
+  $('flashcard').className = `flashcard cat-${normalizeAudioKey(entry.categoria)}`;
   $('flashcardFront').textContent = entry.ayuuk;
+  $('flashcardPlay').classList.toggle('hidden', !info.isReal);
+  $('flashcardPlay').setAttribute('aria-label', `Escuchar ${entry.ayuuk}`);
   $('flashcardBack').innerHTML = `
     <div class="flashcard__answer">${escapeHtml(entry.espanol)}</div>
-    <div class="flashcard__category">${escapeHtml(prettyCategory(entry.categoria))}</div>
-  `;
+    <div class="flashcard__category">${categoryIcon(entry.categoria)} ${escapeHtml(prettyCategory(entry.categoria))}</div>`;
   $('flashcardBack').classList.toggle('hidden', !state.flashcardRevealed);
-  $('revealBtn').disabled = false;
-  $('nextCardBtn').disabled = false;
-  $('revealBtn').textContent = state.flashcardRevealed ? 'Ocultar respuesta' : 'Mostrar respuesta';
-  $('flashcardMeta').innerHTML = `
-    Tarjeta ${state.flashcardIndex + 1} de ${entries.length}
-    ${audioInfo.isReal ? '<span class="audio-icon audio-icon--inline" aria-hidden="true">🔊</span>' : ' · <span class="badge missing">Sin audio todavía</span>'}
-  `;
+  $('revealBtn').textContent = state.flashcardRevealed ? 'Ocultar significado' : 'Mostrar significado';
+  $('flashcardMeta').textContent = `Tarjeta ${fmt(state.flashcardIndex + 1)} de ${fmt(entries.length)}${info.isReal ? '' : ' · esta palabra aún no tiene audio'}`;
+}
 
-  if (audioInfo.isReal) {
-    bindCardAudio($('flashcard'), entry);
-  }
+function playCurrentFlashcard() {
+  const entry = filteredEntries()[state.flashcardIndex];
+  if (entry && hasAudio(entry)) playEntryAudio(entry, $('flashcard'));
 }
 
 function revealFlashcard() {
@@ -596,46 +484,42 @@ function revealFlashcard() {
   renderFlashcards(filteredEntries());
 }
 
-function nextFlashcard() {
+function stepFlashcard(delta) {
   const entries = filteredEntries();
   if (!entries.length) return;
-  state.flashcardIndex = (state.flashcardIndex + 1) % entries.length;
+  state.flashcardIndex = (state.flashcardIndex + delta + entries.length) % entries.length;
   state.flashcardRevealed = false;
   renderFlashcards(entries);
-}
-
-function cardTemplate(entry) {
-  const audioInfo = getAudioInfo(entry, state.audioManifest);
-  const categorySlug = normalizeAudioKey(entry.categoria || GENERAL_CATEGORY);
-  const audioControl = audioInfo.isReal
-    ? `<span class="audio-icon" aria-hidden="true">🔊</span>${audioInfo.voz ? `<span class="voice">Voz: ${escapeHtml(audioInfo.voz)}</span>` : ''}`
-    : '<span class="badge missing">Sin audio todavía</span>';
-  const note = entry.nota
-    ? `<div class="note">Nota: ${escapeHtml(entry.nota)}</div>`
-    : '';
-
-  return `<article class="card category-${escapeHtml(categorySlug)}${audioInfo.isReal ? ' has-audio' : ' no-audio'}">
-    <div class="card__top">
-      <div>
-        <div class="word">${escapeHtml(entry.ayuuk)}</div>
-        <div class="meaning">${escapeHtml(entry.espanol)}</div>
-      </div>
-    </div>
-    <div class="audioRow">
-      ${audioControl}
-    </div>
-    ${note}
-  </article>`;
+  playCurrentFlashcard();
 }
 
 function escapeHtml(str) {
   return (str || '').toString().replace(/[&<>'"]/g, (char) => ({
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    "'": '&#39;',
-    '"': '&quot;'
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
   })[char]);
+}
+
+async function bootstrap() {
+  try {
+    const res = await fetch(DATA_URL, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`No se pudo cargar el diccionario (${res.status})`);
+    const data = await res.json();
+    state.metadata = data.metadata || {};
+    state.entries = prepareEntries(data.entries || data);
+  } catch (error) {
+    console.error(error);
+    $('stats').innerHTML = '<div><dt>No se pudo cargar el diccionario</dt></div>';
+    $('results').innerHTML = '<div class="empty">No pudimos cargar el diccionario. Revisa tu conexión y vuelve a intentar.</div>';
+    return;
+  }
+
+  state.audioManifest = await loadAudioManifest();
+  renderStats();
+  buildCategoryChips();
+  buildAlphabet();
+  bindEvents();
+  syncFilterControls();
+  render();
 }
 
 bootstrap();
