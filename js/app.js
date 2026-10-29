@@ -1,4 +1,4 @@
-const APP_VERSION = 'v5.5.0';
+const APP_VERSION = 'v5.5.1';
 const HOVER_DELAY_MS = 350;
 const SLOW_RATE = 0.9;
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
@@ -326,6 +326,35 @@ function clearAllFilters() {
   resetPaging();
   syncFilterControls();
   render();
+  revealResults();
+}
+
+// Si la lista quedó fuera de vista (celular, zoom alto), bajar a ella para que se vea el cambio.
+function revealResults() {
+  const head = document.querySelector('.results-head');
+  const top = head.getBoundingClientRect().top;
+  if (top > window.innerHeight * 0.75 || top < 0) {
+    window.scrollTo({ top: window.scrollY + top - 12, behavior: 'smooth' });
+  }
+}
+
+// Enlaces internos (#historia, #himno): desplazamiento suave sin dejar el «#» pegado en la dirección.
+function scrollToSection(id, smooth = true) {
+  const target = document.getElementById(id);
+  if (!target) return;
+  target.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
+  history.replaceState(null, '', location.pathname + location.search);
+}
+
+function setupInPageLinks() {
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link || link.getAttribute('href').length < 2) return;
+    event.preventDefault();
+    scrollToSection(link.getAttribute('href').slice(1));
+  });
+  // Al entrar con #himno o #historia, esperar a que exista la lista; si no, la sección se recorre al cargarla.
+  if (location.hash.length > 1) setTimeout(() => scrollToSection(location.hash.slice(1), false), 60);
 }
 
 /* ---------- Construcción ---------- */
@@ -364,6 +393,7 @@ function buildCategoryChips() {
     resetPaging();
     syncFilterControls();
     render();
+    revealResults();
   });
 }
 
@@ -382,6 +412,7 @@ function buildAlphabet() {
     resetPaging();
     syncFilterControls();
     render();
+    revealResults();
   });
 }
 
@@ -594,6 +625,7 @@ async function bootstrap() {
   setupSoundHint();
   syncFilterControls();
   render();
+  setupInPageLinks();
 }
 
 bootstrap();
