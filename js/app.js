@@ -1,4 +1,4 @@
-const APP_VERSION = 'v5.1.1';
+const APP_VERSION = 'v5.1.2';
 const HOVER_DELAY_MS = 350;
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
 const AUDIO_MANIFEST_URL = `data/audio_manifest.json?v=${APP_VERSION}`;
