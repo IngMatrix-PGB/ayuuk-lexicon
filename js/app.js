@@ -1,4 +1,4 @@
-const APP_VERSION = 'v5.2.4';
+const APP_VERSION = 'v5.3.0';
 const HOVER_DELAY_MS = 350;
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
 const AUDIO_MANIFEST_URL = `data/audio_manifest.json?v=${APP_VERSION}`;
@@ -293,11 +293,6 @@ async function loadAudioManifest() {
   }
 }
 
-function renderStats() {
-  const topics = new Set(state.entries.map((e) => topicOf(e.categoria))).size;
-  $('stats').textContent = `${fmt(state.entries.length)} palabras · ${fmt(topics)} temas`;
-}
-
 function buildCategoryChips() {
   const chip = (cat, label, icon) => `
     <button class="chip" type="button" data-category="${escapeHtml(cat)}" aria-pressed="false">
@@ -529,13 +524,11 @@ async function bootstrap() {
     state.entries = prepareEntries(data.entries || data);
   } catch (error) {
     console.error(error);
-    $('stats').innerHTML = '<div><dt>No se pudo cargar el diccionario</dt></div>';
     $('results').innerHTML = '<div class="empty">No pudimos cargar el diccionario. Revisa tu conexión y vuelve a intentar.</div>';
     return;
   }
 
   state.audioManifest = await loadAudioManifest();
-  renderStats();
   buildCategoryChips();
   buildAlphabet();
   bindEvents();

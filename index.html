@@ -9,14 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" />
-  <link rel="stylesheet" href="css/styles.css?v=v5.2.6" />
+  <link rel="stylesheet" href="css/styles.css?v=v5.3.0" />
 </head>
 <body>
   <header class="hero">
     <div class="hero__content">
       <h1>Diccionario interactivo <span>Mixe / Ayuuk</span></h1>
       <p class="lead">Escucha y aprende palabras del Ayuuk (Mixe) de San Juan Guichicovi, Oaxaca.</p>
-      <p class="hero__meta" id="stats">Cargando…</p>
+      <a class="hero__link" href="#historia">Conoce la historia del proyecto ↓</a>
       <div class="hero__actions">
         <button class="btn btn--light" type="button" id="helpBtn">
           <span aria-hidden="true">?</span> ¿Cómo funciona?
@@ -74,6 +74,53 @@
         <button id="nextCardBtn" class="btn btn--primary" type="button">Siguiente →</button>
       </div>
     </section>
+    <section class="history" id="historia" aria-labelledby="historiaTitle">
+      <h2 id="historiaTitle">Historia del proyecto</h2>
+      <p class="history__intro">El Ayuuk de San Juan Guichicovi, en la zona húmeda del Istmo de Tehuantepec, había llegado hasta nuestros días solo de forma oral, de generación en generación. No existía un diccionario en Mixe, y quienes querían aprenderlo no tenían cómo consultar su escritura ni su pronunciación.</p>
+
+      <ol class="timeline">
+        <li class="timeline__item">
+          <span class="timeline__year">2009</span>
+          <div class="timeline__body">
+            <h3>Nace el CD <em>Tecnología Lingüística Mixe</em></h3>
+            <p>Pablo Galeana Bailey, entonces catedrático del Campus Matías Romero de la Universidad del Golfo de México, diseñó y programó en Flash un diccionario multimedia interactivo como parte del Programa de Alfabetización en Lengua Ayuuk (Mixe bajo). Lo hizo solo, en su tiempo libre y sin apoyo institucional.</p>
+            <p>Reunió cerca de 1,200 palabras recogidas directamente de la voz y el uso cotidiano de las comunidades de habla Mixe, con su escritura, su traducción al español y su pronunciación grabada. Las organizó por letra inicial y por temas: parentesco, números, colores, formas geométricas, animales, insectos, fenómenos naturales y naturaleza. Incluyó también el Himno Nacional Mexicano en Mixe.</p>
+            <figure class="history__figure">
+              <img src="img/cd-2009-menu.jpg" width="900" height="672" loading="lazy" alt="Pantalla principal del CD Tecnología Lingüística Mixe: menú de opciones a la izquierda, foto del templo de Guichicovi y letras del alfabeto en bloques de colores" />
+              <figcaption>Pantalla principal del CD original (2009).</figcaption>
+            </figure>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__year">¿Por qué?</span>
+          <div class="timeline__body">
+            <h3>Aprender escuchando</h3>
+            <p>En una encuesta a 31 alumnos de la Primaria Bilingüe Julio de la Fuente y del COBAO plantel 29 de Guichicovi, 30 no conocían ningún diccionario en Mixe y 22 dijeron haber aprendido la lengua escuchándola. Por eso el audio fue desde el inicio el corazón del proyecto.</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__year">Gaceta UGM</span>
+          <div class="timeline__body">
+            <h3>Reconocimiento</h3>
+            <p>La Gaceta de la Universidad del Golfo de México presentó el proyecto como parte de su propósito de mantener vivas las costumbres y tradiciones de sus alumnos.</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__year">2026</span>
+          <div class="timeline__body">
+            <h3>Del CD a la web</h3>
+            <p>Diecisiete años después, el diccionario se migró a la web para que cualquiera pueda usarlo desde un celular. Las grabaciones originales se recuperaron del CD, se limpiaron y se emparejaron palabra por palabra. Hoy reúne 1,191 palabras y casi todas tienen su voz.</p>
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--next">
+          <span class="timeline__year">Lo que sigue</span>
+          <div class="timeline__body">
+            <h3>Tu voz también cuenta</h3>
+            <p>Algunas palabras todavía esperan una voz. Si hablas Ayuuk y quieres sumar la tuya a este acervo, escribe a <a href="mailto:1ngbyt3@gmail.com">1ngbyt3@gmail.com</a>.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
   </main>
 
   <footer class="footer">
@@ -126,6 +173,6 @@
     <button class="btn btn--primary help__ok" type="button" id="helpOk">Entendido</button>
   </dialog>
 
-  <script src="js/app.js?v=v5.2.4"></script>
+  <script src="js/app.js?v=v5.3.0"></script>
 </body>
 </html>
