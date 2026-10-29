@@ -134,8 +134,8 @@ kbd {
 }
 .search { display: block; width: min(560px, 100%); margin: 0 auto; }
 .filter__label {
-  font-weight: 700; font-size: .8rem; color: var(--muted);
-  text-transform: uppercase; letter-spacing: .1em;
+  font-weight: 800; font-size: .9rem; color: var(--ink);
+  text-transform: uppercase; letter-spacing: .12em;
 }
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
@@ -209,6 +209,11 @@ kbd {
 .results-head p { margin: 4px 0 0; color: var(--muted); }
 .segmented--view button { min-width: 96px; }
 
+.sound-hint {
+  margin: 0 0 14px; padding: 10px 14px; text-align: center;
+  background: var(--chip); border: 1px solid var(--line); border-radius: 12px;
+  color: var(--muted); font-size: .95rem;
+}
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
 
 .card {
@@ -354,6 +359,11 @@ kbd {
 .footer__motto strong { color: #fff7ec; }
 
 /* ---------- Móvil ---------- */
+/* Letras: hasta 900 px, cuadrícula de 8 columnas (filas de 8 y 7) en vez de cortes desbalanceados */
+@media (max-width: 900px) {
+  .letters { display: grid; grid-template-columns: repeat(8, 44px); gap: 8px; justify-content: center; }
+}
+
 @media (max-width: 640px) {
   .hero__content { padding: 28px 16px 44px; }
   .hero h1 { font-size: 1.6rem; text-wrap: nowrap; }
@@ -361,15 +371,19 @@ kbd {
   .container { padding: 0 16px 48px; }
   .panel { padding: 18px 16px; border-radius: 20px; }
   .hero__actions .btn { flex: 1 1 auto; }
-  .filter { justify-items: stretch; text-align: left; }
-  .filter .chips, .filter .letters { justify-content: flex-start; }
-  .chips, .letters {
+  .filter .chips { justify-self: stretch; justify-content: flex-start; }
+  .letters {
+    grid-template-columns: repeat(8, 1fr); gap: 6px;
+    width: 100%;
+  }
+  .letter { min-width: 0; height: 42px; padding: 0; }
+  .chips {
     flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
     margin: 0 -16px; padding: 2px 16px 6px;
     scroll-snap-type: x proximity;
   }
-  .chips::-webkit-scrollbar, .letters::-webkit-scrollbar { display: none; }
-  .chip, .letter { flex: none; scroll-snap-align: start; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip { flex: none; scroll-snap-align: start; }
   .filter--row { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr; }
   .flashcard-panel { justify-items: stretch; }

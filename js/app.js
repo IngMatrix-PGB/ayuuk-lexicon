@@ -1,4 +1,4 @@
-const APP_VERSION = 'v5.2.2';
+const APP_VERSION = 'v5.2.4';
 const HOVER_DELAY_MS = 350;
 const DATA_URL = `data/diccionario_mixe_dataset.json?v=${APP_VERSION}`;
 const AUDIO_MANIFEST_URL = `data/audio_manifest.json?v=${APP_VERSION}`;
@@ -149,6 +149,21 @@ let playingEl = null;
 // La pausa evita que suenen todas al pasar el cursor por la lista.
 let hoverTimer = null;
 const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+// Los navegadores no dejan sonar audio hasta el primer clic o tecla en la página.
+// En computadora avisamos una vez; el aviso se va con la primera interacción.
+function setupSoundHint() {
+  if (!canHover) return;
+  const hint = $('soundHint');
+  hint.classList.remove('hidden');
+  const unlock = () => {
+    hint.classList.add('hidden');
+    window.removeEventListener('pointerdown', unlock, true);
+    window.removeEventListener('keydown', unlock, true);
+  };
+  window.addEventListener('pointerdown', unlock, true);
+  window.addEventListener('keydown', unlock, true);
+}
 
 function hoverPlay(el, getEntry) {
   if (!canHover) return;
@@ -524,6 +539,7 @@ async function bootstrap() {
   buildCategoryChips();
   buildAlphabet();
   bindEvents();
+  setupSoundHint();
   syncFilterControls();
   render();
 }
