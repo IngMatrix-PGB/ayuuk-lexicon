@@ -419,8 +419,9 @@ html { scroll-behavior: smooth; }
 /* ---------- Pie ---------- */
 .footer { background: var(--cacao); color: #f3dccb; }
 .footer__inner { max-width: 980px; margin: 0 auto; padding: 32px 20px 28px; text-align: center; }
-.footer h2 { margin: 0; font-family: var(--font-display); color: #fff7ec; font-size: 1.6rem; }
-.footer__lead { margin: 6px 0 20px; color: #e9cdb8; }
+.footer__head { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 4px 12px; margin: 0 0 18px; }
+.footer h2 { margin: 0; font-family: var(--font-display); font-weight: 800; color: #fff7ec; font-size: 1.15rem; }
+.footer__lead { margin: 0; font-size: .95rem; color: #e9cdb8; }
 .footer__motto { margin: 22px auto 0; max-width: 640px; font-size: 1.1rem; color: #f3dccb; }
 .footer__motto strong { color: #fff7ec; }
 .footer__credit { margin: 14px 0 0; font-size: .82rem; color: #cfae98; }
@@ -469,7 +470,10 @@ html { scroll-behavior: smooth; }
 /* ---------- Voces de la comunidad ---------- */
 .voices {
   list-style: none; margin: 0; padding: 0;
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px;
+}
+@media (max-width: 760px) {
+  .voices { grid-template-columns: 1fr; }
 }
 .voice-card {
   --tone: var(--maiz);
