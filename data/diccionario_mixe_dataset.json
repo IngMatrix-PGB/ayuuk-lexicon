@@ -1,12 +1,12 @@
 {
   "metadata": {
     "name": "Ayuuk para Todos",
-    "total_entries": 1359,
+    "total_entries": 1549,
     "source": "Palabra-Mixe-v6.docx",
     "audio_convention": "audio/<slug>.mp3",
     "version": "v6 (docx v6 + CD 2009)",
-    "raw_entries": 1359,
-    "unique_entries": 1359,
+    "raw_entries": 1549,
+    "unique_entries": 1549,
     "dedupe_rule": "Una tarjeta por palabra Ayuuk normalizada. Si existe en vocabulario_general y en categoría específica, conserva la categoría específica. Significados compatibles se fusionan.",
     "audio_rule": "No se hacen requests HEAD por cada audio. La app usa data/audio_manifest.json para decidir si muestra botón ▶ Escuchar o Audio pendiente.",
     "audio_real": 1174,
@@ -7769,6 +7769,26 @@
       "ilustracion": "img/ilustraciones/ixye.svg"
     },
     {
+      "id": 1360,
+      "ayuuk": "JA",
+      "espanol": "El, la, los, las (lejos o no a la vista)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "ja.mp3",
+      "audio_path": "audio/ja.mp3",
+      "slug": "ja",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "ja",
+      "fuente_pagina": 18,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 232,
       "ayuuk": "JAAM",
       "espanol": "Cal",
@@ -8004,6 +8024,26 @@
       "audio_path": "audio/jaix.mp3",
       "slug": "jaix",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1364,
+      "ayuuk": "JAJ",
+      "espanol": "Arder",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jaj.mp3",
+      "audio_path": "audio/jaj.mp3",
+      "slug": "jaj",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jaj",
+      "fuente_pagina": 18,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -8264,6 +8304,66 @@
       "ilustracion": "img/ilustraciones/jamieet.svg"
     },
     {
+      "id": 1365,
+      "ayuuk": "JAMYËËT",
+      "espanol": "Compañero",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jamyeet.mp3",
+      "audio_path": "audio/jamyeet.mp3",
+      "slug": "jamyeet",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jamyëët",
+      "fuente_pagina": 19,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1366,
+      "ayuuk": "JANË JATU’UN",
+      "espanol": "También así",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "janejatuun.mp3",
+      "audio_path": "audio/janejatuun.mp3",
+      "slug": "janejatuun",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "janë jaduꞌun",
+      "fuente_pagina": 19,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1367,
+      "ayuuk": "JANË JATU’UN TU’UMPË",
+      "espanol": "Manera (la misma)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "janejatuuntuumpe.mp3",
+      "audio_path": "audio/janejatuuntuumpe.mp3",
+      "slug": "janejatuuntuumpe",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "janë jaduꞌun duꞌumbë",
+      "fuente_pagina": 19,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 253,
       "ayuuk": "JANËYË",
       "espanol": "Lo mismo",
@@ -8282,6 +8382,46 @@
       ]
     },
     {
+      "id": 1368,
+      "ayuuk": "JANTEMY",
+      "espanol": "Mucho",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jantemy.mp3",
+      "audio_path": "audio/jantemy.mp3",
+      "slug": "jantemy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jantemy",
+      "fuente_pagina": 19,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1369,
+      "ayuuk": "JA’OY",
+      "espanol": "Bueno",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jaoy.mp3",
+      "audio_path": "audio/jaoy.mp3",
+      "slug": "jaoy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jaꞌoy",
+      "fuente_pagina": 19,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 254,
       "ayuuk": "JAPOOM",
       "espanol": "Mañana",
@@ -8293,6 +8433,26 @@
       "audio_path": "audio/japoom.mp3",
       "slug": "japoom",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1361,
+      "ayuuk": "JAPOOM JAPOOM",
+      "espanol": "Todos los días",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "japoomjapoom.mp3",
+      "audio_path": "audio/japoomjapoom.mp3",
+      "slug": "japoomjapoom",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jaboom jaboom",
+      "fuente_pagina": 18,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -8376,6 +8536,46 @@
       ]
     },
     {
+      "id": 1370,
+      "ayuuk": "JAT APET",
+      "espanol": "Suceder",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jatapet.mp3",
+      "audio_path": "audio/jatapet.mp3",
+      "slug": "jatapet",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jat abet",
+      "fuente_pagina": 19,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1362,
+      "ayuuk": "JATIJT",
+      "espanol": "Tronar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jatijt.mp3",
+      "audio_path": "audio/jatijt.mp3",
+      "slug": "jatijt",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jadijt",
+      "fuente_pagina": 18,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 259,
       "ayuuk": "JATITS",
       "espanol": "Porque",
@@ -8405,6 +8605,46 @@
       "audio_path": "audio/jatuun.mp3",
       "slug": "jatuun",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1363,
+      "ayuuk": "JATU’UNYTYË",
+      "espanol": "Ahorita",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jatuunytye.mp3",
+      "audio_path": "audio/jatuunytye.mp3",
+      "slug": "jatuunytye",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jaduꞌuñtyë",
+      "fuente_pagina": 18,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1371,
+      "ayuuk": "JATY",
+      "espanol": "Cada (después de un número)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jaty.mp3",
+      "audio_path": "audio/jaty.mp3",
+      "slug": "jaty",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jaty",
+      "fuente_pagina": 19,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -8477,6 +8717,26 @@
       "audio_path": "audio/jaween.mp3",
       "slug": "jaween",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1372,
+      "ayuuk": "JA WE’EN JATY",
+      "espanol": "Ya mero",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jaweenjaty.mp3",
+      "audio_path": "audio/jaweenjaty.mp3",
+      "slug": "jaweenjaty",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "ja weꞌen jaty",
+      "fuente_pagina": 19,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -8558,6 +8818,86 @@
       ]
     },
     {
+      "id": 1373,
+      "ayuuk": "JAYO’OY",
+      "espanol": "Nada más",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jayooy.mp3",
+      "audio_path": "audio/jayooy.mp3",
+      "slug": "jayooy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jayoꞌoy",
+      "fuente_pagina": 19,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1375,
+      "ayuuk": "JE’E",
+      "espanol": "Él (lejos o no a la vista)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jee.mp3",
+      "audio_path": "audio/jee.mp3",
+      "slug": "jee",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jeꞌe",
+      "fuente_pagina": 20,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1376,
+      "ayuuk": "JE’ENË",
+      "espanol": "Todavía",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jeene.mp3",
+      "audio_path": "audio/jeene.mp3",
+      "slug": "jeene",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jeꞌenë",
+      "fuente_pagina": 20,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1377,
+      "ayuuk": "JEE’P TSIM NËË",
+      "espanol": "Arroyo Cuchara (población)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jeeptsimnee.mp3",
+      "audio_path": "audio/jeeptsimnee.mp3",
+      "slug": "jeeptsimnee",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "Jeeꞌp Tsim Nëë",
+      "fuente_pagina": 20,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 270,
       "ayuuk": "JEJK",
       "espanol": "Duró",
@@ -8612,6 +8952,66 @@
       ]
     },
     {
+      "id": 1378,
+      "ayuuk": "JEKË’ËW",
+      "espanol": "Pasar (mucho tiempo)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jekeew.mp3",
+      "audio_path": "audio/jekeew.mp3",
+      "slug": "jekeew",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jegëꞌëw",
+      "fuente_pagina": 20,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1379,
+      "ayuuk": "JEKY",
+      "espanol": "Mucho tiempo",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jeky.mp3",
+      "audio_path": "audio/jeky.mp3",
+      "slug": "jeky",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jeky",
+      "fuente_pagina": 20,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1380,
+      "ayuuk": "JEKY KUTUJT",
+      "espanol": "Mandamiento",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jekykutujt.mp3",
+      "audio_path": "audio/jekykutujt.mp3",
+      "slug": "jekykutujt",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jeky kudujt",
+      "fuente_pagina": 20,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 273,
       "ayuuk": "JEMTSY",
       "espanol": "Pesado",
@@ -8659,6 +9059,26 @@
       "audio_path": "audio/jen.mp3",
       "slug": "jen",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1374,
+      "ayuuk": "JE’TU’UN",
+      "espanol": "Eso",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jetuun.mp3",
+      "audio_path": "audio/jetuun.mp3",
+      "slug": "jetuun",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jeꞌduꞌun",
+      "fuente_pagina": 19,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -8776,6 +9196,26 @@
       "imagen": "img/palabras/jeengudsujxpe.webp"
     },
     {
+      "id": 1382,
+      "ayuuk": "JËËNTËJK",
+      "espanol": "Cocina",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jeentejk.mp3",
+      "audio_path": "audio/jeentejk.mp3",
+      "slug": "jeentejk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëëndëjk",
+      "fuente_pagina": 20,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 338,
       "ayuuk": "JËËPY",
       "espanol": "Llora",
@@ -8795,6 +9235,26 @@
       "ilustracion": "img/ilustraciones/jeepy.svg"
     },
     {
+      "id": 1383,
+      "ayuuk": "JËËT",
+      "espanol": "Aserrar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jeet.mp3",
+      "audio_path": "audio/jeet.mp3",
+      "slug": "jeet",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëët",
+      "fuente_pagina": 20,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 325,
       "ayuuk": "JË’ËW",
       "espanol": "Llora (imperativo)",
@@ -8812,6 +9272,26 @@
         "vocabulario_general"
       ],
       "ilustracion": "img/ilustraciones/jeew.svg"
+    },
+    {
+      "id": 1384,
+      "ayuuk": "JË’ËW XU’UTS",
+      "espanol": "Llorar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jeewxuuts.mp3",
+      "audio_path": "audio/jeewxuuts.mp3",
+      "slug": "jeewxuuts",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëꞌëw xuꞌuts",
+      "fuente_pagina": 20,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 335,
@@ -8850,6 +9330,66 @@
       ]
     },
     {
+      "id": 1385,
+      "ayuuk": "JËËX KË’ËM",
+      "espanol": "Parte trasera",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jeexkeem.mp3",
+      "audio_path": "audio/jeexkeem.mp3",
+      "slug": "jeexkeem",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëëx këꞌëm",
+      "fuente_pagina": 20,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1386,
+      "ayuuk": "JËË’XMUK",
+      "espanol": "Comer (juntos)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jeexmuk.mp3",
+      "audio_path": "audio/jeexmuk.mp3",
+      "slug": "jeexmuk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëëꞌxmuk",
+      "fuente_pagina": 21,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1387,
+      "ayuuk": "JËË’XTUK",
+      "espanol": "Sobras (de comida menos pan o tortilla)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jeextuk.mp3",
+      "audio_path": "audio/jeextuk.mp3",
+      "slug": "jeextuk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëëꞌxtuk",
+      "fuente_pagina": 21,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 326,
       "ayuuk": "JËJP",
       "espanol": "Filoso",
@@ -8868,6 +9408,26 @@
       ]
     },
     {
+      "id": 1388,
+      "ayuuk": "JË’JUT",
+      "espanol": "Orificio (de la nariz)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jejut.mp3",
+      "audio_path": "audio/jejut.mp3",
+      "slug": "jejut",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëꞌjut",
+      "fuente_pagina": 21,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 327,
       "ayuuk": "JËK",
       "espanol": "Roñoso",
@@ -8879,6 +9439,26 @@
       "audio_path": "audio/jek.mp3",
       "slug": "jek",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1389,
+      "ayuuk": "JËMUUM",
+      "espanol": "Picar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jemuum.mp3",
+      "audio_path": "audio/jemuum.mp3",
+      "slug": "jemuum",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëmuum",
+      "fuente_pagina": 21,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -8942,6 +9522,26 @@
       "ilustracion": "img/ilustraciones/jetk.svg"
     },
     {
+      "id": 1381,
+      "ayuuk": "JËTSË’Ë",
+      "espanol": "Huipil",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jetsee.mp3",
+      "audio_path": "audio/jetsee.mp3",
+      "slug": "jetsee",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëdsëꞌë",
+      "fuente_pagina": 20,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 331,
       "ayuuk": "JËTSY",
       "espanol": "Masa",
@@ -8953,6 +9553,126 @@
       "audio_path": "audio/jetsy.mp3",
       "slug": "jetsy",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1390,
+      "ayuuk": "JËWA’ATS",
+      "espanol": "Quitarse",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jewaats.mp3",
+      "audio_path": "audio/jewaats.mp3",
+      "slug": "jewaats",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëwaꞌats",
+      "fuente_pagina": 21,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1391,
+      "ayuuk": "JËWË’ËW",
+      "espanol": "Sentir",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jeweew.mp3",
+      "audio_path": "audio/jeweew.mp3",
+      "slug": "jeweew",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëwëꞌëw",
+      "fuente_pagina": 21,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1392,
+      "ayuuk": "JËWIITS",
+      "espanol": "Columna (vertebral)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jewiits.mp3",
+      "audio_path": "audio/jewiits.mp3",
+      "slug": "jewiits",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëwiits",
+      "fuente_pagina": 21,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1393,
+      "ayuuk": "JËWIPNA’AW",
+      "espanol": "Estar tirado (en el suelo)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jewipnaaw.mp3",
+      "audio_path": "audio/jewipnaaw.mp3",
+      "slug": "jewipnaaw",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëwipnaꞌaw",
+      "fuente_pagina": 21,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1394,
+      "ayuuk": "JËXE’EP",
+      "espanol": "Nuera",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jexeep.mp3",
+      "audio_path": "audio/jexeep.mp3",
+      "slug": "jexeep",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëxeꞌep",
+      "fuente_pagina": 21,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1395,
+      "ayuuk": "JËXËX",
+      "espanol": "Planchar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jexex.mp3",
+      "audio_path": "audio/jexex.mp3",
+      "slug": "jexex",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëxëx",
+      "fuente_pagina": 21,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -8977,6 +9697,26 @@
       "dedupe_count": 2,
       "source_categories": [
         "familia",
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1396,
+      "ayuuk": "JËYË’ËY",
+      "espanol": "Volar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jeyeey.mp3",
+      "audio_path": "audio/jeyeey.mp3",
+      "slug": "jeyeey",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jëyëꞌëy",
+      "fuente_pagina": 22,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
         "vocabulario_general"
       ]
     },
@@ -9029,6 +9769,86 @@
       "audio_path": "audio/jii.mp3",
       "slug": "jii",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1397,
+      "ayuuk": "JIIPY",
+      "espanol": "En (adentro)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jiipy.mp3",
+      "audio_path": "audio/jiipy.mp3",
+      "slug": "jiipy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jiipy",
+      "fuente_pagina": 22,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1398,
+      "ayuuk": "JIJKËTA’AK",
+      "espanol": "Arrodillarse",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jijketaak.mp3",
+      "audio_path": "audio/jijketaak.mp3",
+      "slug": "jijketaak",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jijkëdaꞌak",
+      "fuente_pagina": 22,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1399,
+      "ayuuk": "JIJNA’A",
+      "espanol": "Arrodillado",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jijnaa.mp3",
+      "audio_path": "audio/jijnaa.mp3",
+      "slug": "jijnaa",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jijnaꞌa",
+      "fuente_pagina": 22,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1400,
+      "ayuuk": "JIJNA’AW",
+      "espanol": "Estar de rodillas",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jijnaaw.mp3",
+      "audio_path": "audio/jijnaaw.mp3",
+      "slug": "jijnaaw",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jijnaꞌaw",
+      "fuente_pagina": 22,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -9147,6 +9967,26 @@
       ]
     },
     {
+      "id": 1401,
+      "ayuuk": "JI’X",
+      "espanol": "Ahogar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jix.mp3",
+      "audio_path": "audio/jix.mp3",
+      "slug": "jix",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jiꞌx",
+      "fuente_pagina": 22,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 280,
       "ayuuk": "JI’XOJ",
       "espanol": "Tos ferina",
@@ -9224,6 +10064,26 @@
       "ilustracion": "img/ilustraciones/joknee.svg"
     },
     {
+      "id": 1403,
+      "ayuuk": "JOK TSOM",
+      "espanol": "Borroso",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "joktsom.mp3",
+      "audio_path": "audio/joktsom.mp3",
+      "slug": "joktsom",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jok tsom",
+      "fuente_pagina": 22,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 291,
       "ayuuk": "JOKX",
       "espanol": "Caliente",
@@ -9235,6 +10095,66 @@
       "audio_path": "audio/jokx.mp3",
       "slug": "jokx",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1404,
+      "ayuuk": "JOKX WIT",
+      "espanol": "Abrigo",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jokxwit.mp3",
+      "audio_path": "audio/jokxwit.mp3",
+      "slug": "jokxwit",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jokx wit",
+      "fuente_pagina": 22,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1405,
+      "ayuuk": "JOMËJT",
+      "espanol": "Año",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jomejt.mp3",
+      "audio_path": "audio/jomejt.mp3",
+      "slug": "jomejt",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jomëjt",
+      "fuente_pagina": 22,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1406,
+      "ayuuk": "JOMËJT JOMËJT",
+      "espanol": "Todos los años",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jomejtjomejt.mp3",
+      "audio_path": "audio/jomejtjomejt.mp3",
+      "slug": "jomejtjomejt",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jomëjt jomëjt",
+      "fuente_pagina": 23,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -9259,6 +10179,26 @@
         "vocabulario_general"
       ],
       "ilustracion": "img/ilustraciones/jook.svg"
+    },
+    {
+      "id": 1407,
+      "ayuuk": "JOOMTYA’AKY",
+      "espanol": "Panal",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "joomtyaaky.mp3",
+      "audio_path": "audio/joomtyaaky.mp3",
+      "slug": "joomtyaaky",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joomdyaꞌaky",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 292,
@@ -9298,6 +10238,166 @@
       ]
     },
     {
+      "id": 1408,
+      "ayuuk": "JOOT AKUUY",
+      "espanol": "Estómago (boca del estómago)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootakuuy.mp3",
+      "audio_path": "audio/jootakuuy.mp3",
+      "slug": "jootakuuy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot aguuy",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1409,
+      "ayuuk": "JOOT ANAPXT",
+      "espanol": "Bazo",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootanapxt.mp3",
+      "audio_path": "audio/jootanapxt.mp3",
+      "slug": "jootanapxt",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot anapxt",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1410,
+      "ayuuk": "JOOT ANUU’XË’ËW",
+      "espanol": "Desanimarse",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootanuuxeew.mp3",
+      "audio_path": "audio/jootanuuxeew.mp3",
+      "slug": "jootanuuxeew",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot anuuꞌxëꞌëw",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1411,
+      "ayuuk": "JOOT ËJX",
+      "espanol": "Vientre",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootejx.mp3",
+      "audio_path": "audio/jootejx.mp3",
+      "slug": "jootejx",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot ëjx",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1412,
+      "ayuuk": "JOOT JOOTY KOPK JOOTY",
+      "espanol": "En la mente y en el corazón",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootjootykopkjooty.mp3",
+      "audio_path": "audio/jootjootykopkjooty.mp3",
+      "slug": "jootjootykopkjooty",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot jooty kopk jooty",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1413,
+      "ayuuk": "JOOT KAPX MËKPËK",
+      "espanol": "Animar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootkapxmekpek.mp3",
+      "audio_path": "audio/jootkapxmekpek.mp3",
+      "slug": "jootkapxmekpek",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot kapx mëkpëk",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1414,
+      "ayuuk": "JOOT KËTA’AK",
+      "espanol": "Agradar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootketaak.mp3",
+      "audio_path": "audio/jootketaak.mp3",
+      "slug": "jootketaak",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot këdaꞌak",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1415,
+      "ayuuk": "JOOT KËTA’AKY",
+      "espanol": "Humilde",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootketaaky.mp3",
+      "audio_path": "audio/jootketaaky.mp3",
+      "slug": "jootketaaky",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot këdaꞌaky",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 294,
       "ayuuk": "JOOTKUIK",
       "espanol": "Contento",
@@ -9315,6 +10415,366 @@
         "vocabulario_general"
       ],
       "ilustracion": "img/ilustraciones/jootkuik.svg"
+    },
+    {
+      "id": 1417,
+      "ayuuk": "JOOT KUJK",
+      "espanol": "Feliz",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootkujk.mp3",
+      "audio_path": "audio/jootkujk.mp3",
+      "slug": "jootkujk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot kujk",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1416,
+      "ayuuk": "JOOT KUKË’ËW",
+      "espanol": "Alegrar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootkukeew.mp3",
+      "audio_path": "audio/jootkukeew.mp3",
+      "slug": "jootkukeew",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot kugëꞌëw",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1418,
+      "ayuuk": "JOOT MA’AT",
+      "espanol": "Enojar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootmaat.mp3",
+      "audio_path": "audio/jootmaat.mp3",
+      "slug": "jootmaat",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot maꞌat",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1419,
+      "ayuuk": "JOOT MAY",
+      "espanol": "Tristeza",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootmay.mp3",
+      "audio_path": "audio/jootmay.mp3",
+      "slug": "jootmay",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot may",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1420,
+      "ayuuk": "JOOT MAY’AJP",
+      "espanol": "Preocupado",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootmayajp.mp3",
+      "audio_path": "audio/jootmayajp.mp3",
+      "slug": "jootmayajp",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot mayꞌajp",
+      "fuente_pagina": 23,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1421,
+      "ayuuk": "JOOT MAY’AT",
+      "espanol": "Preocuparse",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootmayat.mp3",
+      "audio_path": "audio/jootmayat.mp3",
+      "slug": "jootmayat",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot mayꞌat",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1422,
+      "ayuuk": "JOOT METSKËËY",
+      "espanol": "Estar dudando",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootmetskeey.mp3",
+      "audio_path": "audio/jootmetskeey.mp3",
+      "slug": "jootmetskeey",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot metskëëy",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1423,
+      "ayuuk": "JOOT MËK",
+      "espanol": "Valiente",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootmek.mp3",
+      "audio_path": "audio/jootmek.mp3",
+      "slug": "jootmek",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot mëk",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1424,
+      "ayuuk": "JOOT MËMËËY",
+      "espanol": "Empacharse",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootmemeey.mp3",
+      "audio_path": "audio/jootmemeey.mp3",
+      "slug": "jootmemeey",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot mëmëëy",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1425,
+      "ayuuk": "JOOT MUTSK",
+      "espanol": "Sensible",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootmutsk.mp3",
+      "audio_path": "audio/jootmutsk.mp3",
+      "slug": "jootmutsk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot mutsk",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1426,
+      "ayuuk": "JOOT NAX",
+      "espanol": "Diarrea",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootnax.mp3",
+      "audio_path": "audio/jootnax.mp3",
+      "slug": "jootnax",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot nax",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1427,
+      "ayuuk": "JOOT PËTA’AK",
+      "espanol": "Poner (en el corazón)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootpetaak.mp3",
+      "audio_path": "audio/jootpetaak.mp3",
+      "slug": "jootpetaak",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot pëdaꞌak",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1428,
+      "ayuuk": "JOOT PËTË’ËKËË",
+      "espanol": "Dolor (agudo en el estómago)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootpeteekee.mp3",
+      "audio_path": "audio/jootpeteekee.mp3",
+      "slug": "jootpeteekee",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot pëdëꞌëgëë",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1429,
+      "ayuuk": "JOOT WIMPIT",
+      "espanol": "Arrepentirse",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootwimpit.mp3",
+      "audio_path": "audio/jootwimpit.mp3",
+      "slug": "jootwimpit",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot wimbit",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1430,
+      "ayuuk": "JOOT XEEMY",
+      "espanol": "Humilde",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootxeemy.mp3",
+      "audio_path": "audio/jootxeemy.mp3",
+      "slug": "jootxeemy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot xeemy",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1431,
+      "ayuuk": "JOOTY",
+      "espanol": "En",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jooty.mp3",
+      "audio_path": "audio/jooty.mp3",
+      "slug": "jooty",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jooty",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1432,
+      "ayuuk": "JOOTYP",
+      "espanol": "Preñada (animal)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootyp.mp3",
+      "audio_path": "audio/jootyp.mp3",
+      "slug": "jootyp",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jootyp",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1433,
+      "ayuuk": "JOOT YU’XËË",
+      "espanol": "Latido (en el estómago)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jootyuxee.mp3",
+      "audio_path": "audio/jootyuxee.mp3",
+      "slug": "jootyuxee",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joot yuꞌxëë",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 295,
@@ -9336,6 +10796,46 @@
       "imagen": "img/palabras/joy.webp"
     },
     {
+      "id": 1402,
+      "ayuuk": "JOPËËY",
+      "espanol": "Amanecer",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jopeey.mp3",
+      "audio_path": "audio/jopeey.mp3",
+      "slug": "jopeey",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jobëëy",
+      "fuente_pagina": 22,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1434,
+      "ayuuk": "JOPKYAY",
+      "espanol": "Desayunar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jopkyay.mp3",
+      "audio_path": "audio/jopkyay.mp3",
+      "slug": "jopkyay",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jopkyay",
+      "fuente_pagina": 24,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 296,
       "ayuuk": "JOPY",
       "espanol": "Temprano",
@@ -9347,6 +10847,26 @@
       "audio_path": "audio/jopy.mp3",
       "slug": "jopy",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1435,
+      "ayuuk": "JOPY TSYUU",
+      "espanol": "Día y noche",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jopytsyuu.mp3",
+      "audio_path": "audio/jopytsyuu.mp3",
+      "slug": "jopytsyuu",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jopy chuu",
+      "fuente_pagina": 25,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -9409,6 +10929,26 @@
         "vocabulario_general"
       ],
       "ilustracion": "img/ilustraciones/jow.svg"
+    },
+    {
+      "id": 1436,
+      "ayuuk": "JO’X",
+      "espanol": "Agarrar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jox.mp3",
+      "audio_path": "audio/jox.mp3",
+      "slug": "jox",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "joꞌx",
+      "fuente_pagina": 25,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 300,
@@ -9503,6 +11043,46 @@
       ]
     },
     {
+      "id": 1437,
+      "ayuuk": "JUJKY MYËKU’UK",
+      "espanol": "Familiar (pariente)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jujkymyekuuk.mp3",
+      "audio_path": "audio/jujkymyekuuk.mp3",
+      "slug": "jujkymyekuuk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jujky myëguꞌuk",
+      "fuente_pagina": 25,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1438,
+      "ayuuk": "JUJPYËK",
+      "espanol": "Resucitar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jujpyek.mp3",
+      "audio_path": "audio/jujpyek.mp3",
+      "slug": "jujpyek",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jujpyëk",
+      "fuente_pagina": 25,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 306,
       "ayuuk": "JUJT",
       "espanol": "Se agujereó",
@@ -9540,6 +11120,26 @@
       "imagen": "img/palabras/kujx.webp"
     },
     {
+      "id": 1439,
+      "ayuuk": "JUKY’AJT",
+      "espanol": "Vida",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jukyajt.mp3",
+      "audio_path": "audio/jukyajt.mp3",
+      "slug": "jukyajt",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jukyꞌajt",
+      "fuente_pagina": 25,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 307,
       "ayuuk": "JUT",
       "espanol": "Hueco, agujereado",
@@ -9575,6 +11175,46 @@
         "vocabulario_general"
       ],
       "ilustracion": "img/ilustraciones/juuk.svg"
+    },
+    {
+      "id": 1440,
+      "ayuuk": "JU’UKY AAY",
+      "espanol": "Tabaco",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "juukyaay.mp3",
+      "audio_path": "audio/juukyaay.mp3",
+      "slug": "juukyaay",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "juꞌuky aay",
+      "fuente_pagina": 25,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1441,
+      "ayuuk": "JUUN",
+      "espanol": "Endurecerse",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "juun.mp3",
+      "audio_path": "audio/juun.mp3",
+      "slug": "juun",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "juun",
+      "fuente_pagina": 25,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 309,
@@ -9625,6 +11265,26 @@
       "audio_path": "audio/juut.mp3",
       "slug": "juut",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1442,
+      "ayuuk": "JUXTËPK",
+      "espanol": "Pasado mañana",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "juxtepk.mp3",
+      "audio_path": "audio/juxtepk.mp3",
+      "slug": "juxtepk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "juxtëpk",
+      "fuente_pagina": 25,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -9860,6 +11520,86 @@
       "numero": 41
     },
     {
+      "id": 1443,
+      "ayuuk": "JUY",
+      "espanol": "Comprar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "juy.mp3",
+      "audio_path": "audio/juy.mp3",
+      "slug": "juy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "juy",
+      "fuente_pagina": 25,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1444,
+      "ayuuk": "JWE’E",
+      "espanol": "Además",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jwee.mp3",
+      "audio_path": "audio/jwee.mp3",
+      "slug": "jwee",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jweꞌe",
+      "fuente_pagina": 25,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1445,
+      "ayuuk": "JWE’E JE’E",
+      "espanol": "Así es",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jweejee.mp3",
+      "audio_path": "audio/jweejee.mp3",
+      "slug": "jweejee",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jweꞌe jeꞌe",
+      "fuente_pagina": 25,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1446,
+      "ayuuk": "JWËË’NYTY",
+      "espanol": "Juicio",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "jweenyty.mp3",
+      "audio_path": "audio/jweenyty.mp3",
+      "slug": "jweenyty",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "jwëëꞌñty",
+      "fuente_pagina": 26,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 324,
       "ayuuk": "JYA’A",
       "espanol": "Suya",
@@ -9937,6 +11677,66 @@
       ]
     },
     {
+      "id": 1447,
+      "ayuuk": "KA’AK NËË AAM",
+      "espanol": "Arroyo Zapote (población)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kaakneeaam.mp3",
+      "audio_path": "audio/kaakneeaam.mp3",
+      "slug": "kaakneeaam",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "Kaꞌak Nëë Aam",
+      "fuente_pagina": 26,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1448,
+      "ayuuk": "KAA KOPMËJK",
+      "espanol": "Cabeza de Tigre (población)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kaakopmejk.mp3",
+      "audio_path": "audio/kaakopmejk.mp3",
+      "slug": "kaakopmejk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "Kaa Kopmëjk",
+      "fuente_pagina": 26,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1449,
+      "ayuuk": "KA’AK POOT",
+      "espanol": "Mamey",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kaakpoot.mp3",
+      "audio_path": "audio/kaakpoot.mp3",
+      "slug": "kaakpoot",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kaꞌak poot",
+      "fuente_pagina": 26,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 347,
       "ayuuk": "KAAKY",
       "espanol": "Tortilla",
@@ -9956,6 +11756,46 @@
       "ilustracion": "img/ilustraciones/kaaky.svg"
     },
     {
+      "id": 1450,
+      "ayuuk": "KAAKY ME’T",
+      "espanol": "Prensa (para hacer tortillas)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kaakymet.mp3",
+      "audio_path": "audio/kaakymet.mp3",
+      "slug": "kaakymet",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kaaky meꞌt",
+      "fuente_pagina": 26,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1451,
+      "ayuuk": "KAAMYUK UUKMUK",
+      "espanol": "Comer (juntos)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kaamyukuukmuk.mp3",
+      "audio_path": "audio/kaamyukuukmuk.mp3",
+      "slug": "kaamyukuukmuk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kaamyuk uukmuk",
+      "fuente_pagina": 26,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 348,
       "ayuuk": "KAAN",
       "espanol": "Sal",
@@ -9973,6 +11813,26 @@
         "vocabulario_general"
       ],
       "ilustracion": "img/ilustraciones/kaan.svg"
+    },
+    {
+      "id": 1452,
+      "ayuuk": "KAA’P MIN",
+      "espanol": "Traer",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kaapmin.mp3",
+      "audio_path": "audio/kaapmin.mp3",
+      "slug": "kaapmin",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kaaꞌp min",
+      "fuente_pagina": 26,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 346,
@@ -10005,6 +11865,26 @@
       "audio_path": "audio/kaapy.mp3",
       "slug": "kaapy",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1453,
+      "ayuuk": "KAA’P YO’OY",
+      "espanol": "Revolver",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kaapyooy.mp3",
+      "audio_path": "audio/kaapyooy.mp3",
+      "slug": "kaapyooy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kaaꞌp yoꞌoy",
+      "fuente_pagina": 26,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -10048,6 +11928,26 @@
         "animales"
       ],
       "imagen": "img/palabras/kaate.webp"
+    },
+    {
+      "id": 1454,
+      "ayuuk": "KA’A TII",
+      "espanol": "Nada",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kaatii.mp3",
+      "audio_path": "audio/kaatii.mp3",
+      "slug": "kaatii",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kaꞌa tii",
+      "fuente_pagina": 26,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 341,
@@ -10104,6 +12004,26 @@
       ]
     },
     {
+      "id": 1455,
+      "ayuuk": "KAAXYËM",
+      "espanol": "Santa Ana (población)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kaaxyem.mp3",
+      "audio_path": "audio/kaaxyem.mp3",
+      "slug": "kaaxyem",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "Kaaxyëm",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 354,
       "ayuuk": "KAAY",
       "espanol": "Comió",
@@ -10139,6 +12059,126 @@
         "vocabulario_general"
       ],
       "ilustracion": "img/ilustraciones/kaj.svg"
+    },
+    {
+      "id": 1459,
+      "ayuuk": "KAJ MAA",
+      "espanol": "Ningún lado",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kajmaa.mp3",
+      "audio_path": "audio/kajmaa.mp3",
+      "slug": "kajmaa",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kaj maa",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1460,
+      "ayuuk": "KAJNË",
+      "espanol": "Mientras",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kajne.mp3",
+      "audio_path": "audio/kajne.mp3",
+      "slug": "kajne",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kajnë",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1461,
+      "ayuuk": "KAJ NII TII",
+      "espanol": "Nada",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kajniitii.mp3",
+      "audio_path": "audio/kajniitii.mp3",
+      "slug": "kajniitii",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kaj nii tii",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1462,
+      "ayuuk": "KAJ TII",
+      "espanol": "Nada",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kajtii.mp3",
+      "audio_path": "audio/kajtii.mp3",
+      "slug": "kajtii",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kaj tii",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1463,
+      "ayuuk": "KAJWEEY",
+      "espanol": "Café",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kajweey.mp3",
+      "audio_path": "audio/kajweey.mp3",
+      "slug": "kajweey",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kajweey",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1464,
+      "ayuuk": "KAJ Y’OYË",
+      "espanol": "No está bien",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kajyoye.mp3",
+      "audio_path": "audio/kajyoye.mp3",
+      "slug": "kajyoye",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kaj yꞌoyë",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 356,
@@ -10308,6 +12348,46 @@
       "ilustracion": "img/ilustraciones/kanee.svg"
     },
     {
+      "id": 1465,
+      "ayuuk": "KANËËMP",
+      "espanol": "Tehuantepec (población)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kaneemp.mp3",
+      "audio_path": "audio/kaneemp.mp3",
+      "slug": "kaneemp",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "Kanëëmp",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1466,
+      "ayuuk": "KANU’UTSËM",
+      "espanol": "El Caracol (población)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kanuutsem.mp3",
+      "audio_path": "audio/kanuutsem.mp3",
+      "slug": "kanuutsem",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "Kanuꞌudsëm",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 364,
       "ayuuk": "KAOYPIA",
       "espanol": "Demonio",
@@ -10346,6 +12426,26 @@
       "ilustracion": "img/ilustraciones/kap.svg"
     },
     {
+      "id": 1456,
+      "ayuuk": "KAPË’ËK",
+      "espanol": "Recoger",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kapeek.mp3",
+      "audio_path": "audio/kapeek.mp3",
+      "slug": "kapeek",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kabëꞌëk",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 365,
       "ayuuk": "KAPIEJT",
       "espanol": "Mesa",
@@ -10375,6 +12475,66 @@
       "audio_path": "audio/kapk.mp3",
       "slug": "kapk",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1467,
+      "ayuuk": "KAP MËNAA",
+      "espanol": "Nunca",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kapmenaa.mp3",
+      "audio_path": "audio/kapmenaa.mp3",
+      "slug": "kapmenaa",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kap mënaa",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1468,
+      "ayuuk": "KAP PËYË’ËK",
+      "espanol": "Llevar (corriendo)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kappeyeek.mp3",
+      "audio_path": "audio/kappeyeek.mp3",
+      "slug": "kappeyeek",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kap pëyëꞌëk",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1469,
+      "ayuuk": "KAP TII",
+      "espanol": "Nada",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kaptii.mp3",
+      "audio_path": "audio/kaptii.mp3",
+      "slug": "kaptii",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kap tii",
+      "fuente_pagina": 27,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -10456,6 +12616,106 @@
       "ilustracion": "img/ilustraciones/kapxtaajk.svg"
     },
     {
+      "id": 1470,
+      "ayuuk": "KAPXTAAKPË",
+      "espanol": "Estudiante",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kapxtaakpe.mp3",
+      "audio_path": "audio/kapxtaakpe.mp3",
+      "slug": "kapxtaakpe",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kapxtaakpë",
+      "fuente_pagina": 28,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1471,
+      "ayuuk": "KAPXTËKOY",
+      "espanol": "Burlarse",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kapxtekoy.mp3",
+      "audio_path": "audio/kapxtekoy.mp3",
+      "slug": "kapxtekoy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kapxtëgoy",
+      "fuente_pagina": 28,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1472,
+      "ayuuk": "KAPX WËTIT MËTYA’AK WËTIT",
+      "espanol": "Explicar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kapxwetitmetyaakwetit.mp3",
+      "audio_path": "audio/kapxwetitmetyaakwetit.mp3",
+      "slug": "kapxwetitmetyaakwetit",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kapx wëdit mëdyaꞌak wëdit",
+      "fuente_pagina": 28,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1473,
+      "ayuuk": "KAPX WIJ",
+      "espanol": "Aconsejar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kapxwij.mp3",
+      "audio_path": "audio/kapxwij.mp3",
+      "slug": "kapxwij",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kapx wij",
+      "fuente_pagina": 28,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1474,
+      "ayuuk": "KAPXY",
+      "espanol": "Mensaje",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kapxy.mp3",
+      "audio_path": "audio/kapxy.mp3",
+      "slug": "kapxy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kapxy",
+      "fuente_pagina": 28,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 371,
       "ayuuk": "Kapy",
       "espanol": "Cuñada; Cuñado por parte de la nuera",
@@ -10473,6 +12733,46 @@
       "dedupe_count": 2,
       "source_categories": [
         "familia",
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1457,
+      "ayuuk": "KAPYEJT",
+      "espanol": "Servilleta (para tortillas)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kapyejt.mp3",
+      "audio_path": "audio/kapyejt.mp3",
+      "slug": "kapyejt",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kabyejt",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1458,
+      "ayuuk": "KATYUK",
+      "espanol": "Pedazo (de tortilla o pan)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "katyuk.mp3",
+      "audio_path": "audio/katyuk.mp3",
+      "slug": "katyuk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kadyuk",
+      "fuente_pagina": 27,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
         "vocabulario_general"
       ]
     },
@@ -10497,6 +12797,26 @@
         "vocabulario_general"
       ],
       "color": "kats"
+    },
+    {
+      "id": 1475,
+      "ayuuk": "KA’TSNA’AW",
+      "espanol": "Estar tirado (en el suelo)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "katsnaaw.mp3",
+      "audio_path": "audio/katsnaaw.mp3",
+      "slug": "katsnaaw",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kaꞌtsnaꞌaw",
+      "fuente_pagina": 28,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 373,
@@ -10628,6 +12948,26 @@
       "ilustracion": "img/ilustraciones/kay.svg"
     },
     {
+      "id": 1476,
+      "ayuuk": "KAY U’UK",
+      "espanol": "Comer",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kayuuk.mp3",
+      "audio_path": "audio/kayuuk.mp3",
+      "slug": "kayuuk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kay uꞌuk",
+      "fuente_pagina": 28,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 380,
       "ayuuk": "KEEK",
       "espanol": "Corrió, voló",
@@ -10683,6 +13023,26 @@
       "imagen": "img/palabras/keemy.webp"
     },
     {
+      "id": 1477,
+      "ayuuk": "KEEP",
+      "espanol": "Cortar (con tijeras)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "keep.mp3",
+      "audio_path": "audio/keep.mp3",
+      "slug": "keep",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "keep",
+      "fuente_pagina": 28,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 382,
       "ayuuk": "KEETSY",
       "espanol": "Pulque",
@@ -10694,6 +13054,26 @@
       "audio_path": "audio/keetsy.mp3",
       "slug": "keetsy",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1478,
+      "ayuuk": "KEJEE",
+      "espanol": "Que (para comparar)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kejee.mp3",
+      "audio_path": "audio/kejee.mp3",
+      "slug": "kejee",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kejee",
+      "fuente_pagina": 28,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -10775,6 +13155,26 @@
       ]
     },
     {
+      "id": 1479,
+      "ayuuk": "KEPKYOPK",
+      "espanol": "Tocón",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kepkyopk.mp3",
+      "audio_path": "audio/kepkyopk.mp3",
+      "slug": "kepkyopk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kepkyopk",
+      "fuente_pagina": 29,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 387,
       "ayuuk": "Keptsyaa",
       "espanol": "Árbol, bosque",
@@ -10824,6 +13224,26 @@
       "audio_path": "audio/kex.mp3",
       "slug": "kex",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1480,
+      "ayuuk": "KEXË’ËK",
+      "espanol": "Aparecer",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kexeek.mp3",
+      "audio_path": "audio/kexeek.mp3",
+      "slug": "kexeek",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kexëꞌëk",
+      "fuente_pagina": 29,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -10904,6 +13324,26 @@
       "ilustracion": "img/ilustraciones/kee.svg"
     },
     {
+      "id": 1482,
+      "ayuuk": "KË’Ë A’X",
+      "espanol": "Brazo",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "keeax.mp3",
+      "audio_path": "audio/keeax.mp3",
+      "slug": "keeax",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "këꞌë aꞌx",
+      "fuente_pagina": 29,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 475,
       "ayuuk": "KËË’K",
       "espanol": "Calzada",
@@ -10933,6 +13373,46 @@
       "audio_path": "audio/keek_3.mp3",
       "slug": "keek_3",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1483,
+      "ayuuk": "KË’ËN YUUK",
+      "espanol": "Rancho Juárez (población)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "keenyuuk.mp3",
+      "audio_path": "audio/keenyuuk.mp3",
+      "slug": "keenyuuk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "Këꞌën Yuuk",
+      "fuente_pagina": 29,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1484,
+      "ayuuk": "KË’Ë PUJ",
+      "espanol": "Lavarse (las manos)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "keepuj.mp3",
+      "audio_path": "audio/keepuj.mp3",
+      "slug": "keepuj",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "këꞌë puj",
+      "fuente_pagina": 29,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -10994,6 +13474,86 @@
       ]
     },
     {
+      "id": 1485,
+      "ayuuk": "KËËWË’ËK",
+      "espanol": "Esponjar (al cocerse)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "keeweek.mp3",
+      "audio_path": "audio/keeweek.mp3",
+      "slug": "keeweek",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "këëwëꞌëk",
+      "fuente_pagina": 29,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1487,
+      "ayuuk": "KË’ËWIK",
+      "espanol": "Pinchar (el dedo para sacar sangre)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "keewik.mp3",
+      "audio_path": "audio/keewik.mp3",
+      "slug": "keewik",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "këꞌëwik",
+      "fuente_pagina": 29,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1486,
+      "ayuuk": "KË’ËWIKË’ËY",
+      "espanol": "Cicatriz (de una vacuna)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "keewikeey.mp3",
+      "audio_path": "audio/keewikeey.mp3",
+      "slug": "keewikeey",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "këꞌëwigëꞌëy",
+      "fuente_pagina": 29,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1488,
+      "ayuuk": "KË’ËWIKY",
+      "espanol": "Vacuna",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "keewiky.mp3",
+      "audio_path": "audio/keewiky.mp3",
+      "slug": "keewiky",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "këꞌëwiky",
+      "fuente_pagina": 29,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 464,
       "ayuuk": "KËJX",
       "espanol": "Cama; Se acabó",
@@ -11031,6 +13591,26 @@
       ]
     },
     {
+      "id": 1489,
+      "ayuuk": "KËJXTA’AXYËË",
+      "espanol": "Eternamente",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kejxtaaxyee.mp3",
+      "audio_path": "audio/kejxtaaxyee.mp3",
+      "slug": "kejxtaaxyee",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "këjxtaꞌaxyëë",
+      "fuente_pagina": 30,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 466,
       "ayuuk": "KËKOX",
       "espanol": "Codo",
@@ -11042,6 +13622,46 @@
       "audio_path": "audio/kekox.mp3",
       "slug": "kekox",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1490,
+      "ayuuk": "KËNIN",
+      "espanol": "Espolvorear",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kenin.mp3",
+      "audio_path": "audio/kenin.mp3",
+      "slug": "kenin",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kënin",
+      "fuente_pagina": 30,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1481,
+      "ayuuk": "KËPO’X",
+      "espanol": "Aplaudir",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kepox.mp3",
+      "audio_path": "audio/kepox.mp3",
+      "slug": "kepox",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "këboꞌx",
+      "fuente_pagina": 29,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -11160,6 +13780,26 @@
       ]
     },
     {
+      "id": 1491,
+      "ayuuk": "KË’XPAKX",
+      "espanol": "Camarón (de mar)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kexpakx.mp3",
+      "audio_path": "audio/kexpakx.mp3",
+      "slug": "kexpakx",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "këꞌxpakx",
+      "fuente_pagina": 30,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 473,
       "ayuuk": "KËXPET",
       "espanol": "Súbete",
@@ -11171,6 +13811,26 @@
       "audio_path": "audio/kexpet.mp3",
       "slug": "kexpet",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1492,
+      "ayuuk": "KËXYË WINË",
+      "espanol": "De todo",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kexyewine.mp3",
+      "audio_path": "audio/kexyewine.mp3",
+      "slug": "kexyewine",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "këxyë winë",
+      "fuente_pagina": 30,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -11195,6 +13855,26 @@
         "vocabulario_general"
       ],
       "ilustracion": "img/ilustraciones/kexyii.svg"
+    },
+    {
+      "id": 1493,
+      "ayuuk": "KËXYPË",
+      "espanol": "Por",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kexype.mp3",
+      "audio_path": "audio/kexype.mp3",
+      "slug": "kexype",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "këxypë",
+      "fuente_pagina": 30,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 394,
@@ -11233,6 +13913,86 @@
         "vocabulario_general"
       ],
       "ilustracion": "img/ilustraciones/kiix.svg"
+    },
+    {
+      "id": 1494,
+      "ayuuk": "KI’IXKË’ËW",
+      "espanol": "Espesar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kiixkeew.mp3",
+      "audio_path": "audio/kiixkeew.mp3",
+      "slug": "kiixkeew",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kiꞌixkëꞌëw",
+      "fuente_pagina": 30,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1495,
+      "ayuuk": "KIIXTA’ATS",
+      "espanol": "Hincharse (mucho)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kiixtaats.mp3",
+      "audio_path": "audio/kiixtaats.mp3",
+      "slug": "kiixtaats",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kiixtaꞌats",
+      "fuente_pagina": 30,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1496,
+      "ayuuk": "KIIXYII ËNA’K",
+      "espanol": "Muchacha, joven",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kiixyiienak.mp3",
+      "audio_path": "audio/kiixyiienak.mp3",
+      "slug": "kiixyiienak",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kiixyii ënaꞌk",
+      "fuente_pagina": 30,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1497,
+      "ayuuk": "KIN",
+      "espanol": "Hundir",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kin.mp3",
+      "audio_path": "audio/kin.mp3",
+      "slug": "kin",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kin",
+      "fuente_pagina": 30,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 396,
@@ -11381,6 +14141,26 @@
       ]
     },
     {
+      "id": 1498,
+      "ayuuk": "KOJKYAPXY’AT",
+      "espanol": "Ponerse de acuerdo",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kojkyapxyat.mp3",
+      "audio_path": "audio/kojkyapxyat.mp3",
+      "slug": "kojkyapxyat",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kojkyapxyꞌat",
+      "fuente_pagina": 31,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 406,
       "ayuuk": "Kojmyaa’xy",
       "espanol": "Huertos",
@@ -11449,6 +14229,26 @@
       "fuente": "Palabra-Mixe.docx",
       "categorias_relacionadas": [],
       "dedupe_count": 2,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1499,
+      "ayuuk": "KO’MËM",
+      "espanol": "Río Malatenco (población)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "komem.mp3",
+      "audio_path": "audio/komem.mp3",
+      "slug": "komem",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "Koꞌmëm",
+      "fuente_pagina": 31,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
       "source_categories": [
         "vocabulario_general"
       ]
@@ -11527,6 +14327,26 @@
       "ilustracion": "img/ilustraciones/konk.svg"
     },
     {
+      "id": 1500,
+      "ayuuk": "KO’N MO’OTSY",
+      "espanol": "Salsa",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "konmootsy.mp3",
+      "audio_path": "audio/konmootsy.mp3",
+      "slug": "konmootsy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "koꞌn moꞌoch",
+      "fuente_pagina": 31,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 413,
       "ayuuk": "KONTSOW",
       "espanol": "Recíbelo",
@@ -11538,6 +14358,26 @@
       "audio_path": "audio/kontsow.mp3",
       "slug": "kontsow",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1501,
+      "ayuuk": "KONYTY",
+      "espanol": "Banquito",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "konyty.mp3",
+      "audio_path": "audio/konyty.mp3",
+      "slug": "konyty",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "koñty",
+      "fuente_pagina": 31,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -11582,6 +14422,26 @@
       "ilustracion": "img/ilustraciones/koon.svg"
     },
     {
+      "id": 1503,
+      "ayuuk": "KO’ONA’AW",
+      "espanol": "Acostarse",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "koonaaw.mp3",
+      "audio_path": "audio/koonaaw.mp3",
+      "slug": "koonaaw",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "koꞌonaꞌaw",
+      "fuente_pagina": 31,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 415,
       "ayuuk": "KOOP",
       "espanol": "Tocando la guitarra",
@@ -11601,6 +14461,66 @@
       "ilustracion": "img/ilustraciones/koop.svg"
     },
     {
+      "id": 1504,
+      "ayuuk": "KOOTS",
+      "espanol": "Noche",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "koots.mp3",
+      "audio_path": "audio/koots.mp3",
+      "slug": "koots",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "koots",
+      "fuente_pagina": 31,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1502,
+      "ayuuk": "KOOTSËËY",
+      "espanol": "Anochecer",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kootseey.mp3",
+      "audio_path": "audio/kootseey.mp3",
+      "slug": "kootseey",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "koodsëëy",
+      "fuente_pagina": 31,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1505,
+      "ayuuk": "KOOTS O’K",
+      "espanol": "Morir (de noche)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kootsok.mp3",
+      "audio_path": "audio/kootsok.mp3",
+      "slug": "kootsok",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "koots oꞌk",
+      "fuente_pagina": 31,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 403,
       "ayuuk": "KO’OXY",
       "espanol": "Seso",
@@ -11612,6 +14532,26 @@
       "audio_path": "audio/kooxy.mp3",
       "slug": "kooxy",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1506,
+      "ayuuk": "KOW",
+      "espanol": "Tocar (guitarra)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kow.mp3",
+      "audio_path": "audio/kow.mp3",
+      "slug": "kow",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kow",
+      "fuente_pagina": 31,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -11655,6 +14595,46 @@
       ]
     },
     {
+      "id": 1507,
+      "ayuuk": "KOXTËNA’AW",
+      "espanol": "Estar de rodillas",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "koxtenaaw.mp3",
+      "audio_path": "audio/koxtenaaw.mp3",
+      "slug": "koxtenaaw",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "koxtënaꞌaw",
+      "fuente_pagina": 31,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1508,
+      "ayuuk": "KOX WOP",
+      "espanol": "Pegar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "koxwop.mp3",
+      "audio_path": "audio/koxwop.mp3",
+      "slug": "koxwop",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kox wop",
+      "fuente_pagina": 32,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 418,
       "ayuuk": "Koy",
       "espanol": "Conejo",
@@ -11672,6 +14652,86 @@
         "animales"
       ],
       "imagen": "img/palabras/koy.webp"
+    },
+    {
+      "id": 1509,
+      "ayuuk": "KRAA",
+      "espanol": "Joven (lo usa un hombre con un hombre)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kraa.mp3",
+      "audio_path": "audio/kraa.mp3",
+      "slug": "kraa",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kraa",
+      "fuente_pagina": 32,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1510,
+      "ayuuk": "KRUS",
+      "espanol": "Cruz",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "krus.mp3",
+      "audio_path": "audio/krus.mp3",
+      "slug": "krus",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "krus",
+      "fuente_pagina": 32,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1511,
+      "ayuuk": "KRUUNTË",
+      "espanol": "Enorme",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kruunte.mp3",
+      "audio_path": "audio/kruunte.mp3",
+      "slug": "kruunte",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kruundë",
+      "fuente_pagina": 32,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1512,
+      "ayuuk": "KU",
+      "espanol": "Cuando",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "ku.mp3",
+      "audio_path": "audio/ku.mp3",
+      "slug": "ku",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "ku",
+      "fuente_pagina": 32,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 421,
@@ -11768,6 +14828,26 @@
       ]
     },
     {
+      "id": 1521,
+      "ayuuk": "KU’IX",
+      "espanol": "Visitar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuix.mp3",
+      "audio_path": "audio/kuix.mp3",
+      "slug": "kuix",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌix",
+      "fuente_pagina": 33,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 426,
       "ayuuk": "KUJAAY",
       "espanol": "Anotado",
@@ -11779,6 +14859,66 @@
       "audio_path": "audio/kujaay.mp3",
       "slug": "kujaay",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1522,
+      "ayuuk": "KUJE’EK",
+      "espanol": "Desgajarse",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kujeek.mp3",
+      "audio_path": "audio/kujeek.mp3",
+      "slug": "kujeek",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kujeꞌek",
+      "fuente_pagina": 33,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1523,
+      "ayuuk": "KUJEKY",
+      "espanol": "Después (de mucho tiempo)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kujeky.mp3",
+      "audio_path": "audio/kujeky.mp3",
+      "slug": "kujeky",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kujeky",
+      "fuente_pagina": 33,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1524,
+      "ayuuk": "KUJEN",
+      "espanol": "Soltar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kujen.mp3",
+      "audio_path": "audio/kujen.mp3",
+      "slug": "kujen",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kujen",
+      "fuente_pagina": 33,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -11899,6 +15039,46 @@
       ]
     },
     {
+      "id": 1525,
+      "ayuuk": "KUK",
+      "espanol": "Que",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuk.mp3",
+      "audio_path": "audio/kuk.mp3",
+      "slug": "kuk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuk",
+      "fuente_pagina": 33,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1519,
+      "ayuuk": "KUKA’ATS",
+      "espanol": "Matar (a pedradas)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kukaats.mp3",
+      "audio_path": "audio/kukaats.mp3",
+      "slug": "kukaats",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kugaꞌats",
+      "fuente_pagina": 33,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 433,
       "ayuuk": "KUKA’AY",
       "espanol": "Barato",
@@ -11910,6 +15090,26 @@
       "audio_path": "audio/kukaay.mp3",
       "slug": "kukaay",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1520,
+      "ayuuk": "KUKAPXË’ËW",
+      "espanol": "Saludar (adentro de un lugar)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kukapxeew.mp3",
+      "audio_path": "audio/kukapxeew.mp3",
+      "slug": "kukapxeew",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kugapxëꞌëw",
+      "fuente_pagina": 33,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -12047,6 +15247,26 @@
       "ilustracion": "img/ilustraciones/kumaap.svg"
     },
     {
+      "id": 1526,
+      "ayuuk": "KUMA’AW",
+      "espanol": "Soñar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kumaaw.mp3",
+      "audio_path": "audio/kumaaw.mp3",
+      "slug": "kumaaw",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kumaꞌaw",
+      "fuente_pagina": 33,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 441,
       "ayuuk": "Kumajk",
       "espanol": "Hijastro",
@@ -12158,6 +15378,26 @@
       ]
     },
     {
+      "id": 1527,
+      "ayuuk": "KUNAAX MËJ TSIIN NËË",
+      "espanol": "Miel (silvestre)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kunaaxmejtsiinnee.mp3",
+      "audio_path": "audio/kunaaxmejtsiinnee.mp3",
+      "slug": "kunaaxmejtsiinnee",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kunaax mëj tsiin nëë",
+      "fuente_pagina": 33,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 446,
       "ayuuk": "KUNA’X",
       "espanol": "Rodó",
@@ -12169,6 +15409,26 @@
       "audio_path": "audio/kunax.mp3",
       "slug": "kunax",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1528,
+      "ayuuk": "KUNEP",
+      "espanol": "Tropezar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kunep.mp3",
+      "audio_path": "audio/kunep.mp3",
+      "slug": "kunep",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kunep",
+      "fuente_pagina": 34,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -12205,6 +15465,26 @@
       "audio_path": "audio/kunuukx.mp3",
       "slug": "kunuukx",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1529,
+      "ayuuk": "KUNUU’X",
+      "espanol": "Bendecir",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kunuux.mp3",
+      "audio_path": "audio/kunuux.mp3",
+      "slug": "kunuux",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kunuuꞌx",
+      "fuente_pagina": 34,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -12338,6 +15618,26 @@
       ]
     },
     {
+      "id": 1513,
+      "ayuuk": "KUPOJPË KUKËTYEEPYË",
+      "espanol": "Pecador",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kupojpekuketyeepye.mp3",
+      "audio_path": "audio/kupojpekuketyeepye.mp3",
+      "slug": "kupojpekuketyeepye",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kubojpë kugëdyeebyë",
+      "fuente_pagina": 32,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 456,
       "ayuuk": "KUPOOJ",
       "espanol": "Canoso",
@@ -12349,6 +15649,26 @@
       "audio_path": "audio/kupooj.mp3",
       "slug": "kupooj",
       "fuente": "Palabra-Mixe.docx",
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1530,
+      "ayuuk": "KURAA",
+      "espanol": "Corral",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuraa.mp3",
+      "audio_path": "audio/kuraa.mp3",
+      "slug": "kuraa",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuraa",
+      "fuente_pagina": 34,
       "categorias_relacionadas": [],
       "dedupe_count": 1,
       "source_categories": [
@@ -12429,6 +15749,26 @@
       ]
     },
     {
+      "id": 1514,
+      "ayuuk": "KUTËJK",
+      "espanol": "Dueño (de casa)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kutejk.mp3",
+      "audio_path": "audio/kutejk.mp3",
+      "slug": "kutejk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kudëjk",
+      "fuente_pagina": 32,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 1090,
       "ayuuk": "KUTUJT",
       "espanol": "Mandato, orden",
@@ -12465,6 +15805,86 @@
       ]
     },
     {
+      "id": 1515,
+      "ayuuk": "KUTUUMPË",
+      "espanol": "Mozo",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kutuumpe.mp3",
+      "audio_path": "audio/kutuumpe.mp3",
+      "slug": "kutuumpe",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuduumbë",
+      "fuente_pagina": 32,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1516,
+      "ayuuk": "KUTYUN",
+      "espanol": "Cumplir",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kutyun.mp3",
+      "audio_path": "audio/kutyun.mp3",
+      "slug": "kutyun",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kudyun",
+      "fuente_pagina": 33,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1517,
+      "ayuuk": "KUTSUKY",
+      "espanol": "Cecina",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kutsuky.mp3",
+      "audio_path": "audio/kutsuky.mp3",
+      "slug": "kutsuky",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kudsuky",
+      "fuente_pagina": 33,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1518,
+      "ayuuk": "KUTSU’UTS",
+      "espanol": "Matar (a mordidas)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kutsuuts.mp3",
+      "audio_path": "audio/kutsuuts.mp3",
+      "slug": "kutsuuts",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kudsuꞌuts",
+      "fuente_pagina": 33,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 419,
       "ayuuk": "Ku’ubáky",
       "espanol": "Abeja negra",
@@ -12482,6 +15902,66 @@
         "insectos"
       ],
       "imagen": "img/palabras/kuubaky.webp"
+    },
+    {
+      "id": 1536,
+      "ayuuk": "KU’UJEEX",
+      "espanol": "Matar (restregando con el pie)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuujeex.mp3",
+      "audio_path": "audio/kuujeex.mp3",
+      "slug": "kuujeex",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌujeex",
+      "fuente_pagina": 34,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1537,
+      "ayuuk": "KU’UJUUX",
+      "espanol": "Rebozo",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuujuux.mp3",
+      "audio_path": "audio/kuujuux.mp3",
+      "slug": "kuujuux",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌujuux",
+      "fuente_pagina": 34,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1538,
+      "ayuuk": "KU’UK",
+      "espanol": "Ciudadano",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuuk.mp3",
+      "audio_path": "audio/kuuk.mp3",
+      "slug": "kuuk",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌuk",
+      "fuente_pagina": 34,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 461,
@@ -12503,6 +15983,86 @@
       "imagen": "img/palabras/kuuke.webp"
     },
     {
+      "id": 1535,
+      "ayuuk": "KU’UKOX",
+      "espanol": "Matar (golpeando en la cabeza)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuukox.mp3",
+      "audio_path": "audio/kuukox.mp3",
+      "slug": "kuukox",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌugox",
+      "fuente_pagina": 34,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1531,
+      "ayuuk": "KU’UPIKX",
+      "espanol": "Dar un coscorrón",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuupikx.mp3",
+      "audio_path": "audio/kuupikx.mp3",
+      "slug": "kuupikx",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌubikx",
+      "fuente_pagina": 34,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1532,
+      "ayuuk": "KU’UPO’O",
+      "espanol": "Canas",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuupoo.mp3",
+      "audio_path": "audio/kuupoo.mp3",
+      "slug": "kuupoo",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌuboꞌo",
+      "fuente_pagina": 34,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1533,
+      "ayuuk": "KU’UPOTS",
+      "espanol": "Golpearse (la cabeza)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuupots.mp3",
+      "audio_path": "audio/kuupots.mp3",
+      "slug": "kuupots",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌubots",
+      "fuente_pagina": 34,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 1094,
       "ayuuk": "KUU’T",
       "espanol": "Listón",
@@ -12522,6 +16082,46 @@
       "ilustracion": "img/ilustraciones/kuut.svg"
     },
     {
+      "id": 1534,
+      "ayuuk": "KU’UTËKOY",
+      "espanol": "Acabar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuutekoy.mp3",
+      "audio_path": "audio/kuutekoy.mp3",
+      "slug": "kuutekoy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌudëgoy",
+      "fuente_pagina": 34,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1539,
+      "ayuuk": "KU’UTY",
+      "espanol": "Trenza",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuuty.mp3",
+      "audio_path": "audio/kuuty.mp3",
+      "slug": "kuuty",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌuty",
+      "fuente_pagina": 34,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 1093,
       "ayuuk": "KUUTYPY",
       "espanol": "Aguacate",
@@ -12539,6 +16139,86 @@
         "vocabulario_general"
       ],
       "ilustracion": "img/ilustraciones/kuutypy.svg"
+    },
+    {
+      "id": 1540,
+      "ayuuk": "KU’UWAMË’ËW",
+      "espanol": "Retoñar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuuwameew.mp3",
+      "audio_path": "audio/kuuwameew.mp3",
+      "slug": "kuuwameew",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌuwamëꞌëw",
+      "fuente_pagina": 35,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1541,
+      "ayuuk": "KU’UWIJY",
+      "espanol": "Inteligente",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuuwijy.mp3",
+      "audio_path": "audio/kuuwijy.mp3",
+      "slug": "kuuwijy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌuwijy",
+      "fuente_pagina": 35,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1542,
+      "ayuuk": "KU’UXEX",
+      "espanol": "Olvidadizo",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuuxex.mp3",
+      "audio_path": "audio/kuuxex.mp3",
+      "slug": "kuuxex",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌuxex",
+      "fuente_pagina": 35,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1543,
+      "ayuuk": "KU’UXY",
+      "espanol": "Camarón (de río)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuuxy.mp3",
+      "audio_path": "audio/kuuxy.mp3",
+      "slug": "kuuxy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuꞌuxy",
+      "fuente_pagina": 35,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 420,
@@ -12616,6 +16296,26 @@
       "ilustracion": "img/ilustraciones/kuween.svg"
     },
     {
+      "id": 1544,
+      "ayuuk": "KUWINTOY",
+      "espanol": "Envidioso",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuwintoy.mp3",
+      "audio_path": "audio/kuwintoy.mp3",
+      "slug": "kuwintoy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuwindoy",
+      "fuente_pagina": 35,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 1098,
       "ayuuk": "KUWITËËY",
       "espanol": "Atornillado",
@@ -12670,6 +16370,26 @@
       ]
     },
     {
+      "id": 1545,
+      "ayuuk": "KUXËTË’NY",
+      "espanol": "Rico",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuxeteny.mp3",
+      "audio_path": "audio/kuxeteny.mp3",
+      "slug": "kuxeteny",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuxëdëꞌñ",
+      "fuente_pagina": 35,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
       "id": 1100,
       "ayuuk": "KUXYË",
       "espanol": "Lleno, Satisfecho de la comida",
@@ -12705,6 +16425,86 @@
         "animales"
       ],
       "imagen": "img/palabras/kuxyeebejt.webp"
+    },
+    {
+      "id": 1546,
+      "ayuuk": "KUYO’OY",
+      "espanol": "Desviar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuyooy.mp3",
+      "audio_path": "audio/kuyooy.mp3",
+      "slug": "kuyooy",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuyoꞌoy",
+      "fuente_pagina": 35,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1547,
+      "ayuuk": "KUYOXË’ËW",
+      "espanol": "Ofrendar (a la iglesia)",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kuyoxeew.mp3",
+      "audio_path": "audio/kuyoxeew.mp3",
+      "slug": "kuyoxeew",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kuyoxëꞌëw",
+      "fuente_pagina": 35,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1549,
+      "ayuuk": "KWENTË",
+      "espanol": "Cuento",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kwente.mp3",
+      "audio_path": "audio/kwente.mp3",
+      "slug": "kwente",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kwentë",
+      "fuente_pagina": 35,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
+    },
+    {
+      "id": 1548,
+      "ayuuk": "KWENTË’AT",
+      "espanol": "Cuidar",
+      "categoria": "vocabulario_general",
+      "tipo": "lexico",
+      "nota": "",
+      "audio_status": "pendiente",
+      "audio_file": "kwenteat.mp3",
+      "audio_path": "audio/kwenteat.mp3",
+      "slug": "kwenteat",
+      "fuente": "Breve diccionario del mixe del Istmo, Mogoñé Viejo (ILV, 2018)",
+      "fuente_forma": "kwendëꞌat",
+      "fuente_pagina": 35,
+      "categorias_relacionadas": [],
+      "dedupe_count": 1,
+      "source_categories": [
+        "vocabulario_general"
+      ]
     },
     {
       "id": 1102,
