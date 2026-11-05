@@ -122,8 +122,10 @@ function normalizeAudioKey(value) {
     .toLowerCase();
 }
 
+// En el alfabeto mixe la ë es su propia letra (va después de la e), así que no se le quita la diéresis.
 function normalizeLetterKey(value) {
-  return normalizeAudioKey(value).charAt(0).toUpperCase();
+  const first = String(value || '').normalize('NFC').replace(/[’'ʼ´‘`ꞌ\s]/g, '').charAt(0).toUpperCase();
+  return first === 'Ë' ? 'Ë' : normalizeAudioKey(value).charAt(0).toUpperCase();
 }
 
 function isRealAudio(audio) {
