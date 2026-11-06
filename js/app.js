@@ -1,4 +1,4 @@
-const APP_VERSION = 'v5.7.0';
+const APP_VERSION = 'v5.9.0';
 const HOVER_DELAY_MS = 350;
 const SLOW_RATE = 0.9;
 // El himno es un «tema» más: al elegirlo, en lugar de palabras se muestra su reproductor y letra.
@@ -602,7 +602,7 @@ function cardTemplate(entry) {
 
   return `<article class="card ${catClass}${info.isReal ? ' has-audio' : ''}${visual ? ' has-visual' : ''}" data-index="${index}"${audioAttrs}>
     ${visual}
-    <div class="word${visual && longestToken(entry.ayuuk) > 8 ? ' word--long' : ''}" lang="mir">${escapeHtml(entry.ayuuk)}</div>
+    <div class="word${longestToken(entry.ayuuk) > 15 ? ' word--xl' : ''}" lang="mir">${escapeHtml(entry.ayuuk)}</div>
     <div class="meaning">${escapeHtml(entry.espanol)}</div>
     <div class="tag">${escapeHtml(prettyCategory(entry.categoria))}${pending}</div>
     ${note}

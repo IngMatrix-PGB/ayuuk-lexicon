@@ -267,16 +267,17 @@ html { scroll-behavior: smooth; }
 .flashcard.is-playing { border-color: var(--jade); }
 @keyframes listen { 50% { opacity: .45; } }
 .card.has-audio:hover { transform: translateY(-2px); box-shadow: 0 2px 4px rgba(58, 29, 20, .08), 0 14px 32px rgba(58, 29, 20, .12); }
-/* Un solo tamaño para todas las tarjetas, calculado del ancho de la tarjeta para que la palabra
-   más larga quepa en una línea: MËTYAAKTA’AK (≈8.7 em) junto a la imagen y
-   WINKUMEJTSTËKË’ËW (≈12.5 em) sin imagen. 100cqi = ancho útil de la tarjeta; 86 px = imagen + separación. */
+/* Un solo tamaño para todas las palabras de las tarjetas: la palabra ocupa todo el ancho de la
+   tarjeta y el tamaño baja solo en tarjetas angostas, para que la más larga (YAJMO’ONTSË’ËW, ≈9.7 em)
+   quepa en una línea. La única excepción es WINKUMEJTSTËKË’ËW (≈12.5 em, clase word--xl). */
 .card { container-type: inline-size; }
 .word {
   font-family: var(--font-display); font-weight: 800;
   font-size: 1.65rem; line-height: 1.1; color: var(--cacao-2);
   overflow-wrap: anywhere;
 }
-.card .word { font-size: min(1.65rem, calc((100cqi - 86px) / 8.8), calc(100cqi / 12.7)); }
+.card .word { font-size: min(1.65rem, calc(100cqi / 9.9)); }
+.card .word--xl { font-size: min(1.65rem, calc(100cqi / 12.7)); }
 @media (prefers-color-scheme: dark) { .word { color: #ffd9c4; } }
 .meaning { margin-top: 4px; font-size: 1.1rem; }
 .card__foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: auto; }
@@ -290,8 +291,10 @@ html { scroll-behavior: smooth; }
 /* ---------- Imágenes de apoyo: todas del mismo tamaño ---------- */
 .card.has-visual { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 14px; align-content: start; }
 .card.has-visual > :not(.visual) { grid-column: 1; }
-.card.has-visual > .visual { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
-.card.has-visual > .tag, .card.has-visual > .voice { grid-column: 1 / -1; }
+.card.has-visual > .word, .card.has-visual > .tag, .card.has-visual > .voice { grid-column: 1 / -1; }
+.card.has-visual > .word { grid-row: 1; }
+.card.has-visual > .meaning { grid-row: 2; align-self: center; }
+.card.has-visual > .visual { grid-column: 2; grid-row: 2; align-self: center; margin-top: 6px; }
 .visual {
   --size: 72px;
   display: grid; place-items: center;
