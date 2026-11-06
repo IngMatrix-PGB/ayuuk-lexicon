@@ -163,7 +163,12 @@ html { scroll-behavior: smooth; }
 .filter--row { grid-template-columns: auto 1fr; align-items: center; gap: 14px; }
 
 .chips, .letters { display: flex; flex-wrap: wrap; gap: 8px; }
-.letters { gap: 10px; padding: 6px 0 8px; }
+/* Letras iniciales en una sola fila: cada ficha mide hasta 54 px y se encoge para que quepan las --n. */
+.letters {
+  display: grid; grid-template-columns: repeat(var(--n, 17), minmax(0, 54px));
+  gap: clamp(4px, 1vw, 10px); padding: 6px 0 8px;
+  width: 100%; container-type: inline-size;
+}
 .chip {
   display: inline-flex; align-items: center; gap: 7px;
   min-height: 42px; padding: 0 14px; font-size: .97rem;
@@ -179,10 +184,11 @@ html { scroll-behavior: smooth; }
    lento (cada una a su ritmo) para invitar a tocarlas; al apuntar se enderezan y crecen. */
 .letter {
   --tone: var(--grana); --tint: rgba(179, 38, 30, .10); --tilt: -5deg;
-  width: 54px; height: 54px; padding: 0;
+  width: 100%; height: auto; aspect-ratio: 1; padding: 0;
   border-radius: 14px; border: 2px solid var(--tone);
   background: var(--tint); color: var(--tone); cursor: pointer;
-  font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; line-height: 1;
+  font-family: var(--font-display); font-weight: 800; line-height: 1;
+  font-size: min(1.5rem, calc(100cqi / var(--n, 17) * .46));
   box-shadow: 0 3px 0 var(--tone);
   transform: rotate(var(--tilt));
   animation: sway 4.2s ease-in-out infinite;
@@ -436,10 +442,6 @@ html { scroll-behavior: smooth; }
 .footer__credit a { color: inherit; }
 
 /* ---------- Móvil ---------- */
-/* Letras: hasta 900 px, cuadrícula de 8 columnas (filas de 8 y 7) en vez de cortes desbalanceados */
-@media (max-width: 900px) {
-  .letters { display: grid; grid-template-columns: repeat(8, 54px); gap: 10px; justify-content: center; }
-}
 
 @media (max-width: 640px) {
   .hero__content { padding: 28px 16px 44px; }
@@ -450,11 +452,16 @@ html { scroll-behavior: smooth; }
   .hero__actions .btn { flex: 1 1 auto; }
   .story-btn { white-space: nowrap; font-size: .95rem; padding: 0 14px; gap: 6px; }
   .filter .chips { justify-self: stretch; justify-content: flex-start; }
-  .letters {
-    grid-template-columns: repeat(8, 1fr); gap: 7px;
-    width: 100%;
+  /* En celular no caben 17 fichas tocables: una sola fila de 36 px que se desliza, como la de Temas. */
+  .letters, .filter .letters {
+    grid-template-columns: repeat(var(--n, 17), 36px); gap: 8px;
+    justify-content: start; justify-self: stretch; width: auto;
+    overflow-x: auto; scrollbar-width: none; container-type: normal;
+    margin: 0 -16px; padding: 8px 16px 10px;
+    scroll-snap-type: x proximity;
   }
-  .letter { width: auto; height: auto; aspect-ratio: 1; font-size: 1.2rem; border-radius: 10px; }
+  .letters::-webkit-scrollbar { display: none; }
+  .letter { font-size: 1.15rem; border-radius: 10px; scroll-snap-align: start; }
   .chips {
     flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
     margin: 0 -16px; padding: 2px 16px 6px;

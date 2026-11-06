@@ -1,4 +1,4 @@
-const APP_VERSION = 'v5.9.0';
+const APP_VERSION = 'v5.10.0';
 const HOVER_DELAY_MS = 350;
 const SLOW_RATE = 0.9;
 // El himno es un «tema» más: al elegirlo, en lugar de palabras se muestra su reproductor y letra.
@@ -416,6 +416,8 @@ function buildAlphabet() {
     .sort((a, b) => a.localeCompare(b, 'es'));
 
   $('alphabet').innerHTML = letters.map((letter) => `<button class="letter" type="button" data-letter="${letter}">${letter}</button>`).join('');
+  // Todas las letras en una sola fila: el CSS reparte el ancho entre --n fichas.
+  $('alphabet').style.setProperty('--n', letters.length);
 
   $('alphabet').addEventListener('click', (event) => {
     const button = event.target.closest('.letter');
